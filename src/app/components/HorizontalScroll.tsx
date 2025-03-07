@@ -1,37 +1,37 @@
-//@ts-nocheck
 "use client";
-import { useRef, useEffect } from "react";
-import HugeParagrah from "./HugeParagraph";
+
+// import { useRef, useEffect } from "react";
+// import HugeParagrah from "./HugeParagraph";
 import GridTwelve from "./Grid-Twelve";
-import { Scrollbar } from "react-scrollbars-custom";
+// import { Scrollbar } from "react-scrollbars-custom";
 
 export default function HorizontalScroll() {
-  const scrollRef = useRef();
+  // const scrollRef = useRef();
 
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (el) {
-      const onWheel = (e) => {
-        if (e.deltaY == 0) return;
-        console.log("testing");
-        e.preventDefault();
-        el.scrollTo({
-          left: el.scrollLeft + e.deltaY * 2
-          // behavior: "smooth"
-        });
-      };
-      el.addEventListener("wheel", onWheel);
-      return () => el.removeEventListener("wheel", onWheel);
-    }
-    // if(el) {
-    //   e.preventDefault();
-    //   var containerScrollPosition = el.scrollLeft;
-    //   el.scrollTo({
-    //     top: 0,
-    //     left
-    //   })
-    // }
-  }, []);
+  // useEffect(() => {
+  //   const el = scrollRef.current;
+  //   if (el) {
+  //     const onWheel = (e) => {
+  //       if (e.deltaY == 0) return;
+  //       console.log("testing");
+  //       e.preventDefault();
+  //       el.scrollTo({
+  //         left: el.scrollLeft + e.deltaY * 2
+  //         // behavior: "smooth"
+  //       });
+  //     };
+  //     el.addEventListener("wheel", onWheel);
+  //     return () => el.removeEventListener("wheel", onWheel);
+  //   }
+  //   // if(el) {
+  //   //   e.preventDefault();
+  //   //   var containerScrollPosition = el.scrollLeft;
+  //   //   el.scrollTo({
+  //   //     top: 0,
+  //   //     left
+  //   //   })
+  //   // }
+  // }, []);
 
   return (
     <>

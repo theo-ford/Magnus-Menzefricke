@@ -1,16 +1,16 @@
 import { type Metadata } from "next";
 
 import { asText } from "@prismicio/client";
-import { SliceZone } from "@prismicio/react";
+// import { SliceZone } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
-import { components } from "@/slices";
+// import { components } from "@/slices";
 
 import HorizontalScroll from "./components/HorizontalScroll";
 
 export default async function Home() {
-  const client = createClient();
-  const home = await client.getByUID("page", "home");
+  // const client = createClient();
+  // const home = await client.getByUID("page", "home");
 
   return (
     <>
