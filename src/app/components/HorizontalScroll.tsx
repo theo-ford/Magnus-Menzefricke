@@ -39,19 +39,22 @@ export default function HorizontalScroll() {
         // ref={scrollRef}
         // className="h-screen w-[200vw] bg-red-800  float-left relative overflow-auto"
         // className="h-screen bg-red-800 w-[2000px] float-left relative overflow-auto flex flex-nowrap "
-        className="h-screen bg-red-800 w-[200vw] float-left relative overflow-auto"
+        className="h-screen bg-red-800 w-[235vw] float-left relative overflow-auto"
         // style={{ overflow: "auto" }}
       >
         {/* <div style={{ whiteSpace: "nowrap" }}> */}
         {/* <div className="bg-blue-800 w-[75vw] h-screen whitespace-nowrap float-left relative"> */}
         {/* <div className="bg-blue-800 w-[50%] h-screen  flex-[0_0_auto] "> */}
-        <div className="bg-blue-800 w-[75vw] float-left relative h-screen whitespace-nowrap">
+        <div className="bg-[#e34234] w-[calc(75vw+20px)] float-left relative h-screen whitespace-nowrap">
           {/* <HugeParagrah /> */}
           <GridTwelve />
         </div>
         {/* <div className="bg-green-800 w-[75vw] h-screen whitespace-nowrap  float-left"> */}
         {/* <div className="bg-green-800 w-[50%] h-screen flex-[0_0_auto] "> */}
-        <div className="bg-green-800 w-[75vw] float-left relative h-screen whitespace-nowrap">
+        <div className="bg-white w-[75vw] float-left relative h-screen whitespace-nowrap">
+          <GridTwelve />
+        </div>
+        <div className="bg-white w-[75vw] float-left relative h-screen whitespace-nowrap">
           <GridTwelve />
         </div>
       </div>
