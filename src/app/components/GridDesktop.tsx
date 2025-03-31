@@ -1,4 +1,4 @@
-export default function GridTwelve() {
+export default function GridDesktop() {
   return (
     <div className="h-[calc(100vh-20px)] w-[100%] m-[10px] opacity-[.3]">
       <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative"></div>

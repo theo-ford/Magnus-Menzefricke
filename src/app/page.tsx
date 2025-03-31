@@ -4,9 +4,14 @@ import { asText } from "@prismicio/client";
 // import { SliceZone } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
+import HomepageScale from "./components/HomepageScale";
+import HorizontalOne from "./components/HorizontalOne";
+import HorizontalTwo from "./components/HorizontalTwo";
+import HorizontalThree from "./components/HorizontalThree";
+
 // import { components } from "@/slices";
 
-import HorizontalScroll from "./components/HorizontalScroll";
+// import HorizontalScroll from "./components/HorizontalScroll";
 
 export default async function Home() {
   // const client = createClient();
@@ -14,7 +19,7 @@ export default async function Home() {
 
   return (
     <>
-      <HorizontalScroll />
+      <HorizontalOne />
       {/* <SliceZone slices={home.data.slices} components={components} />{" "} */}
     </>
   );

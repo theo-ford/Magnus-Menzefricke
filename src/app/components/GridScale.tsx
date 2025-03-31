@@ -1,0 +1,231 @@
+"use client";
+
+export default function GridScale() {
+  return (
+    <>
+      <div className="h-[calc(100vh-20px)] w-[100vw] m-[10px] opacity-[.3] xl:w-[calc(75vw+20px)]">
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:hidden ">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:hidden"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:hidden">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:hidden"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:hidden">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:hidden"></div>
+        <div className="w-[calc(100%-20px)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[10px] xl:hidden">
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
+          {/* ROW */}
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%] hidden xl:block"></div>
+          {/* ROW */}
+        </div>
+        <div className="w-[calc(100%-20px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:hidden"></div>
+      </div>
+    </>
+  );
+}
