@@ -26,6 +26,7 @@ export default async function Page() {
   );
   return (
     <>
+      {/* Static Group on Homepage - can't get it to return the image slices within projects */}
       {/* {projects2.map(
         (item, index) =>
           item && (

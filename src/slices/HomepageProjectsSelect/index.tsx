@@ -18,6 +18,10 @@ import HorizontalOne from "@/app/components/HorizontalOne";
 import GridScale from "@/app/components/GridScale";
 import Carousel from "@/app/components/Carousel";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+
 /**
  * Props for `HomepageProjectsSelect`.
  */
@@ -46,27 +50,54 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
   // const projects3 = slice.primary.projectsgroup.map((item, index) => {
   //   return client.getByUID("project", item.project.uid);
   // });
+
+  // const swiperRef = useRef<any>(null);
+  // const swiper = useSwiper();
+
+  // function nextFunc() {
+  //   swiperRef.current.swiper.slideNext();
+  // }
+  // function prevFunc() {
+  //   swiperRef.current.swiper.slidePrev();
+  // }
+
   return (
     <div key={slice.index}>
       {projects.map(
         (item, index) =>
           item && (
             <>
-              <div className="h-[calc(100vh-20px)] w-[100%] m-[10px] absolute top-[0]">
-                <div className="w-[calc(100%-40px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(100%-20px)]">
-                  <div className="col-span-3 col-start-1 row-start-4 bg-green-800">
-                    <h5 className="text-[12px] p-[0px] m-[0px]">
-                      {item.data.title}
-                    </h5>
+              <div>
+                <div className="h-[calc(100vh-20px)] w-[100%] m-[10px] absolute top-[0] z-50">
+                  <div className="w-[calc(100%-40px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(100%-20px)]">
+                    <div className="col-span-3 col-start-1 row-start-4">
+                      <h5 className="text-[12px] p-[0px] m-[0px]">
+                        {item.data.title}
+                      </h5>
+                    </div>
                   </div>
                 </div>
               </div>
-              {/* <Carousel>
-                <SliceZone slices={item.data.slices1} components={components} />
-              </Carousel> */}
+              <div className="absolute z-[-40] top--[0]">
+                <GridScale />
+              </div>
+              <div className="">
+                <Carousel>
+                  <SliceZone
+                    slices={item.data.slices1}
+                    components={components}
+                  />
+                </Carousel>
+              </div>
 
-              <SliceZone slices={item.data.slices1} components={components} />
-              <GridScale />
+              {/* <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br> */}
             </>
           )
       )}

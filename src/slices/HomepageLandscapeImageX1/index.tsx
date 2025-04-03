@@ -1,8 +1,10 @@
+"use client";
+// @ts-nocheck
+
 import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
-import { SwiperSlide } from "swiper/react";
 /**
  * Props for `HomepageLandscapeImageX1`.
  */
@@ -17,12 +19,15 @@ const HomepageLandscapeImageX1: FC<HomepageLandscapeImageX1Props> = ({
 }) => {
   return (
     <>
-      <div className="h-[calc(100vh-20px)] w-[100vw] m-[10px] absolute top-[0]">
-        <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(100%-20px)]"></div>
-        <div className="col-span-4 col-start-1 row-start-5 row-span-4 overflow-hidden">
-          <PrismicNextImage field={slice.primary.image} alt="" />
+      <>
+        <div className="h-[calc(100vh-20px)] w-[100vw] m-[10px] absolute top-[0]">
+          <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(100%-20px)] ml-[10px]">
+            <div className="col-span-4 col-start-1 row-start-5 row-span-4 overflow-hidden">
+              <PrismicNextImage field={slice.primary.image} alt="" />
+            </div>
+          </div>
         </div>
-      </div>
+      </>
     </>
 
     // <section
