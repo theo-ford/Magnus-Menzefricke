@@ -1,12 +1,9 @@
-// @ts-nocheck
-
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { SliceZone, PrismicRichText } from "@prismicio/react";
+// import { SliceZone, PrismicRichText } from "@prismicio/react";
 import * as prismic from "@prismicio/client";
 import { createClient } from "@/prismicio";
-import { components } from "@/slices";
-import { PrismicNextLink } from "@prismicio/next";
+// import { components } from "@/slices";
 
 type Params = { uid: string };
 

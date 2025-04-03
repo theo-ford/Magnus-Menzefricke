@@ -1,14 +1,7 @@
 "use client";
 
-import React, {
-  useRef,
-  useState,
-  useEffect,
-  useContext,
-  useMemo,
-  ReactNode
-} from "react";
-import { Swiper, SwiperSlide, SwiperProps } from "swiper/react";
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -17,23 +10,13 @@ import { Navigation, Autoplay } from "swiper/modules";
 export default function Carousel({ children }: { children: any }) {
   const swiperRef = useRef<any>(null);
 
-  function nextFunc() {
-    swiperRef.current.swiper.slideNext();
-  }
-  function prevFunc() {
-    swiperRef.current.swiper.slidePrev();
-  }
+  // function nextFunc() {
+  //   swiperRef.current.swiper.slideNext();
+  // }
+  // function prevFunc() {
+  //   swiperRef.current.swiper.slidePrev();
+  // }
   return (
-    // <Swiper
-    //   slidesPerView={1}
-    //   slidesPerGroup={1}
-    //   // autoplay={true}
-    //   loop={true}
-    //   className="mySwiper"
-    //   modules={[Navigation]}
-    // >
-    //   {children}
-    // </Swiper>
     <>
       {/* <Swiper
         // autoplay={{ delay: 0 }}

@@ -1,26 +1,16 @@
 // "use client";
-// @ts-nocheck
 
 import { FC } from "react";
-import { Content } from "@prismicio/client";
+
 import { SliceComponentProps } from "@prismicio/react";
-import { Content, isFilled, LinkField } from "@prismicio/client";
-import {
-  SliceComponentProps,
-  JSXMapSerializer,
-  PrismicRichText,
-  SliceZone
-} from "@prismicio/react";
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+// import { Content, isFilled, LinkField } from "@prismicio/client";
+import { Content, isFilled } from "@prismicio/client";
+import { SliceZone } from "@prismicio/react";
+// import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
-import HorizontalOne from "@/app/components/HorizontalOne";
 import GridScale from "@/app/components/GridScale";
 import Carousel from "@/app/components/Carousel";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import "swiper/css";
 
 /**
  * Props for `HomepageProjectsSelect`.

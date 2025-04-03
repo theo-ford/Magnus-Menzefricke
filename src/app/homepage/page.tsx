@@ -4,7 +4,6 @@ import { SliceZone } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
-import GridScale from "../components/GridScale";
 
 export default async function Page() {
   const client = createClient();
@@ -17,13 +16,13 @@ export default async function Page() {
   //   return item;
   // });
 
-  const projects2 = await Promise.all(
-    page.data.homepage_projects_group.map((item) => {
-      if (isFilled.contentRelationship(item.project) && item.project.uid) {
-        return client.getByUID("project", item.project.uid);
-      }
-    })
-  );
+  // const projects2 = await Promise.all(
+  //   page.data.homepage_projects_group.map((item) => {
+  //     if (isFilled.contentRelationship(item.project) && item.project.uid) {
+  //       return client.getByUID("project", item.project.uid);
+  //     }
+  //   })
+  // );
   return (
     <>
       {/* Static Group on Homepage - can't get it to return the image slices within projects */}
