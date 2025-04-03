@@ -52,7 +52,7 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
   // }
 
   return (
-    <div key={slice.index}>
+    <div key={slice.id}>
       {projects.map(
         (item) =>
           item && (
