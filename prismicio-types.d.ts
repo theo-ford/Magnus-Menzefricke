@@ -4,6 +4,99 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
+/**
+ * Item in *Homepage → Homepage Projects Group*
+ */
+export interface HomepageDocumentDataHomepageProjectsGroupItem {
+  /**
+   * Project field in *Homepage → Homepage Projects Group*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.homepage_projects_group[].project
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  project: prismic.ContentRelationshipField<"project">;
+}
+
+type HomepageDocumentDataSlicesSlice = HomepageProjectsSelectSlice;
+
+/**
+ * Content for Homepage documents
+ */
+interface HomepageDocumentData {
+  /**
+   * Homepage Projects Group field in *Homepage*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.homepage_projects_group[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  homepage_projects_group: prismic.GroupField<
+    Simplify<HomepageDocumentDataHomepageProjectsGroupItem>
+  >;
+
+  /**
+   * Slice Zone field in *Homepage*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<HomepageDocumentDataSlicesSlice> /**
+   * Meta Title field in *Homepage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: homepage.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_title: prismic.KeyTextField;
+
+  /**
+   * Meta Description field in *Homepage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: homepage.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Homepage*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+}
+
+/**
+ * Homepage document from Prismic
+ *
+ * - **API ID**: `homepage`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type HomepageDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<HomepageDocumentData>,
+    "homepage",
+    Lang
+  >;
+
 type PageDocumentDataSlicesSlice = RichTextSlice;
 
 /**
@@ -76,18 +169,270 @@ interface PageDocumentData {
 export type PageDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
 
-export type AllDocumentTypes = PageDocument;
+type ProjectDocumentDataSlices1Slice =
+  | HomepageLandscapeImageX2Slice
+  | HomepageLandscapeImageX1Slice;
 
 /**
- * Primary content in *RichText → Primary*
+ * Content for Project documents
+ */
+interface ProjectDocumentData {
+  /**
+   * Title field in *Project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField /**
+   * Slice Zone field in *Project*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.slices1[]
+   * - **Tab**: Homepage Content
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */;
+  slices1: prismic.SliceZone<ProjectDocumentDataSlices1Slice> /**
+   * Meta Title field in *Project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.meta_title
+   * - **Tab**: SEO
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_title: prismic.KeyTextField;
+
+  /**
+   * Meta Description field in *Project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.meta_description
+   * - **Tab**: SEO
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_description: prismic.KeyTextField;
+}
+
+/**
+ * Project document from Prismic
+ *
+ * - **API ID**: `project`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ProjectDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<ProjectDocumentData>,
+    "project",
+    Lang
+  >;
+
+export type AllDocumentTypes =
+  | HomepageDocument
+  | PageDocument
+  | ProjectDocument;
+
+/**
+ * Primary content in *HomepageLandscapeImageX1 → Default → Primary*
+ */
+export interface HomepageLandscapeImageX1SliceDefaultPrimary {
+  /**
+   * Position field in *HomepageLandscapeImageX1 → Default → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage_landscape_image_x1.default.primary.position
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  position: prismic.SelectField<"Left" | "Right">;
+
+  /**
+   * Image field in *HomepageLandscapeImageX1 → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage_landscape_image_x1.default.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for HomepageLandscapeImageX1 Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HomepageLandscapeImageX1SliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<HomepageLandscapeImageX1SliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *HomepageLandscapeImageX1*
+ */
+type HomepageLandscapeImageX1SliceVariation =
+  HomepageLandscapeImageX1SliceDefault;
+
+/**
+ * HomepageLandscapeImageX1 Shared Slice
+ *
+ * - **API ID**: `homepage_landscape_image_x1`
+ * - **Description**: HomepageLandscapeImageX1
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HomepageLandscapeImageX1Slice = prismic.SharedSlice<
+  "homepage_landscape_image_x1",
+  HomepageLandscapeImageX1SliceVariation
+>;
+
+/**
+ * Primary content in *HomepageLandscapeImageX2 → Default → Primary*
+ */
+export interface HomepageLandscapeImageX2SliceDefaultPrimary {
+  /**
+   * Position field in *HomepageLandscapeImageX2 → Default → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage_landscape_image_x2.default.primary.position
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  position: prismic.SelectField<"Left" | "Right">;
+
+  /**
+   * Image 1 field in *HomepageLandscapeImageX2 → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage_landscape_image_x2.default.primary.image_1
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image_1: prismic.ImageField<never>;
+
+  /**
+   * Image 2 field in *HomepageLandscapeImageX2 → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage_landscape_image_x2.default.primary.image_2
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image_2: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for HomepageLandscapeImageX2 Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HomepageLandscapeImageX2SliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<HomepageLandscapeImageX2SliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *HomepageLandscapeImageX2*
+ */
+type HomepageLandscapeImageX2SliceVariation =
+  HomepageLandscapeImageX2SliceDefault;
+
+/**
+ * HomepageLandscapeImageX2 Shared Slice
+ *
+ * - **API ID**: `homepage_landscape_image_x2`
+ * - **Description**: HomepageLandscapeImageX2
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HomepageLandscapeImageX2Slice = prismic.SharedSlice<
+  "homepage_landscape_image_x2",
+  HomepageLandscapeImageX2SliceVariation
+>;
+
+/**
+ * Item in *HomepageProjectsSelect → Default → Primary → ProjectsGroup*
+ */
+export interface HomepageProjectsSelectSliceDefaultPrimaryProjectsgroupItem {
+  /**
+   * Project field in *HomepageProjectsSelect → Default → Primary → ProjectsGroup*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage_projects_select.default.primary.projectsgroup[].project
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  project: prismic.ContentRelationshipField<"project">;
+}
+
+/**
+ * Primary content in *HomepageProjectsSelect → Default → Primary*
+ */
+export interface HomepageProjectsSelectSliceDefaultPrimary {
+  /**
+   * ProjectsGroup field in *HomepageProjectsSelect → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage_projects_select.default.primary.projectsgroup[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  projectsgroup: prismic.GroupField<
+    Simplify<HomepageProjectsSelectSliceDefaultPrimaryProjectsgroupItem>
+  >;
+}
+
+/**
+ * Default variation for HomepageProjectsSelect Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HomepageProjectsSelectSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<HomepageProjectsSelectSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *HomepageProjectsSelect*
+ */
+type HomepageProjectsSelectSliceVariation = HomepageProjectsSelectSliceDefault;
+
+/**
+ * HomepageProjectsSelect Shared Slice
+ *
+ * - **API ID**: `homepage_projects_select`
+ * - **Description**: HomepageProjectsSelect
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HomepageProjectsSelectSlice = prismic.SharedSlice<
+  "homepage_projects_select",
+  HomepageProjectsSelectSliceVariation
+>;
+
+/**
+ * Primary content in *RichText → Default → Primary*
  */
 export interface RichTextSliceDefaultPrimary {
   /**
-   * Content field in *RichText → Primary*
+   * Content field in *RichText → Default → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: Lorem ipsum...
-   * - **API ID Path**: rich_text.primary.content
+   * - **API ID Path**: rich_text.default.primary.content
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   content: prismic.RichTextField;
@@ -131,12 +476,43 @@ declare module "@prismicio/client" {
     ): prismic.Client<AllDocumentTypes>;
   }
 
+  interface CreateWriteClient {
+    (
+      repositoryNameOrEndpoint: string,
+      options: prismic.WriteClientConfig,
+    ): prismic.WriteClient<AllDocumentTypes>;
+  }
+
+  interface CreateMigration {
+    (): prismic.Migration<AllDocumentTypes>;
+  }
+
   namespace Content {
     export type {
+      HomepageDocument,
+      HomepageDocumentData,
+      HomepageDocumentDataHomepageProjectsGroupItem,
+      HomepageDocumentDataSlicesSlice,
       PageDocument,
       PageDocumentData,
       PageDocumentDataSlicesSlice,
+      ProjectDocument,
+      ProjectDocumentData,
+      ProjectDocumentDataSlices1Slice,
       AllDocumentTypes,
+      HomepageLandscapeImageX1Slice,
+      HomepageLandscapeImageX1SliceDefaultPrimary,
+      HomepageLandscapeImageX1SliceVariation,
+      HomepageLandscapeImageX1SliceDefault,
+      HomepageLandscapeImageX2Slice,
+      HomepageLandscapeImageX2SliceDefaultPrimary,
+      HomepageLandscapeImageX2SliceVariation,
+      HomepageLandscapeImageX2SliceDefault,
+      HomepageProjectsSelectSlice,
+      HomepageProjectsSelectSliceDefaultPrimaryProjectsgroupItem,
+      HomepageProjectsSelectSliceDefaultPrimary,
+      HomepageProjectsSelectSliceVariation,
+      HomepageProjectsSelectSliceDefault,
       RichTextSlice,
       RichTextSliceDefaultPrimary,
       RichTextSliceVariation,

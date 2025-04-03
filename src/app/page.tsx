@@ -4,10 +4,10 @@ import { asText } from "@prismicio/client";
 // import { SliceZone } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
-import HomepageScale from "./components/HomepageScale";
+// import HomepageScale from "./components/HomepageScale";
 import HorizontalOne from "./components/HorizontalOne";
-import HorizontalTwo from "./components/HorizontalTwo";
-import HorizontalThree from "./components/HorizontalThree";
+// import HorizontalTwo from "./components/HorizontalTwo";
+// import HorizontalThree from "./components/HorizontalThree";
 
 // import { components } from "@/slices";
 

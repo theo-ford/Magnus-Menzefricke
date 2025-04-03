@@ -3,5 +3,12 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  homepage_landscape_image_x1: dynamic(
+    () => import("./HomepageLandscapeImageX1"),
+  ),
+  homepage_landscape_image_x2: dynamic(
+    () => import("./HomepageLandscapeImageX2"),
+  ),
+  homepage_projects_select: dynamic(() => import("./HomepageProjectsSelect")),
   rich_text: dynamic(() => import("./RichText")),
 };

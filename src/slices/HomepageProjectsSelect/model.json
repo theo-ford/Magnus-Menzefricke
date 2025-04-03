@@ -1,0 +1,39 @@
+{
+  "id": "homepage_projects_select",
+  "type": "SharedSlice",
+  "name": "HomepageProjectsSelect",
+  "description": "HomepageProjectsSelect",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "projectsgroup": {
+          "type": "Group",
+          "config": {
+            "label": "ProjectsGroup",
+            "repeat": true,
+            "fields": {
+              "project": {
+                "type": "Link",
+                "config": {
+                  "label": "Project",
+                  "select": "document",
+                  "repeat": false,
+                  "customtypes": [
+                    "project"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
