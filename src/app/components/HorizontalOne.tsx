@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 
 import { useRef, useEffect } from "react";
@@ -7,11 +6,11 @@ import GridScale from "./GridScale";
 import { useMediaQuery } from "./MediaQuery";
 
 export default function HorizontalOne() {
-  const scrollRef = useRef();
+  const scrollRef = useRef(null);
   const isDesktop = useMediaQuery("(min-width: 1280px)");
 
   useEffect(() => {
-    const el = scrollRef.current;
+    const el: any = scrollRef.current;
     if (el && isDesktop) {
       const onWheel = (e) => {
         if (e.deltaY == 0) return;
