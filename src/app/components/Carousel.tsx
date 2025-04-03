@@ -7,7 +7,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 
+// eslint-disable-next-line  @typescript-eslint/no-explicit-any
 export default function Carousel({ children }: { children: any }) {
+  // eslint-disable-next-line  @typescript-eslint/no-explicit-any
   const swiperRef = useRef<any>(null);
 
   // function nextFunc() {
@@ -35,6 +37,7 @@ export default function Carousel({ children }: { children: any }) {
         ref={swiperRef}
       >
         {/* {children} */}
+        {/* eslint-disable-next-line  @typescript-eslint/no-explicit-any */}
         {children.map((child: any, id: React.Key | null | undefined) => (
           <SwiperSlide key={id}>
             <div className="w-full h-[110vh] grid grid-cols-48 justify-items-center items-center">

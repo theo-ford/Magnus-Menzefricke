@@ -10,6 +10,7 @@ export default function HorizontalOne() {
   const isDesktop = useMediaQuery("(min-width: 1280px)");
 
   useEffect(() => {
+    // eslint-disable-next-line  @typescript-eslint/no-explicit-any
     const el: any = scrollRef.current;
     if (el && isDesktop) {
       const onWheel = (e) => {
