@@ -31,4 +31,5 @@
     // "src/app/components"
   ],
   "exclude": ["node_modules"]
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
 }
