@@ -24,14 +24,19 @@ export type HomepageProjectsSelectProps =
 const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
   slice
 }) => {
+  // WORKING SLICE USING ASYNC
   const client = createClient();
-  const projects = await Promise.all(
+  const projectsAsync = await Promise.all(
     slice.primary.projectsgroup.map((item) => {
       if (isFilled.contentRelationship(item.project) && item.project.uid) {
         return client.getByUID("project", item.project.uid);
       }
     })
   );
+
+  // const projects = slice.primary.projectsgroup.map((item) => {
+  //   return client.getByUID("project", item.project.uid);
+  // });
 
   // const projects2 = slice.primary.projectsgroup.map((item, index) => {
   //   return item;
@@ -52,14 +57,17 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
   // }
 
   return (
-    <div key={slice.id}>
-      {projects.map(
+    //
+    <>
+      {/* <div key={slice.id}> */}
+      {projectsAsync.map(
         (item, index) =>
           item && (
             <>
-              <div className="relative h-[100vh] w-[100vw] float-left">
-                <div className="h-[calc(100vh-20px)] w-[100%] m-[10px] absolute top-[0] z-50">
-                  <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw+20px)]">
+              {/* <div className="relative h-[100vh] w-[100vw] float-left"> */}
+              <div className="relative float-left h-[calc(100vh-20px)] w-[100vw] xl:w-[calc(75vw+20px)] xl:mr-[20px] mb-[10px]">
+                <div className="h-[calc(100vh-20px)] w-[100%] absolute top-[0] z-50 xl:w-[calc(75vw+20px)] m-[10px]">
+                  <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(100%)]">
                     <div className="col-span-2 col-start-1 row-start-3 xl:col-span-1 xl:col-start-1 xl:row-start-2">
                       <h5 className="text-[48px] p-[0px] m-[0px] leading-none xl:text-[120px]">
                         {"0" + (index + 1)}
@@ -104,10 +112,10 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
                   </div>
                 </div>
 
-                <div className="absolute z-[-40] top--[0]">
+                <div className="absolute z-[-40] top--[0] xl:w-[calc(75vw+20px)] m-[10px]">
                   <GridScale />
                 </div>
-                <div className="">
+                <div className="xl:w-[calc(75vw+20px)] m-[10px]">
                   <Carousel>
                     <SliceZone
                       slices={item.data.slices1}
@@ -119,7 +127,8 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
             </>
           )
       )}
-    </div>
+      {/* </div> */}
+    </>
 
     // <section
     //   data-slice-type={slice.slice_type}

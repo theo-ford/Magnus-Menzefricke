@@ -4,6 +4,7 @@ import { SliceZone } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
+import HomepageProjects from "../components/HomepageProjects";
 
 export default async function Page() {
   const client = createClient();
@@ -23,6 +24,7 @@ export default async function Page() {
   //     }
   //   })
   // );
+
   return (
     <>
       {/* Static Group on Homepage - can't get it to return the image slices within projects */}
@@ -40,7 +42,11 @@ export default async function Page() {
           )
       )} */}
       {/* HomepageProjectsSelect */}
-      <SliceZone slices={page.data.slices} components={components} />
+      {/* <SliceZone slices={page.data.slices} components={components} /> */}
+
+      <HomepageProjects>
+        <SliceZone slices={page.data.slices} components={components} />
+      </HomepageProjects>
     </>
   );
 }

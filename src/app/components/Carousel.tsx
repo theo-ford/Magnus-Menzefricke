@@ -40,11 +40,7 @@ export default function Carousel({ children }: { children: any }) {
         {/* eslint-disable-next-line  @typescript-eslint/no-explicit-any */}
         {children.map((child: any, id: React.Key | null | undefined) => (
           <SwiperSlide key={id}>
-            <div className="w-full h-[110vh] grid grid-cols-48 justify-items-center items-center">
-              {/* <div className={ImageOrientation(child)}>{child}</div> */}
-              {/* <div className="col-[13_/_span_24]">{child}</div> */}
-              {child}
-            </div>
+            <div className="w-full ">{child}</div>
           </SwiperSlide>
         ))}
       </Swiper>
