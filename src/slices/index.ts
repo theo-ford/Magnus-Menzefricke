@@ -10,5 +10,6 @@ export const components = {
     () => import("./HomepageLandscapeImageX2"),
   ),
   homepage_projects_select: dynamic(() => import("./HomepageProjectsSelect")),
+  image: dynamic(() => import("./Image")),
   rich_text: dynamic(() => import("./RichText")),
 };

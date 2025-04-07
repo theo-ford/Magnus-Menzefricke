@@ -18,6 +18,69 @@
           "label": "Title",
           "placeholder": ""
         }
+      },
+      "subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "SubTitle",
+          "placeholder": "Eg. Design Management for Office Group"
+        }
+      },
+      "design_architects": {
+        "type": "Text",
+        "config": {
+          "label": "Design Architects",
+          "placeholder": ""
+        }
+      },
+      "technical_architects": {
+        "type": "Text",
+        "config": {
+          "label": "Technical Architects",
+          "placeholder": ""
+        }
+      },
+      "net_internal_area": {
+        "type": "Text",
+        "config": {
+          "label": "Net Internal Area",
+          "placeholder": ""
+        }
+      },
+      "completion_date": {
+        "type": "Text",
+        "config": {
+          "label": "Completion Date",
+          "placeholder": ""
+        }
+      },
+      "client": {
+        "type": "Text",
+        "config": {
+          "label": "Client",
+          "placeholder": ""
+        }
+      },
+      "service": {
+        "type": "Text",
+        "config": {
+          "label": "Service",
+          "placeholder": ""
+        }
+      },
+      "location": {
+        "type": "Text",
+        "config": {
+          "label": "Location",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
       }
     },
     "Homepage Content": {
@@ -26,6 +89,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "image": {
+              "type": "SharedSlice"
+            },
             "homepage_landscape_image_x2": {
               "type": "SharedSlice"
             },
