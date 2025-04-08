@@ -60,76 +60,79 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
     //
     <>
       {/* <div key={slice.id}> */}
-      {projectsAsync.map(
-        (item, index) =>
-          item && (
-            <>
-              {/* <div className="relative h-[100vh] w-[100vw] float-left"> */}
-              <div className="relative float-left h-[calc(100vh-20px)] w-[100vw] xl:w-[calc(75vw-20px)] xl:mr-[20px] mb-[10px]">
-                <div className="h-[calc(100vh-20px)] w-[100%] absolute top-[0] z-50 xl:w-[calc(75vw-20px)] m-[10px]">
-                  <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(100%)]">
-                    <div className="col-span-2 col-start-1 row-start-3 xl:col-span-1 xl:col-start-1 xl:row-start-2">
-                      <h5 className="text-[48px] p-[0px] m-[0px] leading-none xl:text-[9.5vw] xl:mt-[-28px] font-bold">
-                        {"0" + (index + 1)}
-                      </h5>
-                    </div>
+      <div className="mt-[0px] relative float-left">
+        {projectsAsync.map(
+          (item, index) =>
+            item && (
+              <>
+                {/* <div className="relative h-[100vh] w-[100vw] float-left"> */}
+                <div className="relative float-left h-[calc(100vh-20px)] w-[100vw] xl:w-[calc(75vw-20px)] xl:mr-[20px] mb-[10px]">
+                  <div className="h-[calc(100vh-20px)] w-[100%] absolute top-[0] z-50 xl:w-[calc(75vw-20px)] m-[10px]">
+                    <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(100%)]">
+                      <div className="col-span-2 col-start-1 row-start-3 xl:col-span-1 xl:col-start-1 xl:row-start-2">
+                        <h5 className="text-[48px] p-[0px] m-[0px] leading-none xl:text-[9.5vw] xl:mt-[-28px] font-bold">
+                          {"0" + (index + 1)}
+                        </h5>
+                      </div>
 
-                    <div className="col-span-2 col-start-1 row-start-11 xl:col-start-1 xl:col-span-2 xl:row-start-7">
-                      <h5 className="text-[18px] p-[0px] m-[0px] leading-none  xl:text-[22px]">
-                        <span className="font-bold">{item.data.title}</span>
-                      </h5>
-                    </div>
-                    <div className="col-span-2 col-start-3 row-start-11  xl:col-start-3 xl:col-span-2 xl:row-start-7">
-                      <h5 className="text-[18px] p-[0px] m-[0px] leading-none xl:text-[22px]">
-                        {item.data.subtitle}
-                      </h5>
-                    </div>
-                    <div className="col-span-2 col-start-1 row-start-12 xl:col-span-2 xl:col-start-1 xl:row-start-8">
-                      <p className="text-[12px] p-[0px] m-[0px] leading-none">
-                        <span className="font-bold">Design Architects</span>
-                        <br></br>
-                        {item.data.design_architects}
-                        <br></br>
-                      </p>
-                      <p className="text-[12px] p-[0px] m-[0px] leading-none xl:mt-[12px]">
-                        <span className="font-bold  ">
-                          Technical Architects
-                        </span>
-                        <br></br>
-                        {item.data.technical_architects}
-                      </p>
-                    </div>
-                    <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-3 xl:row-start-8">
-                      <p className="text-[12px] p-[0px] m-[0px] leading-none">
-                        <span className="font-bold">Net Internal Area</span>
-                        <br></br>
-                        {item.data.net_internal_area}
-                      </p>
-                      <p className="text-[12px] p-[0px] m-[0px] leading-none xl:mt-[12px]">
-                        <span className="font-bold">Completion</span>
-                        <br></br>
+                      <div className="col-span-2 col-start-1 row-start-11 xl:col-start-1 xl:col-span-2 xl:row-start-7">
+                        <h5 className="text-[18px] p-[0px] m-[0px] leading-none  xl:text-[22px]">
+                          <span className="font-bold">{item.data.title}</span>
+                        </h5>
+                      </div>
+                      <div className="col-span-2 col-start-3 row-start-11  xl:col-start-3 xl:col-span-2 xl:row-start-7">
+                        <h5 className="text-[18px] p-[0px] m-[0px] leading-none xl:text-[22px]">
+                          {item.data.subtitle}
+                        </h5>
+                      </div>
+                      <div className="col-span-2 col-start-1 row-start-12 xl:col-span-2 xl:col-start-1 xl:row-start-8">
+                        <p className="text-[12px] p-[0px] m-[0px] leading-none">
+                          <span className="font-bold">Design Architects</span>
+                          <br></br>
+                          {item.data.design_architects}
+                          <br></br>
+                        </p>
+                        <p className="text-[12px] p-[0px] m-[0px] leading-none xl:mt-[12px]">
+                          <span className="font-bold  ">
+                            Technical Architects
+                          </span>
+                          <br></br>
+                          {item.data.technical_architects}
+                        </p>
+                      </div>
+                      <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-3 xl:row-start-8">
+                        <p className="text-[12px] p-[0px] m-[0px] leading-none">
+                          <span className="font-bold">Net Internal Area</span>
+                          <br></br>
+                          {item.data.net_internal_area}
+                        </p>
+                        <p className="text-[12px] p-[0px] m-[0px] leading-none xl:mt-[12px]">
+                          <span className="font-bold">Completion</span>
+                          <br></br>
 
-                        {item.data.completion_date}
-                      </p>
+                          {item.data.completion_date}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="absolute z-[-40] top--[0] xl:w-[calc(75vw-20px)] m-[10px]">
-                  <GridScale />
+                  <div className="absolute z-[-40] top--[0] xl:w-[calc(75vw-20px)] m-[10px]">
+                    <GridScale />
+                  </div>
+                  <div className="xl:w-[calc(75vw)]">
+                    <Carousel>
+                      <SliceZone
+                        slices={item.data.slices1}
+                        components={components}
+                      />
+                    </Carousel>
+                  </div>
                 </div>
-                <div className="xl:w-[calc(75vw)]">
-                  <Carousel>
-                    <SliceZone
-                      slices={item.data.slices1}
-                      components={components}
-                    />
-                  </Carousel>
-                </div>
-              </div>
-            </>
-          )
-      )}
+              </>
+            )
+        )}
+      </div>
+
       {/* </div> */}
     </>
 

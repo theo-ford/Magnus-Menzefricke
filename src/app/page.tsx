@@ -24,6 +24,20 @@ export default async function Home() {
 
   return (
     <>
+      <div className="fixed z-100">
+        <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300">
+          <span className="">Menu / </span>
+          <span className="opacity-50">Portfolio</span>
+          <span className="opacity-0"> / Index</span>
+          <span className="opacity-0"> / About</span>
+          <span className="opacity-0"> / News</span>
+        </p>
+      </div>
+      <div className="fixed z-100 right-0">
+        <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300">
+          <span className="">Pause</span>
+        </p>
+      </div>
       <HomepageProjects>
         <Hero pageData={page.data}></Hero>
         <SliceZone slices={page.data.slices} components={components} />
