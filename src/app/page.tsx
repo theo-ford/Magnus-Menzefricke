@@ -6,6 +6,10 @@ import { asText } from "@prismicio/client";
 import { createClient } from "@/prismicio";
 // import HomepageScale from "./components/HomepageScale";
 import HorizontalOne from "./components/HorizontalOne";
+import HomepageProjects from "./components/HomepageProjects";
+import Hero from "./components/Hero";
+import { SliceZone } from "@prismicio/react";
+import { components } from "@/slices";
 // import HorizontalTwo from "./components/HorizontalTwo";
 // import HorizontalThree from "./components/HorizontalThree";
 
@@ -16,11 +20,15 @@ import HorizontalOne from "./components/HorizontalOne";
 export default async function Home() {
   // const client = createClient();
   // const home = await client.getByUID("page", "home");
+  const client = createClient();
+  const page = await client.getSingle("homepage");
 
   return (
     <>
-      <HorizontalOne />
-      {/* <SliceZone slices={home.data.slices} components={components} />{" "} */}
+      <HomepageProjects>
+        <Hero pageData={page.data}></Hero>
+        <SliceZone slices={page.data.slices} components={components} />
+      </HomepageProjects>
     </>
   );
 }

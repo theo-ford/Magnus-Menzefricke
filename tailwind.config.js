@@ -20,7 +20,7 @@ module.exports = {
       },
 
       fontFamily: {
-        sans: ["Helvetica", "Arial", "sans-serif"]
+        sans: ["NeueHaasUnica", "Arial", "sans-serif"]
       },
       fontSize: {
         sm: ["12px", { lineHeight: "110%", letterSpacing: "0.2px;" }],

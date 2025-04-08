@@ -5,6 +5,7 @@ import { useRef, useEffect } from "react";
 // import HeroContentScale from "./HeroContentScale";
 import { useMediaQuery } from "./MediaQuery";
 import GridScale from "./GridScale";
+import { PrismicRichText } from "@prismicio/react";
 
 // eslint-disable-next-line  @typescript-eslint/no-explicit-any
 export default function HomepageProjects({ children }: { children: any }) {
@@ -38,11 +39,6 @@ export default function HomepageProjects({ children }: { children: any }) {
           // className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll xl:w-[calc(160vw+40px)]"
           className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll "
         >
-          <div className="bg-[#e34234] float-left relative h-screen  xl:w-[calc(75vw-5px)] xl:mr-[0px]">
-            <div className="m-[10px] xl:m-[10px] xl:w-[calc(75vw-25px)] ">
-              <GridScale />
-            </div>
-          </div>
           {children}
         </div>
       </div>

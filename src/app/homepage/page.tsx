@@ -5,6 +5,7 @@ import { SliceZone } from "@prismicio/react";
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import HomepageProjects from "../components/HomepageProjects";
+import Hero from "../components/Hero";
 
 export default async function Page() {
   const client = createClient();
@@ -45,6 +46,7 @@ export default async function Page() {
       {/* <SliceZone slices={page.data.slices} components={components} /> */}
       <div className="">
         <HomepageProjects>
+          <Hero pageData={page.data}></Hero>
           <SliceZone slices={page.data.slices} components={components} />
         </HomepageProjects>
       </div>
