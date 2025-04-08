@@ -12,12 +12,12 @@ export default function Carousel({ children }: { children: any }) {
   // eslint-disable-next-line  @typescript-eslint/no-explicit-any
   const swiperRef = useRef<any>(null);
 
-  function nextFunc() {
-    swiperRef.current.swiper.slideNext();
-  }
-  function prevFunc() {
-    swiperRef.current.swiper.slidePrev();
-  }
+  // function nextFunc() {
+  //   swiperRef.current.swiper.slideNext();
+  // }
+  // function prevFunc() {
+  //   swiperRef.current.swiper.slidePrev();
+  // }
   return (
     <>
       {/* <Swiper
