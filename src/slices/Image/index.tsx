@@ -84,9 +84,8 @@ const Image: FC<ImageProps> = ({ slice }) => {
         </div>
       )}
       {slice.variation == "1XPortraitImage" && (
-        <div className="h-[calc(100vh)]  w-[75vw+20px] xl:h-[calc(100vh-20px)] xl:w-[100%] xl:m-[10px]">
-          {/* <div className="h-[calc(100vh)]  w-[75vw+20px]"> */}
-          <div className="w-[calc(100%)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-20px)]">
+        <div className="h-[calc(100vh)]  w-[75vw+20px] xl:h-[calc(100vh-20px)] xl:w-[100%] mt-[5px] xl:mt-[10px] xl:ml-[10px]">
+          <div className="w-[calc(100%)] h-[calc(100%-10px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-20px)]">
             {slice.primary.position == "Top" ? (
               <div className="col-span-4 col-start-1 row-start-1 row-span-12 overflow-hidden xl:col-span-4 xl:row-start-1 xl:row-span-5 xl:col-start-9 flex items-center">
                 <PrismicNextImage
@@ -104,8 +103,8 @@ const Image: FC<ImageProps> = ({ slice }) => {
         </div>
       )}
       {slice.variation == "fullBleedImage" && (
-        <div className="h-[calc(100vh)] w-[75vw+20px]">
-          <div className="w-[calc(100%)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8">
+        <div className="h-[calc(100vh)] w-[75vw+20px] mt-[5px] xl:mt-[-10px]">
+          <div className="w-[calc(100%)] h-[calc(100%-10px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:h-[calc(100%+20px)]">
             <div className="col-span-4 col-start-1 row-start-1 row-span-12 overflow-hidden xl:row-span-8 xl:col-span-12 xl:col-start-1 l:row-start-1 flex items-center ">
               <PrismicNextImage
                 field={slice.primary.image}

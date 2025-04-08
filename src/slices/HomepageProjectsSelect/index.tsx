@@ -90,8 +90,11 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
                         <br></br>
                         {item.data.design_architects}
                         <br></br>
-                        <br></br>
-                        <span className="font-bold">Technical Architects</span>
+                      </p>
+                      <p className="text-[12px] p-[0px] m-[0px] leading-none xl:mt-[12px]">
+                        <span className="font-bold  ">
+                          Technical Architects
+                        </span>
                         <br></br>
                         {item.data.technical_architects}
                       </p>
@@ -101,8 +104,8 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
                         <span className="font-bold">Net Internal Area</span>
                         <br></br>
                         {item.data.net_internal_area}
-                        <br></br>
-                        <br></br>
+                      </p>
+                      <p className="text-[12px] p-[0px] m-[0px] leading-none xl:mt-[12px]">
                         <span className="font-bold">Completion</span>
                         <br></br>
 
