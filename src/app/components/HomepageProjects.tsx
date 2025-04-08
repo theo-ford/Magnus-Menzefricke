@@ -4,8 +4,6 @@ import { useRef, useEffect } from "react";
 
 // import HeroContentScale from "./HeroContentScale";
 import { useMediaQuery } from "./MediaQuery";
-import GridScale from "./GridScale";
-import { PrismicRichText } from "@prismicio/react";
 
 // eslint-disable-next-line  @typescript-eslint/no-explicit-any
 export default function HomepageProjects({ children }: { children: any }) {

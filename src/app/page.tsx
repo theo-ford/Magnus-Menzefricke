@@ -5,7 +5,6 @@ import { asText } from "@prismicio/client";
 
 import { createClient } from "@/prismicio";
 // import HomepageScale from "./components/HomepageScale";
-import HorizontalOne from "./components/HorizontalOne";
 import HomepageProjects from "./components/HomepageProjects";
 import Hero from "./components/Hero";
 import { SliceZone } from "@prismicio/react";
