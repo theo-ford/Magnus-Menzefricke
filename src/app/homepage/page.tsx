@@ -43,7 +43,7 @@ export default async function Page() {
       )} */}
       {/* HomepageProjectsSelect */}
       {/* <SliceZone slices={page.data.slices} components={components} /> */}
-      <div className="mb-[800px]">
+      <div className="">
         <HomepageProjects>
           <SliceZone slices={page.data.slices} components={components} />
         </HomepageProjects>
