@@ -45,14 +45,8 @@ export default async function Page() {
       {/* HomepageProjectsSelect */}
       {/* <SliceZone slices={page.data.slices} components={components} /> */}
       <div className="">
-        <div className="fixed z-100">
-          <p className="">
-            <span className="">Menu /</span>
-            <span className="">Portfolio</span>
-          </p>
-        </div>
         <HomepageProjects>
-          <Hero pageData={page.data}></Hero>
+          {/* <Hero pageData={page.data}></Hero> */}
           <SliceZone slices={page.data.slices} components={components} />
         </HomepageProjects>
       </div>
