@@ -43,10 +43,11 @@ export default async function Page() {
       )} */}
       {/* HomepageProjectsSelect */}
       {/* <SliceZone slices={page.data.slices} components={components} /> */}
-
-      <HomepageProjects>
-        <SliceZone slices={page.data.slices} components={components} />
-      </HomepageProjects>
+      <div className="mb-[800px]">
+        <HomepageProjects>
+          <SliceZone slices={page.data.slices} components={components} />
+        </HomepageProjects>
+      </div>
     </>
   );
 }

@@ -169,10 +169,7 @@ interface PageDocumentData {
 export type PageDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
 
-type ProjectDocumentDataSlices1Slice =
-  | ImageSlice
-  | HomepageLandscapeImageX2Slice
-  | HomepageLandscapeImageX1Slice;
+type ProjectDocumentDataSlices1Slice = ImageSlice;
 
 /**
  * Content for Project documents
@@ -340,128 +337,6 @@ export type AllDocumentTypes =
   | ProjectDocument;
 
 /**
- * Primary content in *HomepageLandscapeImageX1 → Default → Primary*
- */
-export interface HomepageLandscapeImageX1SliceDefaultPrimary {
-  /**
-   * Position field in *HomepageLandscapeImageX1 → Default → Primary*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **API ID Path**: homepage_landscape_image_x1.default.primary.position
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  position: prismic.SelectField<"Left" | "Right">;
-
-  /**
-   * Image field in *HomepageLandscapeImageX1 → Default → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: homepage_landscape_image_x1.default.primary.image
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  image: prismic.ImageField<never>;
-}
-
-/**
- * Default variation for HomepageLandscapeImageX1 Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type HomepageLandscapeImageX1SliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<HomepageLandscapeImageX1SliceDefaultPrimary>,
-  never
->;
-
-/**
- * Slice variation for *HomepageLandscapeImageX1*
- */
-type HomepageLandscapeImageX1SliceVariation =
-  HomepageLandscapeImageX1SliceDefault;
-
-/**
- * HomepageLandscapeImageX1 Shared Slice
- *
- * - **API ID**: `homepage_landscape_image_x1`
- * - **Description**: HomepageLandscapeImageX1
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type HomepageLandscapeImageX1Slice = prismic.SharedSlice<
-  "homepage_landscape_image_x1",
-  HomepageLandscapeImageX1SliceVariation
->;
-
-/**
- * Primary content in *HomepageLandscapeImageX2 → Default → Primary*
- */
-export interface HomepageLandscapeImageX2SliceDefaultPrimary {
-  /**
-   * Position field in *HomepageLandscapeImageX2 → Default → Primary*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **API ID Path**: homepage_landscape_image_x2.default.primary.position
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  position: prismic.SelectField<"Left" | "Right">;
-
-  /**
-   * Image 1 field in *HomepageLandscapeImageX2 → Default → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: homepage_landscape_image_x2.default.primary.image_1
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  image_1: prismic.ImageField<never>;
-
-  /**
-   * Image 2 field in *HomepageLandscapeImageX2 → Default → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: homepage_landscape_image_x2.default.primary.image_2
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  image_2: prismic.ImageField<never>;
-}
-
-/**
- * Default variation for HomepageLandscapeImageX2 Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type HomepageLandscapeImageX2SliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<HomepageLandscapeImageX2SliceDefaultPrimary>,
-  never
->;
-
-/**
- * Slice variation for *HomepageLandscapeImageX2*
- */
-type HomepageLandscapeImageX2SliceVariation =
-  HomepageLandscapeImageX2SliceDefault;
-
-/**
- * HomepageLandscapeImageX2 Shared Slice
- *
- * - **API ID**: `homepage_landscape_image_x2`
- * - **Description**: HomepageLandscapeImageX2
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type HomepageLandscapeImageX2Slice = prismic.SharedSlice<
-  "homepage_landscape_image_x2",
-  HomepageLandscapeImageX2SliceVariation
->;
-
-/**
  * Item in *HomepageProjectsSelect → Default → Primary → ProjectsGroup*
  */
 export interface HomepageProjectsSelectSliceDefaultPrimaryProjectsgroupItem {
@@ -532,10 +407,11 @@ export interface ImageSlice1XLandscapeImagePrimary {
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
+   * - **Default Value**: Left
    * - **API ID Path**: image.1XLandscapeImage.primary.position
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  position: prismic.SelectField<"Left" | "Right">;
+  position: prismic.SelectField<"Left" | "Right", "filled">;
 
   /**
    * Image field in *Image → 1x Landscape Image → Primary*
@@ -570,10 +446,11 @@ export interface ImageSlice2XLandscapeImagePrimary {
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
+   * - **Default Value**: Left
    * - **API ID Path**: image.2XLandscapeImage.primary.position
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  position: prismic.SelectField<"Left" | "Right">;
+  position: prismic.SelectField<"Left" | "Right", "filled">;
 
   /**
    * Image 1 field in *Image → 2x Landscape Image → Primary*
@@ -618,10 +495,11 @@ export interface ImageSlice1XPortraitImagePrimary {
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
+   * - **Default Value**: Top
    * - **API ID Path**: image.1XPortraitImage.primary.position
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  position: prismic.SelectField<"Top" | "Bottom">;
+  position: prismic.SelectField<"Top" | "Bottom", "filled">;
 
   /**
    * Image field in *Image → 1x Portrait Image → Primary*
@@ -656,10 +534,11 @@ export interface ImageSlice2XPortraitImagePrimary {
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
+   * - **Default Value**: Top
    * - **API ID Path**: image.2XPortraitImage.primary.position
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  position: prismic.SelectField<"Top " | "Bottom">;
+  position: prismic.SelectField<"Top" | "Bottom", "filled">;
 
   /**
    * Image 1 field in *Image → 2x Portrait Image → Primary*
@@ -819,14 +698,6 @@ declare module "@prismicio/client" {
       ProjectDocumentData,
       ProjectDocumentDataSlices1Slice,
       AllDocumentTypes,
-      HomepageLandscapeImageX1Slice,
-      HomepageLandscapeImageX1SliceDefaultPrimary,
-      HomepageLandscapeImageX1SliceVariation,
-      HomepageLandscapeImageX1SliceDefault,
-      HomepageLandscapeImageX2Slice,
-      HomepageLandscapeImageX2SliceDefaultPrimary,
-      HomepageLandscapeImageX2SliceVariation,
-      HomepageLandscapeImageX2SliceDefault,
       HomepageProjectsSelectSlice,
       HomepageProjectsSelectSliceDefaultPrimaryProjectsgroupItem,
       HomepageProjectsSelectSliceDefaultPrimary,

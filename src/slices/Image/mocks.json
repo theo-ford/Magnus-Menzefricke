@@ -5,7 +5,7 @@
 		"primary": {
 			"position": {
 				"__TYPE__": "FieldContent",
-				"value": "Right",
+				"value": "Left",
 				"type": "Select"
 			},
 			"image": {
@@ -108,7 +108,7 @@
 		"primary": {
 			"position": {
 				"__TYPE__": "FieldContent",
-				"value": "Bottom",
+				"value": "Top",
 				"type": "Select"
 			},
 			"image": {

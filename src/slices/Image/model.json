@@ -20,7 +20,8 @@
             "options": [
               "Left",
               "Right"
-            ]
+            ],
+            "default_value": "Left"
           }
         },
         "image": {
@@ -50,7 +51,8 @@
             "options": [
               "Left",
               "Right"
-            ]
+            ],
+            "default_value": "Left"
           }
         },
         "image_1": {
@@ -88,7 +90,8 @@
             "options": [
               "Top",
               "Bottom"
-            ]
+            ],
+            "default_value": "Top"
           }
         },
         "image": {
@@ -116,9 +119,10 @@
             "label": "Position",
             "placeholder": "",
             "options": [
-              "Top ",
+              "Top",
               "Bottom"
-            ]
+            ],
+            "default_value": "Top"
           }
         },
         "image_1": {

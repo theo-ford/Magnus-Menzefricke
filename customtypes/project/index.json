@@ -91,12 +91,6 @@
           "choices": {
             "image": {
               "type": "SharedSlice"
-            },
-            "homepage_landscape_image_x2": {
-              "type": "SharedSlice"
-            },
-            "homepage_landscape_image_x1": {
-              "type": "SharedSlice"
             }
           }
         }

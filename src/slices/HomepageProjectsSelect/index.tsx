@@ -115,7 +115,7 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
                 <div className="absolute z-[-40] top--[0] xl:w-[calc(75vw-20px)] m-[10px]">
                   <GridScale />
                 </div>
-                <div className="xl:w-[calc(75vw-20px)] m-[10px]">
+                <div className="xl:w-[calc(75vw)]">
                   <Carousel>
                     <SliceZone
                       slices={item.data.slices1}

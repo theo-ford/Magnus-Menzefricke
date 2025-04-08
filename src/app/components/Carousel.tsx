@@ -12,12 +12,12 @@ export default function Carousel({ children }: { children: any }) {
   // eslint-disable-next-line  @typescript-eslint/no-explicit-any
   const swiperRef = useRef<any>(null);
 
-  // function nextFunc() {
-  //   swiperRef.current.swiper.slideNext();
-  // }
-  // function prevFunc() {
-  //   swiperRef.current.swiper.slidePrev();
-  // }
+  function nextFunc() {
+    swiperRef.current.swiper.slideNext();
+  }
+  function prevFunc() {
+    swiperRef.current.swiper.slidePrev();
+  }
   return (
     <>
       {/* <Swiper
@@ -29,6 +29,7 @@ export default function Carousel({ children }: { children: any }) {
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
       </Swiper> */}
+
       <Swiper
         autoplay={{ delay: 1000 }}
         speed={1}
@@ -44,6 +45,7 @@ export default function Carousel({ children }: { children: any }) {
           </SwiperSlide>
         ))}
       </Swiper>
+
       {/* <p onClick={nextFunc}>Next</p>
       <p onClick={prevFunc}>Prev</p> */}
     </>
