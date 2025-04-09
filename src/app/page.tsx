@@ -9,6 +9,7 @@ import HomepageProjects from "./components/HomepageProjects";
 import Hero from "./components/Hero";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
+import Link from "next/link";
 // import HorizontalTwo from "./components/HorizontalTwo";
 // import HorizontalThree from "./components/HorizontalThree";
 
@@ -27,10 +28,16 @@ export default async function Home() {
       <div className="fixed z-100">
         <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300">
           <span className="">Menu / </span>
-          <span className="opacity-50">Portfolio</span>
-          <span className="opacity-0"> / Index</span>
-          <span className="opacity-0"> / About</span>
-          <span className="opacity-0"> / News</span>
+          <span className="opacity-50">
+            {" "}
+            <Link href="/"> Portfolio</Link>{" "}
+          </span>
+          <span className="opacity-50"> / Index</span>
+          <span className="opacity-50">
+            {" "}
+            <Link href="/about">/ About</Link>
+          </span>
+          <span className="opacity-50"> / News</span>
         </p>
       </div>
       <div className="fixed z-100 right-0">
