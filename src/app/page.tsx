@@ -26,7 +26,7 @@ export default async function Home() {
           </span>
           <span className="opacity-50">
             {" "}
-            <Link href="/index"> Index</Link>{" "}
+            <Link href="/project-index"> Index</Link>{" "}
           </span>
           <span className="opacity-50">
             {" "}
