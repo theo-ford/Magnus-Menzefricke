@@ -1,0 +1,39 @@
+{
+  "id": "index_projects_select",
+  "type": "SharedSlice",
+  "name": "IndexProjectsSelect",
+  "description": "IndexProjectsSelect",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "projects_group": {
+          "type": "Group",
+          "config": {
+            "label": "Projects Group",
+            "repeat": true,
+            "fields": {
+              "project": {
+                "type": "Link",
+                "config": {
+                  "label": "Project",
+                  "select": "document",
+                  "repeat": false,
+                  "customtypes": [
+                    "project"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

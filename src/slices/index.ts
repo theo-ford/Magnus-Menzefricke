@@ -5,5 +5,6 @@ import dynamic from "next/dynamic";
 export const components = {
   homepage_projects_select: dynamic(() => import("./HomepageProjectsSelect")),
   image: dynamic(() => import("./Image")),
+  index_projects_select: dynamic(() => import("./IndexProjectsSelect")),
   rich_text: dynamic(() => import("./RichText")),
 };

@@ -1,27 +1,19 @@
 import { type Metadata } from "next";
-
 import { asText } from "@prismicio/client";
-// import { SliceZone } from "@prismicio/react";
-
 import { createClient } from "@/prismicio";
-// import HomepageScale from "./components/HomepageScale";
 import HomepageProjects from "./components/HomepageProjects";
 import Hero from "./components/Hero";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 import Link from "next/link";
-// import HorizontalTwo from "./components/HorizontalTwo";
-// import HorizontalThree from "./components/HorizontalThree";
-
-// import { components } from "@/slices";
-
-// import HorizontalScroll from "./components/HorizontalScroll";
 
 export default async function Home() {
   // const client = createClient();
-  // const home = await client.getByUID("page", "home");
+  // const page = await client.getByUID("page", "home");
   const client = createClient();
-  const page = await client.getSingle("homepage");
+  // const page = await client.getSingle("homepage");
+  const page = await client.getByUID("homepage", "homepage");
+  // const page = await client.getByUID("page", "homepage");
 
   return (
     <>
@@ -58,6 +50,7 @@ export default async function Home() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
+  // const home = await client.getByUID("page", "home");
   const home = await client.getByUID("page", "home");
 
   return {

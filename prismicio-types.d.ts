@@ -342,6 +342,67 @@ export type HomepageDocument<Lang extends string = string> =
     Lang
   >;
 
+type IndexDocumentDataSlicesSlice = IndexProjectsSelectSlice;
+
+/**
+ * Content for Index documents
+ */
+interface IndexDocumentData {
+  /**
+   * Slice Zone field in *Index*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: index.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<IndexDocumentDataSlicesSlice> /**
+   * Meta Title field in *Index*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: index.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_title: prismic.KeyTextField;
+
+  /**
+   * Meta Description field in *Index*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: index.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Index*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: index.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+}
+
+/**
+ * Index document from Prismic
+ *
+ * - **API ID**: `index`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type IndexDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<IndexDocumentData>, "index", Lang>;
+
 /**
  * Item in *News → News Item*
  */
@@ -696,6 +757,7 @@ export type ProjectDocument<Lang extends string = string> =
 export type AllDocumentTypes =
   | AboutDocument
   | HomepageDocument
+  | IndexDocument
   | NewsDocument
   | PageDocument
   | ProjectDocument;
@@ -986,6 +1048,68 @@ type ImageSliceVariation =
 export type ImageSlice = prismic.SharedSlice<"image", ImageSliceVariation>;
 
 /**
+ * Item in *IndexProjectsSelect → Default → Primary → Projects Group*
+ */
+export interface IndexProjectsSelectSliceDefaultPrimaryProjectsGroupItem {
+  /**
+   * Project field in *IndexProjectsSelect → Default → Primary → Projects Group*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: index_projects_select.default.primary.projects_group[].project
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  project: prismic.ContentRelationshipField<"project">;
+}
+
+/**
+ * Primary content in *IndexProjectsSelect → Default → Primary*
+ */
+export interface IndexProjectsSelectSliceDefaultPrimary {
+  /**
+   * Projects Group field in *IndexProjectsSelect → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: index_projects_select.default.primary.projects_group[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  projects_group: prismic.GroupField<
+    Simplify<IndexProjectsSelectSliceDefaultPrimaryProjectsGroupItem>
+  >;
+}
+
+/**
+ * Default variation for IndexProjectsSelect Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type IndexProjectsSelectSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<IndexProjectsSelectSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *IndexProjectsSelect*
+ */
+type IndexProjectsSelectSliceVariation = IndexProjectsSelectSliceDefault;
+
+/**
+ * IndexProjectsSelect Shared Slice
+ *
+ * - **API ID**: `index_projects_select`
+ * - **Description**: IndexProjectsSelect
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type IndexProjectsSelectSlice = prismic.SharedSlice<
+  "index_projects_select",
+  IndexProjectsSelectSliceVariation
+>;
+
+/**
  * Primary content in *RichText → Default → Primary*
  */
 export interface RichTextSliceDefaultPrimary {
@@ -1059,6 +1183,9 @@ declare module "@prismicio/client" {
       HomepageDocumentData,
       HomepageDocumentDataHomepageProjectsGroupItem,
       HomepageDocumentDataSlicesSlice,
+      IndexDocument,
+      IndexDocumentData,
+      IndexDocumentDataSlicesSlice,
       NewsDocument,
       NewsDocumentData,
       NewsDocumentDataNewsItemItem,
@@ -1087,6 +1214,11 @@ declare module "@prismicio/client" {
       ImageSlice1XPortraitImage,
       ImageSlice2XPortraitImage,
       ImageSliceFullBleedImage,
+      IndexProjectsSelectSlice,
+      IndexProjectsSelectSliceDefaultPrimaryProjectsGroupItem,
+      IndexProjectsSelectSliceDefaultPrimary,
+      IndexProjectsSelectSliceVariation,
+      IndexProjectsSelectSliceDefault,
       RichTextSlice,
       RichTextSliceDefaultPrimary,
       RichTextSliceVariation,
