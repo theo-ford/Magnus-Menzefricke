@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import { isFilled, asImageSrc } from "@prismicio/client";
-import { PrismicRichText, SliceZone } from "@prismicio/react";
+import { PrismicRichText } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
-import { components } from "@/slices";
+
 import Link from "next/link";
 import Grid16 from "../components/Grid16";
 import { PrismicNextImage } from "@prismicio/next";
