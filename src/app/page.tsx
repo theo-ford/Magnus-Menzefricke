@@ -1,5 +1,5 @@
-import { type Metadata } from "next";
-import { asText } from "@prismicio/client";
+// import { type Metadata } from "next";
+// import { asText } from "@prismicio/client";
 import { createClient } from "@/prismicio";
 import HomepageProjects from "./components/HomepageProjects";
 import Hero from "./components/Hero";
@@ -11,8 +11,8 @@ export default async function Home() {
   // const client = createClient();
   // const page = await client.getByUID("page", "home");
   const client = createClient();
-  // const page = await client.getSingle("homepage");
-  const page = await client.getByUID("homepage", "homepage");
+  const page = await client.getSingle("homepage");
+  // const page = await client.getByUID("homepage", "homepage");
   // const page = await client.getByUID("page", "homepage");
 
   return (
@@ -22,9 +22,12 @@ export default async function Home() {
           <span className="">Menu / </span>
           <span className="opacity-50">
             {" "}
-            <Link href="/"> Portfolio</Link>{" "}
+            <Link href="/"> Portfolio /</Link>{" "}
           </span>
-          <span className="opacity-50"> / Index</span>
+          <span className="opacity-50">
+            {" "}
+            <Link href="/index"> Index</Link>{" "}
+          </span>
           <span className="opacity-50">
             {" "}
             <Link href="/about">/ About</Link>
@@ -48,17 +51,17 @@ export default async function Home() {
   );
 }
 
-export async function generateMetadata(): Promise<Metadata> {
-  const client = createClient();
-  // const home = await client.getByUID("page", "home");
-  const home = await client.getByUID("page", "home");
+// export async function generateMetadata(): Promise<Metadata> {
+//   const client = createClient();
+//   const home = await client.getByUID("page", "home");
+//   // const home = await client.getByUID("homepage", "homepage");
 
-  return {
-    title: asText(home.data.title),
-    description: home.data.meta_description,
-    openGraph: {
-      title: home.data.meta_title ?? undefined,
-      images: [{ url: home.data.meta_image.url ?? "" }]
-    }
-  };
-}
+//   return {
+//     title: asText(home.data.title),
+//     description: home.data.meta_description,
+//     openGraph: {
+//       title: home.data.meta_title ?? undefined,
+//       images: [{ url: home.data.meta_image.url ?? "" }]
+//     }
+//   };
+// }
