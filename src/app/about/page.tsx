@@ -26,7 +26,10 @@ export default async function Page() {
             {" "}
             <Link href="/about">/ About</Link>
           </span>
-          <span className="opacity-50"> / News</span>
+          <span className="opacity-50">
+            {" "}
+            <Link href="/news">/ News</Link>
+          </span>
         </p>
       </div>
 

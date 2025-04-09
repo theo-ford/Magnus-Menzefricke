@@ -37,7 +37,10 @@ export default async function Home() {
             {" "}
             <Link href="/about">/ About</Link>
           </span>
-          <span className="opacity-50"> / News</span>
+          <span className="opacity-50">
+            {" "}
+            <Link href="/news">/ News</Link>
+          </span>
         </p>
       </div>
       <div className="fixed z-100 right-0">
