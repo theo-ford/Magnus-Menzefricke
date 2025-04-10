@@ -1,11 +1,11 @@
 "use client";
 
-import { useMediaQuery } from "./MediaQuery";
+// import { useMediaQuery } from "./MediaQuery";
 import { NavDesktopTwo } from "./NavDesktopTwo";
-import { NavMobile } from "./NavMobile";
+// import { NavMobile } from "./NavMobile";
 
 export const Nav = () => {
-  const isDesktop = useMediaQuery("(min-width: 1280px)");
+  // const isDesktop = useMediaQuery("(min-width: 1280px)");
 
   return (
     <>

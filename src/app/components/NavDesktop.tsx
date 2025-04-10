@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -8,7 +8,7 @@ export const NavDesktop = () => {
   const pathname = usePathname();
 
   const [menuClicked, setMenuClicked] = useState(false);
-  const [currentPage, setCurrentPage] = useState(pathname);
+  const [currentPage] = useState(pathname);
 
   function menuStateChange() {
     if (menuClicked == false) {

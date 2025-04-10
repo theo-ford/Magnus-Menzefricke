@@ -6,7 +6,6 @@ import { createClient } from "@/prismicio";
 
 import Grid16 from "../components/Grid16";
 import { PrismicNextImage } from "@prismicio/next";
-import { NavDesktop } from "../components/NavDesktop";
 import { Nav } from "../components/Nav";
 
 export default async function Page() {
