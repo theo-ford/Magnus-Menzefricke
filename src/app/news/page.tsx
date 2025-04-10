@@ -3,7 +3,6 @@ import { isFilled, asImageSrc } from "@prismicio/client";
 import { PrismicRichText } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
-import Link from "next/link";
 import GridNews from "../components/GridNews";
 import { PrismicNextImage } from "@prismicio/next";
 import HomepageProjects from "../components/HomepageProjects";
