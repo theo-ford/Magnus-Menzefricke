@@ -5,7 +5,8 @@ import HomepageProjects from "./components/HomepageProjects";
 import Hero from "./components/Hero";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
-import Link from "next/link";
+// import Link from "next/link";
+import { Nav } from "./components/Nav";
 
 export default async function Home() {
   // const client = createClient();
@@ -17,7 +18,7 @@ export default async function Home() {
 
   return (
     <>
-      <div className="fixed z-100">
+      {/* <div className="fixed z-100">
         <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300 hover:*:inline cursor-pointer hover:[&>*:nth-child(2)]:hidden">
           <span className="">Menu / </span>
           <span className="">
@@ -59,7 +60,8 @@ export default async function Home() {
         <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300">
           <span className="">Pause</span>
         </p>
-      </div>
+      </div> */}
+      <Nav />
       <HomepageProjects>
         <Hero pageData={page.data}></Hero>
         <SliceZone slices={page.data.slices} components={components} />

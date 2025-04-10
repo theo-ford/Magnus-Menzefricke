@@ -4,9 +4,10 @@ import { PrismicRichText } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
 
-import Link from "next/link";
 import Grid16 from "../components/Grid16";
 import { PrismicNextImage } from "@prismicio/next";
+import { NavDesktop } from "../components/NavDesktop";
+import { Nav } from "../components/Nav";
 
 export default async function Page() {
   const client = createClient();
@@ -14,24 +15,7 @@ export default async function Page() {
 
   return (
     <>
-      <div className="fixed z-100">
-        <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300">
-          <span className="">Menu / </span>
-          <span className="opacity-50">
-            {" "}
-            <Link href="/"> Portfolio</Link>{" "}
-          </span>
-          <span className="opacity-50"> / Index</span>
-          <span className="opacity-50">
-            {" "}
-            <Link href="/about">/ About</Link>
-          </span>
-          <span className="opacity-50">
-            {" "}
-            <Link href="/news">/ News</Link>
-          </span>
-        </p>
-      </div>
+      <Nav />
 
       {/* <div className="relative z-[-40] top--[0] xl:w-[calc(100vw-20px)] m-[10px]">
         <Grid16 />

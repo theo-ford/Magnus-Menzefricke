@@ -7,7 +7,7 @@ import GridNews from "../components/GridNews";
 import { PrismicNextImage } from "@prismicio/next";
 import HomepageProjects from "../components/HomepageProjects";
 import GridNewsMobileNavSpacer from "../components/GridNewsMobileNavSpacer";
-import { MobileNav } from "../components/MobileNav";
+import { Nav } from "../components/Nav";
 
 export default async function Page() {
   const client = createClient();
@@ -15,7 +15,8 @@ export default async function Page() {
 
   return (
     <>
-      <MobileNav />
+      {/* <NavMobile /> */}
+      <Nav />
 
       {/* <SliceZone slices={page.data.slices} components={components} /> */}
       <HomepageProjects>
