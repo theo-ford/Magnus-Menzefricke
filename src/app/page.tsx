@@ -18,23 +18,40 @@ export default async function Home() {
   return (
     <>
       <div className="fixed z-100">
-        <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300">
+        <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300 hover:*:inline cursor-pointer hover:[&>*:nth-child(2)]:hidden">
           <span className="">Menu / </span>
-          <span className="opacity-50">
+          <span className="">
             {" "}
-            <Link href="/"> Portfolio /</Link>{" "}
+            <Link href="/" className="opacity-50  hover:opacity-100">
+              {" "}
+              Portfolio{" "}
+            </Link>{" "}
           </span>
-          <span className="opacity-50">
+          <span className="hidden">
             {" "}
-            <Link href="/project-index"> Index</Link>{" "}
+            <Link
+              href="/project-index"
+              className="opacity-50 hover:opacity-100"
+            >
+              {" "}
+              Index
+            </Link>{" "}
           </span>
-          <span className="opacity-50">
+          <span className="hidden">
             {" "}
-            <Link href="/about">/ About</Link>
+            <span className="opacity-50">/</span>
+            <Link href="/about" className="opacity-50 hover:opacity-100">
+              {" "}
+              About
+            </Link>
           </span>
-          <span className="opacity-50">
+          <span className="hidden">
             {" "}
-            <Link href="/news">/ News</Link>
+            <span className="opacity-50">/</span>
+            <Link href="/news" className="opacity-50  hover:opacity-100">
+              {" "}
+              News
+            </Link>
           </span>
         </p>
       </div>

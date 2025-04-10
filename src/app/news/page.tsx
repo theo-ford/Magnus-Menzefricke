@@ -8,6 +8,7 @@ import GridNews from "../components/GridNews";
 import { PrismicNextImage } from "@prismicio/next";
 import HomepageProjects from "../components/HomepageProjects";
 import GridNewsMobileNavSpacer from "../components/GridNewsMobileNavSpacer";
+import { MobileNav } from "../components/MobileNav";
 
 export default async function Page() {
   const client = createClient();
@@ -15,25 +16,7 @@ export default async function Page() {
 
   return (
     <>
-      <div className="fixed z-100">
-        <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300">
-          <span className="">Menu / </span>
-          {/* <span className="opacity-50">
-            {" "}
-            <Link href="/"> Portfolio</Link>{" "}
-          </span>
-          <span className="opacity-50"> / Index</span>
-          <span className="opacity-50">
-            {" "}
-            <Link href="/about">/ About</Link>
-          </span> */}
-          <span className="opacity-50">
-            {" "}
-            <Link href="/news"> News</Link>
-          </span>
-        </p>
-      </div>
-      {/* <p>News</p>
+      <MobileNav />
 
       {/* <SliceZone slices={page.data.slices} components={components} /> */}
       <HomepageProjects>
