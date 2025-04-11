@@ -1,0 +1,216 @@
+{
+  "id": "project_page_image",
+  "type": "SharedSlice",
+  "name": "ProjectPageImage",
+  "description": "ProjectPageImage",
+  "variations": [
+    {
+      "id": "1XLandscapeImage",
+      "name": "1x Landscape Image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "position": {
+          "type": "Select",
+          "config": {
+            "label": "Position",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Right"
+            ],
+            "default_value": "Left"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption": {
+          "type": "Text",
+          "config": {
+            "label": "Caption",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "2XLandscapeImage",
+      "name": "2x Landscape Image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "position": {
+          "type": "Select",
+          "config": {
+            "label": "Position",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Right"
+            ],
+            "default_value": "Left"
+          }
+        },
+        "image_1": {
+          "type": "Image",
+          "config": {
+            "label": "Image 1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption_1": {
+          "type": "Text",
+          "config": {
+            "label": "Caption 1",
+            "placeholder": ""
+          }
+        },
+        "image_2": {
+          "type": "Image",
+          "config": {
+            "label": "Image 2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption_2": {
+          "type": "Text",
+          "config": {
+            "label": "Caption 2",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "1XPortraitImage",
+      "name": "1x Portrait Image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "position": {
+          "type": "Select",
+          "config": {
+            "label": "Position",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Right"
+            ],
+            "default_value": "Left"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption": {
+          "type": "Text",
+          "config": {
+            "label": "Caption",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "2XPortraitImage",
+      "name": "2x Portrait Image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "position": {
+          "type": "Select",
+          "config": {
+            "label": "Position",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Right"
+            ],
+            "default_value": "Left"
+          }
+        },
+        "image_1": {
+          "type": "Image",
+          "config": {
+            "label": "Image 1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption_1": {
+          "type": "Text",
+          "config": {
+            "label": "Caption 1",
+            "placeholder": ""
+          }
+        },
+        "image_2": {
+          "type": "Image",
+          "config": {
+            "label": "Image 2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption_2": {
+          "type": "Text",
+          "config": {
+            "label": "Caption 2",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "fullBleedImage",
+      "name": "Full Bleed Image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption": {
+          "type": "Text",
+          "config": {
+            "label": "Caption",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

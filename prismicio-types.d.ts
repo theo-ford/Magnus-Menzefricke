@@ -520,7 +520,7 @@ interface NewsDocumentData {
 export type NewsDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<NewsDocumentData>, "news", Lang>;
 
-type PageDocumentDataSlicesSlice = RichTextSlice;
+type PageDocumentDataSlicesSlice = never;
 
 /**
  * Content for Page documents
@@ -593,6 +593,8 @@ export type PageDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
 
 type ProjectDocumentDataSlices1Slice = ImageSlice;
+
+type ProjectDocumentDataSlices3Slice = RichTextSlice | ProjectPageImageSlice;
 
 /**
  * Content for Project documents
@@ -735,7 +737,27 @@ interface ProjectDocumentData {
    * - **Tab**: SEO
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  meta_description: prismic.KeyTextField;
+  meta_description: prismic.KeyTextField /**
+   * Hero Image field in *Project*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.hero_image
+   * - **Tab**: Project Page Content
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */;
+  hero_image: prismic.ImageField<never>;
+
+  /**
+   * Slice Zone field in *Project*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.slices3[]
+   * - **Tab**: Project Page Content
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices3: prismic.SliceZone<ProjectDocumentDataSlices3Slice>;
 }
 
 /**
@@ -1110,18 +1132,316 @@ export type IndexProjectsSelectSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *ProjectPageImage → 1x Landscape Image → Primary*
+ */
+export interface ProjectPageImageSlice1XLandscapeImagePrimary {
+  /**
+   * Position field in *ProjectPageImage → 1x Landscape Image → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: project_page_image.1XLandscapeImage.primary.position
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  position: prismic.SelectField<"Left" | "Right", "filled">;
+
+  /**
+   * Image field in *ProjectPageImage → 1x Landscape Image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.1XLandscapeImage.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Caption field in *ProjectPageImage → 1x Landscape Image → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.1XLandscapeImage.primary.caption
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  caption: prismic.KeyTextField;
+}
+
+/**
+ * 1x Landscape Image variation for ProjectPageImage Slice
+ *
+ * - **API ID**: `1XLandscapeImage`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProjectPageImageSlice1XLandscapeImage =
+  prismic.SharedSliceVariation<
+    "1XLandscapeImage",
+    Simplify<ProjectPageImageSlice1XLandscapeImagePrimary>,
+    never
+  >;
+
+/**
+ * Primary content in *ProjectPageImage → 2x Landscape Image → Primary*
+ */
+export interface ProjectPageImageSlice2XLandscapeImagePrimary {
+  /**
+   * Position field in *ProjectPageImage → 2x Landscape Image → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: project_page_image.2XLandscapeImage.primary.position
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  position: prismic.SelectField<"Left" | "Right", "filled">;
+
+  /**
+   * Image 1 field in *ProjectPageImage → 2x Landscape Image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.2XLandscapeImage.primary.image_1
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image_1: prismic.ImageField<never>;
+
+  /**
+   * Caption 1 field in *ProjectPageImage → 2x Landscape Image → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.2XLandscapeImage.primary.caption_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  caption_1: prismic.KeyTextField;
+
+  /**
+   * Image 2 field in *ProjectPageImage → 2x Landscape Image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.2XLandscapeImage.primary.image_2
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image_2: prismic.ImageField<never>;
+
+  /**
+   * Caption 2 field in *ProjectPageImage → 2x Landscape Image → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.2XLandscapeImage.primary.caption_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  caption_2: prismic.KeyTextField;
+}
+
+/**
+ * 2x Landscape Image variation for ProjectPageImage Slice
+ *
+ * - **API ID**: `2XLandscapeImage`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProjectPageImageSlice2XLandscapeImage =
+  prismic.SharedSliceVariation<
+    "2XLandscapeImage",
+    Simplify<ProjectPageImageSlice2XLandscapeImagePrimary>,
+    never
+  >;
+
+/**
+ * Primary content in *ProjectPageImage → 1x Portrait Image → Primary*
+ */
+export interface ProjectPageImageSlice1XPortraitImagePrimary {
+  /**
+   * Position field in *ProjectPageImage → 1x Portrait Image → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: project_page_image.1XPortraitImage.primary.position
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  position: prismic.SelectField<"Left" | "Right", "filled">;
+
+  /**
+   * Image field in *ProjectPageImage → 1x Portrait Image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.1XPortraitImage.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Caption field in *ProjectPageImage → 1x Portrait Image → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.1XPortraitImage.primary.caption
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  caption: prismic.KeyTextField;
+}
+
+/**
+ * 1x Portrait Image variation for ProjectPageImage Slice
+ *
+ * - **API ID**: `1XPortraitImage`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProjectPageImageSlice1XPortraitImage = prismic.SharedSliceVariation<
+  "1XPortraitImage",
+  Simplify<ProjectPageImageSlice1XPortraitImagePrimary>,
+  never
+>;
+
+/**
+ * Primary content in *ProjectPageImage → 2x Portrait Image → Primary*
+ */
+export interface ProjectPageImageSlice2XPortraitImagePrimary {
+  /**
+   * Position field in *ProjectPageImage → 2x Portrait Image → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Left
+   * - **API ID Path**: project_page_image.2XPortraitImage.primary.position
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  position: prismic.SelectField<"Left" | "Right", "filled">;
+
+  /**
+   * Image 1 field in *ProjectPageImage → 2x Portrait Image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.2XPortraitImage.primary.image_1
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image_1: prismic.ImageField<never>;
+
+  /**
+   * Caption 1 field in *ProjectPageImage → 2x Portrait Image → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.2XPortraitImage.primary.caption_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  caption_1: prismic.KeyTextField;
+
+  /**
+   * Image 2 field in *ProjectPageImage → 2x Portrait Image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.2XPortraitImage.primary.image_2
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image_2: prismic.ImageField<never>;
+
+  /**
+   * Caption 2 field in *ProjectPageImage → 2x Portrait Image → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.2XPortraitImage.primary.caption_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  caption_2: prismic.KeyTextField;
+}
+
+/**
+ * 2x Portrait Image variation for ProjectPageImage Slice
+ *
+ * - **API ID**: `2XPortraitImage`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProjectPageImageSlice2XPortraitImage = prismic.SharedSliceVariation<
+  "2XPortraitImage",
+  Simplify<ProjectPageImageSlice2XPortraitImagePrimary>,
+  never
+>;
+
+/**
+ * Primary content in *ProjectPageImage → Full Bleed Image → Primary*
+ */
+export interface ProjectPageImageSliceFullBleedImagePrimary {
+  /**
+   * Image field in *ProjectPageImage → Full Bleed Image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.fullBleedImage.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Caption field in *ProjectPageImage → Full Bleed Image → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project_page_image.fullBleedImage.primary.caption
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  caption: prismic.KeyTextField;
+}
+
+/**
+ * Full Bleed Image variation for ProjectPageImage Slice
+ *
+ * - **API ID**: `fullBleedImage`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProjectPageImageSliceFullBleedImage = prismic.SharedSliceVariation<
+  "fullBleedImage",
+  Simplify<ProjectPageImageSliceFullBleedImagePrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *ProjectPageImage*
+ */
+type ProjectPageImageSliceVariation =
+  | ProjectPageImageSlice1XLandscapeImage
+  | ProjectPageImageSlice2XLandscapeImage
+  | ProjectPageImageSlice1XPortraitImage
+  | ProjectPageImageSlice2XPortraitImage
+  | ProjectPageImageSliceFullBleedImage;
+
+/**
+ * ProjectPageImage Shared Slice
+ *
+ * - **API ID**: `project_page_image`
+ * - **Description**: ProjectPageImage
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProjectPageImageSlice = prismic.SharedSlice<
+  "project_page_image",
+  ProjectPageImageSliceVariation
+>;
+
+/**
  * Primary content in *RichText → Default → Primary*
  */
 export interface RichTextSliceDefaultPrimary {
   /**
-   * Content field in *RichText → Default → Primary*
+   * Text field in *RichText → Default → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: Lorem ipsum...
-   * - **API ID Path**: rich_text.default.primary.content
+   * - **API ID Path**: rich_text.default.primary.text
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  content: prismic.RichTextField;
+  text: prismic.RichTextField;
 }
 
 /**
@@ -1196,6 +1516,7 @@ declare module "@prismicio/client" {
       ProjectDocument,
       ProjectDocumentData,
       ProjectDocumentDataSlices1Slice,
+      ProjectDocumentDataSlices3Slice,
       AllDocumentTypes,
       HomepageProjectsSelectSlice,
       HomepageProjectsSelectSliceDefaultPrimaryProjectsgroupItem,
@@ -1219,6 +1540,18 @@ declare module "@prismicio/client" {
       IndexProjectsSelectSliceDefaultPrimary,
       IndexProjectsSelectSliceVariation,
       IndexProjectsSelectSliceDefault,
+      ProjectPageImageSlice,
+      ProjectPageImageSlice1XLandscapeImagePrimary,
+      ProjectPageImageSlice2XLandscapeImagePrimary,
+      ProjectPageImageSlice1XPortraitImagePrimary,
+      ProjectPageImageSlice2XPortraitImagePrimary,
+      ProjectPageImageSliceFullBleedImagePrimary,
+      ProjectPageImageSliceVariation,
+      ProjectPageImageSlice1XLandscapeImage,
+      ProjectPageImageSlice2XLandscapeImage,
+      ProjectPageImageSlice1XPortraitImage,
+      ProjectPageImageSlice2XPortraitImage,
+      ProjectPageImageSliceFullBleedImage,
       RichTextSlice,
       RichTextSliceDefaultPrimary,
       RichTextSliceVariation,

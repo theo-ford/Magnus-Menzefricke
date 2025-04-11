@@ -11,14 +11,16 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "RichText",
       "primary": {
-        "content": {
+        "text": {
           "type": "StructuredText",
           "config": {
-            "label": "Content",
+            "label": "Text",
             "placeholder": "Lorem ipsum...",
             "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading1,heading2,heading3,strong,em,hyperlink,embed,list-item",
-            "labels": ["codespan"]
+            "multi": "paragraph,embed,strong,em",
+            "labels": [
+              "codespan"
+            ]
           }
         }
       },
