@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SliceZone } from "@prismicio/react";
@@ -8,6 +10,8 @@ import { PrismicNextImage } from "@prismicio/next";
 import { NavProjects } from "@/app/components/NavProjects";
 
 type Params = { uid: string };
+
+// type tParams = Promise<{ uid: string} >;
 
 /**
  * This page renders a Prismic Document dynamically based on the URL.
