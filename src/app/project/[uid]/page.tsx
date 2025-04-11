@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SliceZone } from "@prismicio/react";
 import * as prismic from "@prismicio/client";
@@ -7,7 +7,7 @@ import { components } from "@/slices";
 import { PrismicNextImage } from "@prismicio/next";
 import { NavProjects } from "@/app/components/NavProjects";
 
-type Params = { uid: string };
+// type Params = { uid: string };
 
 // type tParams = Promise<{ uid: string} >;
 
@@ -15,21 +15,21 @@ type Params = { uid: string };
  * This page renders a Prismic Document dynamically based on the URL.
  */
 
-export async function generateMetadata({
-  params
-}: {
-  params: Params;
-}): Promise<Metadata> {
-  const client = createClient();
-  const page = await client
-    .getByUID("project", params.uid)
-    .catch(() => notFound());
+// export async function generateMetadata({
+//   params
+// }: {
+//   params: Params;
+// }): Promise<Metadata> {
+//   const client = createClient();
+//   const page = await client
+//     .getByUID("project", params.uid)
+//     .catch(() => notFound());
 
-  return {
-    title: page.data.meta_title,
-    description: page.data.meta_description
-  };
-}
+//   return {
+//     title: page.data.meta_title,
+//     description: page.data.meta_description
+//   };
+// }
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
