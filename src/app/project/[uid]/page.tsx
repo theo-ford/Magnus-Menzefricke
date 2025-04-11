@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SliceZone } from "@prismicio/react";
@@ -33,6 +31,8 @@ export async function generateMetadata({
   };
 }
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 export default async function Page({ params }: { params: Params }) {
   const client = createClient();
   const page = await client
