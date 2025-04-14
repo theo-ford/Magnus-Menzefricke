@@ -13,12 +13,6 @@ export default async function Page() {
 
   return (
     <>
-      {/* <div className="fixed z-100">
-        <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300">
-          <span className="">Menu / </span>
-          <span className="opacity-50"> Index</span>
-        </p>
-      </div> */}
       <Nav />
       <div className="relative ml-[10px] w-[calc(100vw-20px)] block xl:hidden">
         <GridIndexProject />
@@ -29,9 +23,9 @@ export default async function Page() {
 
       <div
         key={"project"}
-        className="fixed block float-left ml-[10px] w-[calc(100vw-20px)] "
+        className="xl:fixed block float-left ml-[10px] w-[calc(100vw-20px)] "
       >
-        <div className="absolute grid grid-cols-4 grid-rows-1 gap-[10px] xl:grid-cols-16 w-[100%]">
+        <div className="absolute grid grid-cols-4 grid-rows-1 gap-[10px] xl:grid-cols-16 w-[calc(100vw-20px)]">
           <div className="col-span-1 hidden xl:block">
             <p key={"index"} className="text-gray-300">
               No.
@@ -67,11 +61,14 @@ export default async function Page() {
           </div>
         </div>
       </div>
-      <div className="relative ml-[10px] w-[calc(100vw-20px)]">
+      <div className="relative ml-[10px] w-[calc(100vw-20px)] block xl:hidden">
         <GridIndexProject />
       </div>
+      <div className=" mt-[0] xl:mt-[calc(12.5vh)] xl:absolute z-100">
+        <SliceZone slices={page.data.slices} components={components} />
+      </div>
+      {/* <SliceZone slices={page.data.slices} components={components} /> */}
 
-      <SliceZone slices={page.data.slices} components={components} />
       <div className="relative ml-[10px] w-[calc(100vw-20px)] block xl:hidden">
         <GridIndexProject />
       </div>
