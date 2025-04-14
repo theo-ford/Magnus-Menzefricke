@@ -64,7 +64,7 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
       {projectsAsync.map(
         (item, index) =>
           item && (
-            <>
+            <div key={index}>
               {/* <div className="relative h-[100vh] w-[100vw] float-left"> */}
               <div className="relative float-left h-[calc(100vh-20px)] w-[100vw] xl:w-[calc(75vw-20px)] xl:mr-[20px] mb-[10px]">
                 <div className="h-[calc(100vh-20px)] w-[100%] absolute top-[0] z-50 xl:w-[calc(75vw-20px)] m-[10px]">
@@ -128,7 +128,7 @@ const HomepageProjectsSelect: FC<HomepageProjectsSelectProps> = async ({
                   </Carousel>
                 </div>
               </div>
-            </>
+            </div>
           )
       )}
 
