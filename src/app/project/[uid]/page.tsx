@@ -38,63 +38,6 @@ export default async function Page({ params }: { params: Params }) {
   const page = await client
     .getByUID("project", params.uid)
     .catch(() => notFound());
-  // console.log(page.data.related_project_1);
-  // console.log(page.data.related_project_2);
-
-  // linting error + breaks on pages without content relationship filled in
-  // const relatedProjectsOne = await client.getByUID(
-  //   "project",
-  //   page.data.related_project_1.uid,
-  //   { fetchLinks: ["title"] }
-  // );
-
-  // console.log(relatedProjectsOne.uid);
-  // console.log(relatedProjectsOne.data.title);
-
-  // if (prismic.isFilled.contentRelationship(page.data.related_project_1)) {
-  //   console.log(true);
-  // }
-
-  // objects are not valid as react child
-  // is there a way to idenify true or false and then retrieve the data?
-  // if (prismic.isFilled.contentRelationship(page.data.related_project_1)) {
-  //   console.log(true);
-  //   const relatedProjectsOne = await client.getByUID(
-  //     "project",
-  //     page.data.related_project_1.uid,
-  //     { fetchLinks: ["title"] }
-  //   );
-  //   return relatedProjectsOne;
-  // }
-
-  //  const [test, setTest] = useState("")
-
-  // failed to load chunk
-  // const FunctionComponent = () => {
-  //   if (prismic.isFilled.contentRelationship(page.data.related_project_1)) {
-  //     console.log(true);
-  //     const relatedProjectsOne = await client.getByUID(
-  //       "project",
-  //       page.data.related_project_1.uid,
-  //       { fetchLinks: ["title"] }
-  //     );
-  //     return (
-  //       <p>{relatedProjectsOne.data.title}</p>
-  //     );
-  // }
-
-  // failed to load chunk + await is only allowed in async at top level
-  // function FunctionTest() {
-  //   if (prismic.isFilled.contentRelationship(page.data.related_project_1)) {
-  //     console.log(true);
-  //     const relatedProjectsOne = await client.getByUID(
-  //       "project",
-  //       page.data.related_project_1.uid,
-  //       { fetchLinks: ["title"] }
-  //     );
-  //     return <p>{relatedProjectsOne.data.title}</p>;
-  //   }
-  // }
 
   return (
     <>
