@@ -708,7 +708,29 @@ interface ProjectDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  description: prismic.KeyTextField /**
+  description: prismic.KeyTextField;
+
+  /**
+   * Related Project 1 field in *Project*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.related_project_1
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  related_project_1: prismic.ContentRelationshipField<"project">;
+
+  /**
+   * Related Project 2 field in *Project*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.related_project_2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  related_project_2: prismic.ContentRelationshipField /**
    * Slice Zone field in *Project*
    *
    * - **Field Type**: Slice Zone

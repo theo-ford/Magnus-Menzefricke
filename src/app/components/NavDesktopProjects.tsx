@@ -19,7 +19,7 @@ export const NavDesktopProjects = ({ projectTitle }) => {
     console.log(menuClicked);
   }
 
-  console.log(currentPage);
+  // console.log(currentPage);
 
   return (
     <>

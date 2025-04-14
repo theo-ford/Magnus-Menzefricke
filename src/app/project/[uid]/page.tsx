@@ -1,11 +1,11 @@
 // import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SliceZone } from "@prismicio/react";
-import * as prismic from "@prismicio/client";
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import { PrismicNextImage } from "@prismicio/next";
 import { NavProjects } from "@/app/components/NavProjects";
+import RelatedProjectsOne from "@/app/components/RelatedProjectsOne";
 
 // type Params = { uid: string };
 
@@ -38,6 +38,63 @@ export default async function Page({ params }: { params: Params }) {
   const page = await client
     .getByUID("project", params.uid)
     .catch(() => notFound());
+  // console.log(page.data.related_project_1);
+  // console.log(page.data.related_project_2);
+
+  // linting error + breaks on pages without content relationship filled in
+  // const relatedProjectsOne = await client.getByUID(
+  //   "project",
+  //   page.data.related_project_1.uid,
+  //   { fetchLinks: ["title"] }
+  // );
+
+  // console.log(relatedProjectsOne.uid);
+  // console.log(relatedProjectsOne.data.title);
+
+  // if (prismic.isFilled.contentRelationship(page.data.related_project_1)) {
+  //   console.log(true);
+  // }
+
+  // objects are not valid as react child
+  // is there a way to idenify true or false and then retrieve the data?
+  // if (prismic.isFilled.contentRelationship(page.data.related_project_1)) {
+  //   console.log(true);
+  //   const relatedProjectsOne = await client.getByUID(
+  //     "project",
+  //     page.data.related_project_1.uid,
+  //     { fetchLinks: ["title"] }
+  //   );
+  //   return relatedProjectsOne;
+  // }
+
+  //  const [test, setTest] = useState("")
+
+  // failed to load chunk
+  // const FunctionComponent = () => {
+  //   if (prismic.isFilled.contentRelationship(page.data.related_project_1)) {
+  //     console.log(true);
+  //     const relatedProjectsOne = await client.getByUID(
+  //       "project",
+  //       page.data.related_project_1.uid,
+  //       { fetchLinks: ["title"] }
+  //     );
+  //     return (
+  //       <p>{relatedProjectsOne.data.title}</p>
+  //     );
+  // }
+
+  // failed to load chunk + await is only allowed in async at top level
+  // function FunctionTest() {
+  //   if (prismic.isFilled.contentRelationship(page.data.related_project_1)) {
+  //     console.log(true);
+  //     const relatedProjectsOne = await client.getByUID(
+  //       "project",
+  //       page.data.related_project_1.uid,
+  //       { fetchLinks: ["title"] }
+  //     );
+  //     return <p>{relatedProjectsOne.data.title}</p>;
+  //   }
+  // }
 
   return (
     <>
@@ -84,24 +141,30 @@ export default async function Page({ params }: { params: Params }) {
       <div className="relative float-left w-[100vw]">
         <SliceZone slices={page.data.slices3} components={components} />
       </div>
+      <div className="relative float-left w-[100%] h-[400px] bg-red-800">
+        {/* <a href={`${relatedProjectsOne.uid}`}>
+          {relatedProjectsOne.data.title}
+        </a> */}
+        <RelatedProjectsOne data={page.data.related_project_1} />
+      </div>
     </>
   );
 }
 
-export async function generateStaticParams() {
-  const client = createClient();
+// export async function generateStaticParams() {
+//   const client = createClient();
 
-  /**
-   * Query all Documents from the API, except the homepage.
-   */
-  const pages = await client.getAllByType("project", {
-    predicates: [prismic.filter.not("my.page.uid", "home")]
-  });
+//   /**
+//    * Query all Documents from the API, except the homepage.
+//    */
+//   const pages = await client.getAllByType("project", {
+//     predicates: [prismic.filter.not("my.page.uid", "home")]
+//   });
 
-  /**
-   * Define a path for every Document.
-   */
-  return pages.map((page) => {
-    return { uid: page.uid };
-  });
-}
+//   /**
+//    * Define a path for every Document.
+//    */
+//   return pages.map((page) => {
+//     return { uid: page.uid };
+//   });
+// }

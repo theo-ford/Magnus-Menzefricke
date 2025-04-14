@@ -81,6 +81,23 @@
           "label": "Description",
           "placeholder": ""
         }
+      },
+      "related_project_1": {
+        "type": "Link",
+        "config": {
+          "label": "Related Project 1",
+          "select": "document",
+          "repeat": false,
+          "customtypes": ["project"]
+        }
+      },
+      "related_project_2": {
+        "type": "Link",
+        "config": {
+          "label": "Related Project 2",
+          "select": "document",
+          "repeat": false
+        }
       }
     },
     "Homepage Content": {
