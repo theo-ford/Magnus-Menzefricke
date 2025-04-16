@@ -42,59 +42,62 @@ export default async function Page({ params }: { params: Params }) {
   return (
     <>
       <NavProjects projectTitle={page.data.title} />
-      <div className="w-[100vw] h-[calc(91.63vh+20px)] bg-red-800 relative float-left xl:h-[87.5vh+20px]">
-        <div className="h-[calc(91.63vh)] w-[calc(100vw-20px)] absolute top-[0] z-50 xl:w-[calc(100vw-20px)] m-[10px] xl:h-[87.5vh+20px]">
-          {/* <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] text-white"> */}
-          <div
-            className={`w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] ${page.data.hero_text_color === "White" ? "text-white" : "text-black"} `}
-          >
-            <div className="col-span-2 col-start-1 row-start-6 xl:col-span-8 xl:col-start-1 xl:row-start-3">
-              <h5 className="text-[64px] tracking-[-2px] p-[0px] m-[0px] leading-[80%] xl:text-[9.5vw] xl:mt-[-28px] font-bold xl:tracking-[-10px]">
-                {page.data.title}
-              </h5>
-            </div>
-            <div className="col-span-4 col-start-1 row-start-12  xl:col-span-2 xl:col-start-1 xl:row-start-8">
-              <div className="absolute bottom-0 xl:relative">
+      <div className="">
+        <div className="w-[100vw] h-[calc(91.63vh+20px)] bg-red-800 relative float-left xl:h-[87.5vh+20px]">
+          <div className="h-[calc(91.63vh)] w-[calc(100vw-20px)] absolute top-[0] z-50 xl:w-[calc(100vw-20px)] m-[10px] xl:h-[87.5vh+20px]">
+            {/* <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] text-white"> */}
+            <div
+              className={`w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] ${page.data.hero_text_color === "White" ? "text-white" : "text-black"} `}
+            >
+              <div className="col-span-2 col-start-1 row-start-6 xl:col-span-8 xl:col-start-1 xl:row-start-3">
+                <h5 className="text-[64px] tracking-[-2px] p-[0px] m-[0px] leading-[80%] xl:text-[9.5vw] xl:mt-[-28px] font-bold xl:tracking-[-10px]">
+                  {page.data.title}
+                </h5>
+              </div>
+              <div className="col-span-4 col-start-1 row-start-12  xl:col-span-2 xl:col-start-1 xl:row-start-8">
+                <div className="absolute bottom-0 xl:relative">
+                  <p className="text-[12px] p-[0px] m-[0px] leading-none">
+                    Net Internal Area: {page.data.net_internal_area}
+                    <br></br>
+                    Completion: {page.data.completion_date}
+                    <br></br>
+                    Client: {page.data.client}
+                    <br></br>
+                  </p>
+                </div>
+              </div>
+              <div className="col-span-2 col-start-1 row-start-12 xl:col-span-2 xl:col-start-3 xl:row-start-8 hidden xl:inline">
                 <p className="text-[12px] p-[0px] m-[0px] leading-none">
-                  Net Internal Area: {page.data.net_internal_area}
+                  Design Architects:<br></br> {page.data.design_architects}
                   <br></br>
-                  Completion: {page.data.completion_date}
                   <br></br>
-                  Client: {page.data.client}
-                  <br></br>
+                  Technical Architects:<br></br>{" "}
+                  {page.data.technical_architects}
                 </p>
               </div>
             </div>
-            <div className="col-span-2 col-start-1 row-start-12 xl:col-span-2 xl:col-start-3 xl:row-start-8 hidden xl:inline">
-              <p className="text-[12px] p-[0px] m-[0px] leading-none">
-                Design Architects:<br></br> {page.data.design_architects}
-                <br></br>
-                <br></br>
-                Technical Architects:<br></br> {page.data.technical_architects}
-              </p>
-            </div>
+          </div>
+          <div className="absolute float-left w-[100vw] h-[calc(91.63vh+20px)] xl:h-[87.5vh+20px] overflow-hidden  flex items-center">
+            <PrismicNextImage
+              field={page.data.hero_image}
+              alt=""
+              className="h-[100%] w-auto xl:w-[100%] xl:h-auto"
+            />
           </div>
         </div>
-        <div className="absolute float-left w-[100vw] h-[calc(91.63vh+20px)] xl:h-[87.5vh+20px] overflow-hidden  flex items-center">
-          <PrismicNextImage
-            field={page.data.hero_image}
-            alt=""
-            className="h-[100%] w-auto xl:w-[100%] xl:h-auto"
-          />
+        <div className="relative float-left w-[100vw]">
+          <SliceZone slices={page.data.slices3} components={components} />
         </div>
-      </div>
-      <div className="relative float-left w-[100vw]">
-        <SliceZone slices={page.data.slices3} components={components} />
-      </div>
-      {/* <div className="relative float-left w-[100%] h-[400px] bg-red-800">
+        {/* <div className="relative float-left w-[100%] h-[400px] bg-red-800">
         <RelatedProjectsOne data={page.data.related_project_1} />
       </div> */}
 
-      <div className="h-[calc(83.33vh)] w-[calc(100vw-20px)] relative float-left xl:w-[calc(100vw-20px)] m-[10px] xl:h-[37.5vh] mt-[33.632vh] xl:mt-[25vh]">
-        <p>Related Projects</p>
-        <div className=" float-left relative w-[calc(100vw-20px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 xl:grid-cols-16 xl:grid-rows-3">
-          <RelatedProjectsOne data={page.data.related_project_1} />
-          <RelatedProjectsOne data={page.data.related_project_2} />
+        <div className="h-[calc(83.33vh)] w-[calc(100vw-20px)] relative float-left xl:w-[calc(100vw-20px)] m-[10px] xl:h-[37.5vh] mt-[33.632vh] xl:mt-[25vh]">
+          <p>Related Projects</p>
+          <div className=" float-left relative w-[calc(100vw-20px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 xl:grid-cols-16 xl:grid-rows-3">
+            <RelatedProjectsOne data={page.data.related_project_1} />
+            <RelatedProjectsOne data={page.data.related_project_2} />
+          </div>
         </div>
       </div>
     </>

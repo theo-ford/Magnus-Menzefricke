@@ -30,12 +30,12 @@ export default function HomepageProjects({ children }: { children: any }) {
 
   return (
     <>
-      <div className="w-[100vw] xl:overflow-y-hidden">
+      <div className="w-[100vw] xl:overflow-y-hidden ">
         {/* <div className=""> */}
         <div
           ref={scrollRef}
           // className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll xl:w-[calc(160vw+40px)]"
-          className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll "
+          className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll"
         >
           {children}
         </div>

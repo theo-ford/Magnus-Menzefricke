@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={NeueHaasUnica.className}>
-      <body>{children}</body>
+      <body className="">{children}</body>
       <PrismicPreview repositoryName={repositoryName} />
     </html>
   );
