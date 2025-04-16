@@ -782,6 +782,18 @@ interface ProjectDocumentData {
   hero_image: prismic.ImageField<never>;
 
   /**
+   * Hero Text Color field in *Project*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: White
+   * - **API ID Path**: project.hero_text_color
+   * - **Tab**: Project Page Content
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  hero_text_color: prismic.SelectField<"White" | "Black", "filled">;
+
+  /**
    * Slice Zone field in *Project*
    *
    * - **Field Type**: Slice Zone

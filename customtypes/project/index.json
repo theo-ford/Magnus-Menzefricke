@@ -146,6 +146,15 @@
           "thumbnails": []
         }
       },
+      "hero_text_color": {
+        "type": "Select",
+        "config": {
+          "label": "Hero Text Color",
+          "placeholder": "",
+          "options": ["White", "Black"],
+          "default_value": "White"
+        }
+      },
       "slices3": {
         "type": "Slices",
         "fieldset": "Slice Zone",

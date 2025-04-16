@@ -24,7 +24,7 @@ export default async function Page() {
         {page.data.news_item.map((item, index) => (
           <>
             <div className="relative float-left">
-              <div className="absolute grid grid-cols-4 grid-rows-9 h-[calc(83.33vh-15px)] w-[calc(100vw-20px)] ml-[10px] gap-x-[10px] xl:w-[25vw] xl:h-[calc(100vh-20px)] xl:mt-[10px] xl:grid-rows-8">
+              <div className="absolute grid grid-cols-4 grid-rows-9 h-[calc(83.33vh-15px)] w-[calc(100vw-20px)] ml-[10px] gap-x-[10px] xl:w-[25vw] xl:h-[calc(100vh-20px)] xl:mt-[10px] xl:grid-rows-8 text-gray-300">
                 <div
                   key={"title" + index}
                   className="col-span-4 row-span-2 row-start-1 mt-[5px] xl:row-start-2 xl:mt-[9vh]"
