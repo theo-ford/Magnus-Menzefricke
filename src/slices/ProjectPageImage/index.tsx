@@ -29,7 +29,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                 </div>
               </div>
             </div>
-            <div className="h-auto w-[calc(100%-20px)] mt-[-4px] ml-[10px] xl:h-auto xl:mt-[4px] absolute">
+            <div className="h-auto w-[calc(100%-20px)] mt-[6px] ml-[10px] xl:h-auto xl:mt-[4px] absolute">
               <div className="float-left grid grid-cols-4 grid-rows-1 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 w-[calc(100%)]">
                 <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
                   <p className="leading-none m-[0] p-[0] text-[12px] xl:text-[16px]">

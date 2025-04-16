@@ -730,7 +730,18 @@ interface ProjectDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  related_project_2: prismic.ContentRelationshipField /**
+  related_project_2: prismic.ContentRelationshipField;
+
+  /**
+   * Related Project Image field in *Project*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.related_project_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  related_project_image: prismic.ImageField<never> /**
    * Slice Zone field in *Project*
    *
    * - **Field Type**: Slice Zone

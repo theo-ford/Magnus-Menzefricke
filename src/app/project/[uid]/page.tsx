@@ -80,15 +80,19 @@ export default async function Page({ params }: { params: Params }) {
           />
         </div>
       </div>
-      {/* <p>Hello world {page.data.title}</p> */}
       <div className="relative float-left w-[100vw]">
         <SliceZone slices={page.data.slices3} components={components} />
       </div>
-      <div className="relative float-left w-[100%] h-[400px] bg-red-800">
-        {/* <a href={`${relatedProjectsOne.uid}`}>
-          {relatedProjectsOne.data.title}
-        </a> */}
+      {/* <div className="relative float-left w-[100%] h-[400px] bg-red-800">
         <RelatedProjectsOne data={page.data.related_project_1} />
+      </div> */}
+
+      <div className="h-[calc(83.33vh)] w-[calc(100vw-20px)] relative float-left xl:w-[calc(100vw-20px)] m-[10px] xl:h-[37.5vh] mt-[33.632vh] xl:mt-[25vh]">
+        <p>Related Projects</p>
+        <div className=" float-left relative w-[calc(100vw-20px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 xl:grid-cols-16 xl:grid-rows-3">
+          <RelatedProjectsOne data={page.data.related_project_1} />
+          <RelatedProjectsOne data={page.data.related_project_2} />
+        </div>
       </div>
     </>
   );

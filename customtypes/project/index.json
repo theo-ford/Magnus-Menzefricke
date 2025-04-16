@@ -98,6 +98,14 @@
           "select": "document",
           "repeat": false
         }
+      },
+      "related_project_image": {
+        "type": "Image",
+        "config": {
+          "label": "Related Project Image",
+          "constraint": {},
+          "thumbnails": []
+        }
       }
     },
     "Homepage Content": {
