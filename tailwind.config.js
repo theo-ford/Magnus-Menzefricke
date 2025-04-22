@@ -9,7 +9,24 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1100px"
+      // => @media (min-width: 1100px) { ... }
+    },
     extend: {
+      // screens: {
+      //   xl: "1400px"
+      //   // => @media (min-width: 1100px) { ... }
+      // },
       gridTemplateColumns: {
         12: "repeat(12, minmax(0, 1fr))",
         48: "repeat(48, minmax(0, 1fr))"
