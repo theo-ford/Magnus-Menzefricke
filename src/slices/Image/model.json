@@ -152,10 +152,18 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "image": {
+        "desktop_image": {
           "type": "Image",
           "config": {
-            "label": "Image",
+            "label": "Desktop Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "mobile_ipad_image": {
+          "type": "Image",
+          "config": {
+            "label": "Mobile Ipad Image",
             "constraint": {},
             "thumbnails": []
           }

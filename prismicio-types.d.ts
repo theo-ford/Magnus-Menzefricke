@@ -771,15 +771,26 @@ interface ProjectDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   meta_description: prismic.KeyTextField /**
-   * Hero Image field in *Project*
+   * Hero Image Desktop field in *Project*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: project.hero_image
+   * - **API ID Path**: project.hero_image_desktop
    * - **Tab**: Project Page Content
    * - **Documentation**: https://prismic.io/docs/field#image
    */;
-  hero_image: prismic.ImageField<never>;
+  hero_image_desktop: prismic.ImageField<never>;
+
+  /**
+   * Hero Image Mobile & iPad field in *Project*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.hero_image_mobile_ipad
+   * - **Tab**: Project Page Content
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  hero_image_mobile_ipad: prismic.ImageField<never>;
 
   /**
    * Hero Text Color field in *Project*
@@ -1072,14 +1083,24 @@ export type ImageSlice2XPortraitImage = prismic.SharedSliceVariation<
  */
 export interface ImageSliceFullBleedImagePrimary {
   /**
-   * Image field in *Image → Full Bleed Image → Primary*
+   * Desktop Image field in *Image → Full Bleed Image → Primary*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: image.fullBleedImage.primary.image
+   * - **API ID Path**: image.fullBleedImage.primary.desktop_image
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  image: prismic.ImageField<never>;
+  desktop_image: prismic.ImageField<never>;
+
+  /**
+   * Mobile Ipad Image field in *Image → Full Bleed Image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image.fullBleedImage.primary.mobile_ipad_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  mobile_ipad_image: prismic.ImageField<never>;
 }
 
 /**

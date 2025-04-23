@@ -20,7 +20,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
           <>
             <div className="h-[calc(108vh+20px)] w-[100%+20px] xl:h-[calc(112.5vh-20px)]">
               <div className="w-[calc(100%)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-13 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-9 ">
-                <div className="col-start-1 row-start-1  overflow-hidden  col-span-4 row-span-13 xl:col-span-16 xl:row-span-9  flex items-center">
+                <div className="col-start-1 row-start-1  overflow-hidden  col-span-4 row-span-13 xl:col-span-16 xl:row-span-9  flex items-center  justify-center">
                   <PrismicNextImage
                     field={slice.primary.image}
                     alt=""

@@ -138,10 +138,18 @@
       }
     },
     "Project Page Content": {
-      "hero_image": {
+      "hero_image_desktop": {
         "type": "Image",
         "config": {
-          "label": "Hero Image",
+          "label": "Hero Image Desktop",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "hero_image_mobile_ipad": {
+        "type": "Image",
+        "config": {
+          "label": "Hero Image Mobile & iPad",
           "constraint": {},
           "thumbnails": []
         }

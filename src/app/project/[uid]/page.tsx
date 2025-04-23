@@ -77,11 +77,16 @@ export default async function Page({ params }: { params: Params }) {
               </div>
             </div>
           </div>
-          <div className="absolute float-left w-[100vw] h-[calc(91.63vh+20px)] xl:h-[87.5vh+20px] overflow-hidden  flex items-center">
+          <div className="absolute float-left w-[100vw] h-[calc(91.63vh+20px)] xl:h-[87.5vh+20px] overflow-hidden  flex items-center  justify-center">
             <PrismicNextImage
-              field={page.data.hero_image}
+              field={page.data.hero_image_desktop}
               alt=""
-              className="h-[100%] w-auto xl:w-[100%] xl:h-auto"
+              className="hidden lg:inline lg:w-[100%] lg:h-auto"
+            />
+            <PrismicNextImage
+              field={page.data.hero_image_mobile_ipad}
+              alt=""
+              className="block lg:hidden h-[100%] max-w-none w-auto"
             />
           </div>
         </div>
@@ -92,9 +97,9 @@ export default async function Page({ params }: { params: Params }) {
         <RelatedProjectsOne data={page.data.related_project_1} />
       </div> */}
 
-        <div className="h-[calc(83.33vh)] w-[calc(100vw-20px)] relative float-left xl:w-[calc(100vw-20px)] m-[10px] xl:h-[37.5vh] mt-[33.632vh] xl:mt-[25vh]">
+        <div className="h-[calc(83.33vh)] w-[calc(100vw-20px)] relative float-left md:w-[calc(100vw-20px)] m-[10px] md:h-[37.5vh] mt-[33.632vh] md:mt-[25vh]">
           <p>Related Projects</p>
-          <div className=" float-left relative w-[calc(100vw-20px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 xl:grid-cols-16 xl:grid-rows-3">
+          <div className=" float-left relative w-[calc(100vw-20px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 md:grid-cols-16 md:grid-rows-3">
             <RelatedProjectsOne data={page.data.related_project_1} />
             <RelatedProjectsOne data={page.data.related_project_2} />
           </div>
