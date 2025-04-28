@@ -78,6 +78,11 @@ export default async function Page({ params }: { params: Params }) {
             </div>
           </div>
           <div className="absolute float-left w-[100vw] h-[calc(91.63vh+20px)] xl:h-[87.5vh+20px] overflow-hidden  flex items-center  justify-center">
+            {/* <PrismicNextImage
+              field={page.data.hero_image_desktop}
+              alt=""
+              className="h-[100%] max-w-none w-auto xl:w-[100%] xl:h-auto"
+            /> */}
             <PrismicNextImage
               field={page.data.hero_image_desktop}
               alt=""
