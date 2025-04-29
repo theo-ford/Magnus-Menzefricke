@@ -18,7 +18,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
       <div className="mt-[16.66vh] xl:mt-[25vh] float-left relative w-[100vw]">
         {slice.variation == "fullBleedImage" && (
           <>
-            <div className="h-[calc(91.63vh+20px)] w-[100%+20px] xl:h-[calc(112.5vh-20px)]">
+            <div className="h-[calc(91.63vh+20px)] w-[100%+20px] xl:h-[calc(112.5vh-20px)] min-h-[600px]">
               <div className="w-[calc(100%)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-11 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-9 ">
                 <div className="col-start-1 row-start-1  overflow-hidden  col-span-4 row-span-11 xl:col-span-16 xl:row-span-9  flex items-center  justify-center">
                   <PrismicNextImage
