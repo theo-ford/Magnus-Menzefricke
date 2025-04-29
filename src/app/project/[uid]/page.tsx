@@ -86,12 +86,12 @@ export default async function Page({ params }: { params: Params }) {
             <PrismicNextImage
               field={page.data.hero_image_desktop}
               alt=""
-              className="hidden lg:inline lg:w-[100%] lg:h-auto"
+              className="hidden xl:inline xl:w-[100%] xl:h-auto"
             />
             <PrismicNextImage
               field={page.data.hero_image_mobile_ipad}
               alt=""
-              className="block lg:hidden h-[100%] max-w-none w-auto"
+              className="block xl:hidden h-[100%] max-w-none w-auto min-h-[900px]"
             />
           </div>
         </div>
@@ -104,7 +104,7 @@ export default async function Page({ params }: { params: Params }) {
 
         <div className="h-[calc(83.33vh)] w-[calc(100vw-20px)] relative float-left md:w-[calc(100vw-20px)] m-[10px] md:h-[37.5vh] mt-[33.632vh] md:mt-[25vh]">
           <p>Related Projects</p>
-          <div className=" float-left relative w-[calc(100vw-20px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 md:grid-cols-16 md:grid-rows-3">
+          <div className=" float-left relative w-[calc(100vw-20px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 md:grid-cols-16 md:grid-rows-3 min-h-[75px] md:!min-h-[200px] xl:min-h-[250px]">
             <RelatedProjectsOne data={page.data.related_project_1} />
             <RelatedProjectsOne data={page.data.related_project_2} />
           </div>
