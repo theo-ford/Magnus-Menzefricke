@@ -32,7 +32,7 @@ const RichText: FC<RichTextProps> = ({ slice }) => {
     <div className="float-left relative h-auto w-[calc(100%-20px)] mt-[-4px] ml-[10px] xl:h-auto xl:mt-[4px] mt-[16.66vh] xl:mt-[25vh]">
       <div className="float-left grid grid-cols-4 grid-rows-1 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 w-[calc(100%)]">
         <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
-          <div className="leading-none text-[18px] xl:text-[24px] m-[0] p-[0]">
+          <div className="leading-[1.15] text-[18px] xl:text-[24px] m-[0] p-[0]">
             <PrismicRichText
               field={slice.primary.text}
               components={components}
