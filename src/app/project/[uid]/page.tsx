@@ -43,7 +43,7 @@ export default async function Page({ params }: { params: Params }) {
     <>
       <NavProjects projectTitle={page.data.title} />
       <div className="">
-        <div className="w-[100vw] h-[calc(91.63vh+20px)] bg-red-800 relative float-left xl:h-[87.5vh+20px]">
+        <div className="w-[100vw] h-[calc(91.63vh+20px)] relative float-left xl:h-[87.5vh+20px]">
           <div className="h-[calc(91.63vh)] w-[calc(100vw-20px)] absolute top-[0] z-50 xl:w-[calc(100vw-20px)] m-[10px] xl:h-[87.5vh+20px]">
             {/* <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] text-white"> */}
             <div

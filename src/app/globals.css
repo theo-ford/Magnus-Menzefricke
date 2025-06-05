@@ -3,3 +3,7 @@
 @theme {
   --breakpoint-xl: 1150px;
 }
+
+p {
+  margin-bottom: 16px;
+}
