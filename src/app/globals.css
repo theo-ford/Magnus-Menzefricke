@@ -3,3 +3,33 @@
 @theme {
   --breakpoint-xl: 1150px;
 }
+
+/* For WebKit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 20px; /* Width of the vertical scrollbar */
+  height: 20px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Or some other background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e2e8f0; /* Color of the scrollbar thumb */
+  border-radius: 0px; /* Makes it a rectangle, or use a value for rounded corners */
+  /* border: 1px solid #555; Optional: if you want a border around the thumb */
+}
+
+/* For Firefox */
+/* Firefox uses scrollbar-width and scrollbar-color properties */
+/* Note: Firefox scrollbar styling is less customizable than WebKit */
+* {
+  scrollbar-width: thin; /* "auto" or "thin"  */
+  scrollbar-color: #e2e8f0 transparent; /* thumb and track color */
+}
+
+/* If you want exactly 10px for Firefox, it's trickier as 'thin' is predefined.
+   For more control, you might need to wrap content in a custom scrollable div
+   and hide the default browser scrollbar, then style your custom one.
+   However, the above `scrollbar-width: thin` and `scrollbar-color` is the standard way.
+*/
