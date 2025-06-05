@@ -16,7 +16,8 @@ export type ImageProps = SliceComponentProps<Content.ImageSlice>;
  */
 
 const Image: FC<ImageProps> = ({ slice }) => {
-  const isPageWide = useMediaQuery("(min-width: 667px)");
+  const isPageWide = useMediaQuery("(max-width: 667px)");
+  console.log("WIDE =" + isPageWide);
   return (
     <>
       {slice.variation == "1XLandscapeImage" && (
