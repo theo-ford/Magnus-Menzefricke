@@ -10,7 +10,7 @@ export const Nav = () => {
 
   return (
     <>
-      <div className="fixed z-100">
+      <div className="fixed z-[9999]">
         {isDesktop ? <NavDesktopTwo /> : <NavMobileTwo />}
       </div>
     </>
