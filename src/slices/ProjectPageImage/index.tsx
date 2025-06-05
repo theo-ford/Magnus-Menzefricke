@@ -104,15 +104,19 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                 {slice.primary.position == "Left" ? (
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
                     <p className="leading-none m-[0] p-[0] text-[12px] xl:text-[12px]">
-                      Left: {slice.primary.caption_1}. Right:{" "}
-                      {slice.primary.caption_2}
+                      {slice.primary.caption_1 &&
+                        `Left: ${slice.primary.caption_1}. `}
+                      {slice.primary.caption_2 &&
+                        `Right: ${slice.primary.caption_2}`}
                     </p>
                   </div>
                 ) : (
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-9  flex items-center">
                     <p className="leading-none m-[0] p-[0] text-[12px] xl:text-[12px]">
-                      Left: {slice.primary.caption_1}. Right:{" "}
-                      {slice.primary.caption_2}
+                      {slice.primary.caption_1 &&
+                        `Left: ${slice.primary.caption_1}. `}
+                      {slice.primary.caption_2 &&
+                        `Right: ${slice.primary.caption_2}`}
                     </p>
                   </div>
                 )}
@@ -184,15 +188,19 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                 {slice.primary.position == "Left" ? (
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
                     <p className="leading-none m-[0] p-[0] text-[12px] xl:text-[12px]">
-                      Left: {slice.primary.caption_1}. Right:{" "}
-                      {slice.primary.caption_2}
+                      {slice.primary.caption_1 &&
+                        `Left: ${slice.primary.caption_1}. `}
+                      {slice.primary.caption_2 &&
+                        `Right: ${slice.primary.caption_2}`}
                     </p>
                   </div>
                 ) : (
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-9  flex items-center">
                     <p className="leading-none m-[0] p-[0] text-[14px] xl:text-[12px]">
-                      Left: {slice.primary.caption_1}. Right:{" "}
-                      {slice.primary.caption_2}
+                      {slice.primary.caption_1 &&
+                        `Left: ${slice.primary.caption_1}. `}
+                      {slice.primary.caption_2 &&
+                        `Right: ${slice.primary.caption_2}`}
                     </p>
                   </div>
                 )}
