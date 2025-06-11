@@ -6,7 +6,7 @@ import GridDesktop from "./GridDesktop";
 import HeroContentDesktop from "./HeroContentDesktop";
 // import { Scrollbar } from "react-scrollbars-custom";
 
-export default function HorizontalScroll() {
+export default function zz_HorizontalScroll() {
   // const scrollRef = useRef();
 
   // useEffect(() => {

@@ -16,10 +16,10 @@ export const NavDesktopTwo = () => {
     } else {
       setMenuClicked(false);
     }
-    console.log(menuClicked);
+    // console.log(menuClicked);
   }
 
-  console.log(currentPage);
+  // console.log(currentPage);
 
   return (
     <>

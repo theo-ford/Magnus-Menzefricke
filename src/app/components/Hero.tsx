@@ -33,42 +33,6 @@ export default function Hero({ pageData }) {
                   <PrismicRichText field={pageData.introduction} />
                 </h5>
               </div>
-              {/* x */}
-              {/* <div className="col-span-4 col-start-6 row-start-11 xl:col-start-11 xl:col-span-2 xl:row-start-6 mt-[8vh]">
-                <h5 className="text-[18px] p-[0px] m-[0px] leading-none  xl:text-[22px] font-bold">
-                  Social
-                </h5>
-              </div>
-              <div className="col-span-4 col-start-6 row-start-11 xl:col-start-11 xl:col-span-2 xl:row-start-7">
-                <h5 className="text-[12px] p-[0px] m-[0px] leading-none  xl:text-[18px]">
-                  Linked In
-                  <br></br>
-                  Twitter
-                  <br></br>
-                  Instagram
-                  <br></br>
-                </h5>
-              </div> */}
-
-              {/* <div className="col-span-2 col-start-5 row-start-12 xl:col-span-2 xl:col-start-1 xl:row-start-8">
-                <p className="text-[12px] p-[0px] m-[0px] leading-none">
-                  <span className="font-bold">Design Architects</span>
-                </p>
-                <p className="text-[12px] p-[0px] m-[0px] leading-none xl:mt-[12px]">
-                  <span className="font-bold  ">Technical Architects</span>
-                  <br></br>
-                </p>
-              </div>
-              <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-3 xl:row-start-8">
-                <p className="text-[12px] p-[0px] m-[0px] leading-none">
-                  <span className="font-bold">Net Internal Area</span>
-                  <br></br>
-                </p>
-                <p className="text-[12px] p-[0px] m-[0px] leading-none xl:mt-[12px]">
-                  <span className="font-bold">Completion</span>
-                  <br></br>
-                </p>
-              </div> */}
             </div>
           </div>
           <GridScale />

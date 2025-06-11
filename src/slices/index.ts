@@ -7,5 +7,5 @@ export const components = {
   image: dynamic(() => import("./Image")),
   index_projects_select: dynamic(() => import("./IndexProjectsSelect")),
   project_page_image: dynamic(() => import("./ProjectPageImage")),
-  rich_text: dynamic(() => import("./RichText")),
+  rich_text: dynamic(() => import("./RichText"))
 };

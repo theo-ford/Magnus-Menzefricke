@@ -5,7 +5,7 @@ import { PrismicRichText } from "@prismicio/react";
 import { createClient } from "@/prismicio";
 import GridNews from "../components/GridNews";
 import { PrismicNextImage } from "@prismicio/next";
-import HomepageProjects from "../components/HomepageProjects";
+import HomepageProjects from "../components/HorizontalScroll";
 import GridNewsMobileNavSpacer from "../components/GridNewsMobileNavSpacer";
 import { Nav } from "../components/Nav";
 

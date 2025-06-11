@@ -17,7 +17,7 @@ export type ImageProps = SliceComponentProps<Content.ImageSlice>;
 
 const Image: FC<ImageProps> = ({ slice }) => {
   const isPageWide = useMediaQuery("(max-width: 667px)");
-  console.log("WIDE =" + isPageWide);
+  // console.log("WIDE =" + isPageWide);
   return (
     <>
       {slice.variation == "1XLandscapeImage" && (
@@ -28,7 +28,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
                 <PrismicNextImage
                   field={slice.primary.image}
                   alt=""
-                  priority={isPageWide}
+                  priority={true}
                 />
               </div>
             ) : (
@@ -36,7 +36,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
                 <PrismicNextImage
                   field={slice.primary.image}
                   alt=""
-                  priority={isPageWide}
+                  priority={true}
                 />
               </div>
             )}
@@ -52,14 +52,14 @@ const Image: FC<ImageProps> = ({ slice }) => {
                   <PrismicNextImage
                     field={slice.primary.image_1}
                     alt=""
-                    priority={isPageWide}
+                    priority={true}
                   />
                 </div>
                 <div className="col-span-2 col-start-3 row-start-6  row-span-2 md:row-span-4 md:row-start-5 xl:col-span-4 xl:!row-start-4 xl:!row-span-2  xl:col-start-5 overflow-hidden flex items-center">
                   <PrismicNextImage
                     field={slice.primary.image_2}
                     alt=""
-                    priority={isPageWide}
+                    priority={true}
                   />
                 </div>
               </>
@@ -69,14 +69,14 @@ const Image: FC<ImageProps> = ({ slice }) => {
                   <PrismicNextImage
                     field={slice.primary.image_1}
                     alt=""
-                    priority={isPageWide}
+                    priority={true}
                   />
                 </div>
                 <div className="col-span-2 col-start-3 row-start-6  row-span-2 md:row-span-4 md:row-start-5 xl:col-span-4 xl:!row-start-4 xl:!row-span-2  xl:col-start-9 overflow-hidden flex items-center">
                   <PrismicNextImage
                     field={slice.primary.image_2}
                     alt=""
-                    priority={isPageWide}
+                    priority={true}
                   />
                 </div>
               </>
@@ -94,14 +94,14 @@ const Image: FC<ImageProps> = ({ slice }) => {
                   <PrismicNextImage
                     field={slice.primary.image_1}
                     alt=""
-                    priority={isPageWide}
+                    priority={true}
                   />
                 </div>
                 <div className="col-span-2 col-start-3 row-start-5 row-span-4 md:row-span-6 md:row-start-4 xl:col-span-4 xl:!row-start-1 xl:!row-span-5 xl:col-start-9 flex items-center overflow-hidden">
                   <PrismicNextImage
                     field={slice.primary.image_2}
                     alt=""
-                    priority={isPageWide}
+                    priority={true}
                   />
                 </div>
               </>
@@ -111,14 +111,14 @@ const Image: FC<ImageProps> = ({ slice }) => {
                   <PrismicNextImage
                     field={slice.primary.image_1}
                     alt=""
-                    priority={isPageWide}
+                    priority={true}
                   />
                 </div>
                 <div className="col-span-2 col-start-3 row-start-5 row-span-4 md:row-span-6 md:row-start-4 xl:col-span-4 xl:!row-start-4 xl:!row-span-5 xl:col-start-9  flex items-center overflow-hidden">
                   <PrismicNextImage
                     field={slice.primary.image_2}
                     alt=""
-                    priority={isPageWide}
+                    priority={true}
                   />
                 </div>
               </>
@@ -136,7 +136,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
                 <PrismicNextImage
                   field={slice.primary.image}
                   alt=""
-                  priority={isPageWide}
+                  priority={true}
                   // className="min-h-[100%] w-auto xl:max-w-auto xl:w-[100%] xl:h-auto"
                 />
               </div>
@@ -145,7 +145,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
                 <PrismicNextImage
                   field={slice.primary.image}
                   alt=""
-                  priority={isPageWide}
+                  priority={true}
                 />
               </div>
             )}
@@ -160,13 +160,13 @@ const Image: FC<ImageProps> = ({ slice }) => {
                 field={slice.primary.desktop_image}
                 alt=""
                 className="hidden xl:inline max-w-auto w-[100%] h-auto"
-                priority={isPageWide}
+                priority={true}
               />
               <PrismicNextImage
                 field={slice.primary.mobile_ipad_image}
                 alt=""
                 className="block xl:hidden w-auto h-[100%] max-w-none"
-                priority={isPageWide}
+                priority={true}
               />
             </div>
           </div>

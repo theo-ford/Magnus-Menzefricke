@@ -1,13 +1,15 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-
-// import HeroContentScale from "./HeroContentScale";
 import { useMediaQuery } from "./MediaQuery";
 
+interface HorizontalScrollProps {
+  children: React.ReactNode;
+}
+
 // eslint-disable-next-line  @typescript-eslint/no-explicit-any
-export default function HomepageProjects({ children }: { children: any }) {
-  const scrollRef = useRef(null);
+export default function HorizontalScroll({ children }: HorizontalScrollProps) {
+  const scrollRef = useRef<HTMLDivElement>(null);
   const isDesktop = useMediaQuery("(min-width: 1280px)");
 
   useEffect(() => {
@@ -28,16 +30,25 @@ export default function HomepageProjects({ children }: { children: any }) {
     }
   }, [isDesktop]);
 
+  const wrappedChildren = Array.isArray(children) ? children : [children];
+  // console.log(wrappedChildren);
   return (
     <>
       <div className="w-[100vw] xl:overflow-y-hidden ">
-        {/* <div className=""> */}
         <div
           ref={scrollRef}
-          // className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll xl:w-[calc(160vw+40px)]"
           className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll"
+          // style={{
+          //   scrollSnapType: "x proximity",
+          //   scrollBehavior: "smooth"
+          // }}
         >
-          {children}
+          {wrappedChildren}
+          {/* <div className="flex">
+            {wrappedChildren.map((child, index) => (
+              <div key={index}>{child}</div>
+            ))}
+          </div> */}
         </div>
       </div>
     </>
