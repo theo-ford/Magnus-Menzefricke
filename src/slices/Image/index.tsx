@@ -4,7 +4,7 @@ import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
-import { useMediaQuery } from "../../app/components/MediaQuery";
+// import { useMediaQuery } from "../../app/components/MediaQuery";
 
 /**
  * Props for `Image`.
@@ -16,7 +16,7 @@ export type ImageProps = SliceComponentProps<Content.ImageSlice>;
  */
 
 const Image: FC<ImageProps> = ({ slice }) => {
-  const isPageWide = useMediaQuery("(max-width: 667px)");
+  // const isPageWide = useMediaQuery("(max-width: 667px)");
   // console.log("WIDE =" + isPageWide);
   return (
     <>

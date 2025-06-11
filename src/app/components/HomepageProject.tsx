@@ -1,10 +1,9 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { Content } from "@prismicio/client";
 import GridScale from "@/app/components/GridScale";
 import Link from "next/link";
-import ScrollSnapWrapper from "./ScrollSnapWrapper";
 
 interface HomepageProjectProps {
   item: Content.ProjectDocument;
