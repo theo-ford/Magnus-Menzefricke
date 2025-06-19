@@ -2,6 +2,7 @@
 // import { asText } from "@prismicio/client";
 import { createClient } from "@/prismicio";
 import Hero from "./components/Hero";
+import ZZ_Hero from "./components/Zz_Hero";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 // import Link from "next/link";
@@ -17,6 +18,7 @@ export default async function Home() {
       <Nav />
       <HorizontalScroll>
         <Hero pageData={page.data}></Hero>
+        {/* <ZZ_Hero pageData={page.data}></ZZ_Hero> */}
         <SliceZone slices={page.data.slices} components={components} />
       </HorizontalScroll>
     </>
