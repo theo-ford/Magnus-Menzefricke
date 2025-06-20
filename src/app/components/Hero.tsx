@@ -2,13 +2,13 @@
 
 // import HeroContentScale from "./HeroContentScale";
 
-import GridScale from "./GridScale";
+// import GridScale from "./GridScale";
 import { PrismicRichText } from "@prismicio/react";
 import Logo from "./Logo";
 import LogoMagnusHeight from "./Logo_MagnusHeight";
-import LogoMagnusWidth from "./Logo_MagnusWidth";
+// import LogoMagnusWidth from "./Logo_MagnusWidth";
 import LogoMenzefrickeHeight from "./Logo_MenzefrickeHeight";
-import LogoMenzefrickeWidth from "./Logo_MenzefrickeWidth";
+// import LogoMenzefrickeWidth from "./Logo_MenzefrickeWidth";
 import GridScaleHero from "./GridScaleHero";
 
 // eslint-disable-next-line  @typescript-eslint/no-explicit-any
