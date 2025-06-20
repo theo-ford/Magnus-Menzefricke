@@ -2,7 +2,7 @@
 // import { asText } from "@prismicio/client";
 import { createClient } from "@/prismicio";
 import Hero from "./components/Hero";
-import ZZ_Hero from "./components/Zz_Hero";
+// import ZZ_Hero from "./components/Zz_Hero";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 // import Link from "next/link";
