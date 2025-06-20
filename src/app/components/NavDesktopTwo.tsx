@@ -27,7 +27,7 @@ export const NavDesktopTwo = () => {
         className={`${menuClicked ? "hidden" : "inline"} `}
         onMouseEnter={menuStateChange}
       >
-        <p className="font-bold text-[22px] tracking-[-1px] m-[36px] mt-[28px] text-gray-300">
+        <p className="font-bold text-[22px] tracking-[-1px] m-[29px] mt-[21px] text-gray-300">
           <span className="/">Menu </span>
           <span
             className={`${currentPage == "/" ? "inline" : "hidden"} opacity-50`}
