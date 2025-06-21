@@ -61,10 +61,10 @@
           "placeholder": ""
         }
       },
-      "service": {
+      "role": {
         "type": "Text",
         "config": {
-          "label": "Service",
+          "label": "Role",
           "placeholder": ""
         }
       },
@@ -82,6 +82,28 @@
           "placeholder": ""
         }
       },
+      "project_type": {
+        "type": "Text",
+        "config": {
+          "label": "Project Type",
+          "placeholder": ""
+        }
+      },
+      "construction_value": {
+        "type": "Text",
+        "config": {
+          "label": "Construction Value",
+          "placeholder": ""
+        }
+      },
+      "related_project_image": {
+        "type": "Image",
+        "config": {
+          "label": "Related Project Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "related_project_1": {
         "type": "Link",
         "config": {
@@ -97,14 +119,6 @@
           "label": "Related Project 2",
           "select": "document",
           "repeat": false
-        }
-      },
-      "related_project_image": {
-        "type": "Image",
-        "config": {
-          "label": "Related Project Image",
-          "constraint": {},
-          "thumbnails": []
         }
       }
     },

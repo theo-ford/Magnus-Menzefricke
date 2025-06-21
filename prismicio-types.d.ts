@@ -678,15 +678,15 @@ interface ProjectDocumentData {
   client: prismic.KeyTextField;
 
   /**
-   * Service field in *Project*
+   * Role field in *Project*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: project.service
+   * - **API ID Path**: project.role
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  service: prismic.KeyTextField;
+  role: prismic.KeyTextField;
 
   /**
    * Location field in *Project*
@@ -711,6 +711,39 @@ interface ProjectDocumentData {
   description: prismic.KeyTextField;
 
   /**
+   * Project Type field in *Project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.project_type
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  project_type: prismic.KeyTextField;
+
+  /**
+   * Construction Value field in *Project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.construction_value
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  construction_value: prismic.KeyTextField;
+
+  /**
+   * Related Project Image field in *Project*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.related_project_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  related_project_image: prismic.ImageField<never>;
+
+  /**
    * Related Project 1 field in *Project*
    *
    * - **Field Type**: Content Relationship
@@ -730,18 +763,7 @@ interface ProjectDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  related_project_2: prismic.ContentRelationshipField;
-
-  /**
-   * Related Project Image field in *Project*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.related_project_image
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  related_project_image: prismic.ImageField<never> /**
+  related_project_2: prismic.ContentRelationshipField /**
    * Slice Zone field in *Project*
    *
    * - **Field Type**: Slice Zone

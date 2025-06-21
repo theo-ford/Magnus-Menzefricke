@@ -44,40 +44,44 @@ export default async function Page({ params }: { params: Params }) {
       <NavProjects projectTitle={page.data.title} />
       <div className="">
         <div className="w-[100vw] h-[calc(91.63vh+20px)] relative float-left xl:h-[87.5vh+20px]">
-          <div className="h-[calc(91.63vh)] w-[calc(100vw-20px)] absolute top-[0] z-50 xl:w-[calc(100vw-20px)] m-[10px] xl:h-[87.5vh+20px]">
+          <div className="h-[calc(91.63vh)] w-[calc(100vw-20px)] absolute top-[0] z-50 xl:w-[calc(100vw-30px)] m-[12.5px] xl:m-[30px] xl:h-[calc(100%-30px)]">
             {/* <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] text-white"> */}
             <div
               className={`w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] ${page.data.hero_text_color === "White" ? "text-white" : "text-black"} `}
             >
               <div className="col-span-2 col-start-1 row-start-6 xl:col-span-8 xl:col-start-1 xl:row-start-3">
-                <h5 className="text-[64px] tracking-[-2px] p-[0px] m-[0px] leading-[80%] xl:text-[9.5vw] xl:mt-[-28px] font-bold xl:tracking-[-10px]">
+                <h5 className="text-[8vh] tracking-[-4px] p-[0px] m-[0px] leading-[80%] xl:text-[9.5vw] xl:mt-[-28px] font-bold xl:tracking-[-10px] xl:ml-[-4px]">
                   {page.data.title}
                 </h5>
               </div>
-              <div className="col-span-4 col-start-1 row-start-12  xl:col-span-2 xl:col-start-1 xl:row-start-8">
-                <div className="absolute bottom-0 xl:relative">
-                  <p className="text-[12px] p-[0px] m-[0px] leading-none">
+              <div className="col-span-4 col-start-1 row-start-9  xl:col-span-2 xl:col-start-1 xl:row-start-8">
+                <div className="xl:relative">
+                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[-3px] leading-none xl:text-[24px]">
+                    Location: {page.data.location}
+                    <br></br>
+                    Year: {page.data.completion_date}
+                  </h5>
+                </div>
+              </div>
+              <div className="col-span-4 col-start-1 row-start-11 xl:col-span-4 xl:col-start-4 xl:row-span-1 xl:row-start-8 xl:inline">
+                <div className="">
+                  <p className="text-[16px] p-[0px] m-[0px] mb-[0px!important] leading-[120%]">
+                    Role: {page.data.role}
+                    <br></br>
+                    Type: {page.data.project_type}
+                    <br></br>
+                    <br></br>
                     Net Internal Area: {page.data.net_internal_area}
                     <br></br>
-                    Completion: {page.data.completion_date}
+                    Construction Value: {page.data.construction_value}
                     <br></br>
                     Client: {page.data.client}
-                    <br></br>
                   </p>
                 </div>
               </div>
-              <div className="col-span-2 col-start-1 row-start-12 xl:col-span-2 xl:col-start-3 xl:row-start-8 hidden xl:inline">
-                <p className="text-[12px] p-[0px] m-[0px] leading-none">
-                  Design Architects:<br></br> {page.data.design_architects}
-                  <br></br>
-                  <br></br>
-                  Technical Architects:<br></br>{" "}
-                  {page.data.technical_architects}
-                </p>
-              </div>
             </div>
           </div>
-          <div className="absolute float-left w-[100vw] h-[calc(91.63vh+20px)] xl:h-[87.5vh+20px] overflow-hidden  flex items-center  justify-center min-h-[600px]">
+          <div className="absolute float-left w-[100vw] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden  flex items-center  justify-center min-h-[600px]">
             {/* <PrismicNextImage
               field={page.data.hero_image_desktop}
               alt=""

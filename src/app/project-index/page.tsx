@@ -14,21 +14,21 @@ export default async function Page() {
   return (
     <>
       <Nav />
-      <div className="absolute float-left block mt-[10px] mb-[10px] h-auto w-[100%] ">
-        <div className="w-[calc(100%-20px)] ml-[10px] border-t-[1px] border-[#d6d6d6] float-left relative opacity-[.3]"></div>
+      <div className="absolute float-left block m-[25px] xl:m-[30px] mb-[25px] h-auto w-[100%] w-[calc(100vw-50px)] xl:w-[calc(100vw-60px)]">
+        <div className="w-[calc(100%-25px)] ml-[25px] border-t-[1px] border-[#d6d6d6] float-left relative opacity-[.3]"></div>
 
-        <div className="relative ml-[10px] w-[calc(100vw-20px)] block xl:hidden">
+        <div className="relative block xl:hidden">
           <GridIndexProject />
         </div>
-        <div className="relative ml-[10px] w-[calc(100vw-20px)]">
+        <div className="relative">
           <GridIndexProject />
         </div>
 
         <div
           key={"project"}
-          className="xl:fixed block float-left ml-[10px] w-[calc(100vw-20px)] text-gray-200"
+          className="xl:fixed block float-left text-gray-200"
         >
-          <div className="absolute grid grid-cols-4 grid-rows-1 gap-[10px] xl:grid-cols-16 w-[calc(100vw-20px)]">
+          <div className="absolute grid grid-cols-4 grid-rows-1 gap-[12.5px] xl:gap-[15px] xl:grid-cols-16 xl:w-[calc(100vw-50px)] xl:w-[calc(100vw-60px)]">
             <div className="col-span-1 hidden xl:block">
               <p key={"index"} className="">
                 No.
@@ -61,17 +61,17 @@ export default async function Page() {
             </div>
           </div>
         </div>
-        <div className="relative ml-[10px] w-[calc(100vw-20px)]">
+        <div className="relative">
           <GridIndexProject />
         </div>
-        <div className="relative mt-[0] z-100 xl:mb-[10px] float-left">
+        <div className="relative z-100 w-[calc(100vw-50px)] xl:w-[calc(100vw-60px)] float-left">
           <SliceZone slices={page.data.slices} components={components} />
         </div>
         {/* <div className="border-b-[1px] border-[#d6d6d6] opacity-[] w-[100%] h-[10px] bg-red-800"></div> */}
-        <div className="relative ml-[10px] w-[calc(100vw-20px)] block xl:hidden">
+        <div className="relative w-[calc(100vw-50px)] block xl:hidden">
           <GridIndexProject />
         </div>
-        <div className="relative ml-[10px] w-[calc(100vw-20px)] block xl:hidden">
+        <div className="relative w-[calc(100vw-50px)] block xl:hidden">
           <GridIndexProject />
         </div>
 

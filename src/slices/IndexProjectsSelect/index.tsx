@@ -35,11 +35,11 @@ const IndexProjectsSelect: FC<IndexProjectsSelectProps> = async ({ slice }) => {
           item && (
             <div
               key={"project" + index}
-              className="relative block float-left ml-[10px] w-[calc(100vw-20px)] text-gray-300 hover:text-gray-400"
+              className="relative block float-left w-[calc(100vw-50px)] xl:w-[calc(100vw-60px)] text-gray-300 hover:text-gray-400"
             >
               <Link href={`project/${item.uid}`}>
                 {/* {console.log(item.uid)} */}
-                <div className="absolute grid grid-cols-4 grid-rows-1 gap-[10px] xl:grid-cols-16 xl:w-[100%]">
+                <div className="absolute grid grid-cols-4 grid-rows-1 gap-[12.5px] xl:gap-[15px] xl:grid-cols-16 xl:w-[100%] text-[16px] xl:text-[24px] leading-[113%]">
                   <div className="col-span-1 hidden xl:block">
                     <p key={"index" + index} className="">
                       {index}
@@ -52,7 +52,7 @@ const IndexProjectsSelect: FC<IndexProjectsSelectProps> = async ({ slice }) => {
                   </div>
                   <div className="col-span-2 hidden xl:block">
                     <p key={"service" + index} className="">
-                      {item.data.service}
+                      {item.data.role}
                     </p>
                   </div>
                   <div className="col-span-2 hidden xl:block">
@@ -66,12 +66,7 @@ const IndexProjectsSelect: FC<IndexProjectsSelectProps> = async ({ slice }) => {
                     </p>
                   </div>
                   <div className="col-span-2 xl:col-span-8 line-clamp-3">
-                    <p
-                      key={"description" + index}
-                      className=" text-[12px] xl:text-[16px] leading-none"
-                    >
-                      {item.data.description}
-                    </p>
+                    <p key={"description" + index}>{item.data.description}</p>
                   </div>
                 </div>
 

@@ -56,7 +56,7 @@ export const NavMobileTwo = () => {
         className={`${menuClicked ? "inline" : "hidden"} `}
         onClick={menuStateChange}
       >
-        <p className="font-bold text-[22px] tracking-[-1px] m-[10px] mt-[1px] text-gray-300">
+        <p className="font-bold text-[22px] tracking-[-1px] m-[24px] mt-[15px] text-gray-300">
           <span className="">Menu </span>
           <span
             className={`${currentPage !== "/" ? "inline" : "hidden"} opacity-50 hover:opacity-100`}
