@@ -21,7 +21,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
   return (
     <>
       {/* <ScrollSnapWrapper index={index} totalItems={children.length}> */}
-      <div key={index} ref={projectRef} className="snap-center">
+      <div key={index} ref={projectRef} className="">
         <Link href={`/project/${item.uid}`} className="">
           {/* <div className="relative float-left h-[calc(100vh-20px)] w-[100vw] xl:w-[calc(75vw-20px)] xl:mr-[20px] mb-[10px]"> */}
           <div className="relative float-left h-[calc(100vh-25px)] w-[calc(100vw-50px)] xl:w-[calc(75vw-45px)] xl:mr-[15px]">

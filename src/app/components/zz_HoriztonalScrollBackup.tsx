@@ -1,12 +1,15 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import GridScale from "./GridScale";
-// import HeroContentScale from "./HeroContentScale";
 import { useMediaQuery } from "./MediaQuery";
 
-export default function HorizontalOne() {
-  const scrollRef = useRef(null);
+interface HorizontalScrollProps {
+  children: React.ReactNode;
+}
+
+// eslint-disable-next-line  @typescript-eslint/no-explicit-any
+export default function HorizontalScroll({ children }: HorizontalScrollProps) {
+  const scrollRef = useRef<HTMLDivElement>(null);
   const isDesktop = useMediaQuery("(min-width: 1280px)");
 
   useEffect(() => {
@@ -14,6 +17,7 @@ export default function HorizontalOne() {
     const el: any = scrollRef.current;
     if (el && isDesktop) {
       const onWheel = (e) => {
+        console.log(e.deltaY);
         if (e.deltaY == 0) return;
         e.preventDefault();
         el.scrollTo({
@@ -26,25 +30,25 @@ export default function HorizontalOne() {
     }
   }, [isDesktop]);
 
+  const wrappedChildren = Array.isArray(children) ? children : [children];
+  // console.log(wrappedChildren);
   return (
     <>
-      {/* <div className="xl:w-[100vw] overflow-y-hidden"> */}
-      <div className="w-[100vw] xl:overflow-y-hidden">
-        {/* <div ref={scrollRef} className="flex flex-nowrap overflow-x-scroll"> */}
+      <div className="w-[100vw] xl:overflow-y-hidden ">
         <div
           ref={scrollRef}
           className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll"
+          // style={{
+          //   scrollSnapType: "x proximity",
+          //   scrollBehavior: "smooth"
+          // }}
         >
-          <div className="bg-[#e34234] float-left relative h-screen xl:w-[calc(75vw+20px)]">
-            <GridScale />
-          </div>
-          <div className="float-left relative h-screen xl:w-[calc(75vw+20px)]">
-            <GridScale />
-          </div>
-
-          {/* <GridScale />
-
-        <GridScale /> */}
+          {wrappedChildren}
+          {/* <div className="flex">
+            {wrappedChildren.map((child, index) => (
+              <div key={index}>{child}</div>
+            ))}
+          </div> */}
         </div>
       </div>
     </>
