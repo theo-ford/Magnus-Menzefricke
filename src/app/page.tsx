@@ -8,7 +8,7 @@ import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 // import Link from "next/link";
 import { Nav } from "./components/Nav";
-import HorizontalScroll from "./components/HorizontalScroll_v1";
+import HorizontalScrollv0 from "./components/HorizontalScroll_v0";
 import { HomepageProject } from "./components/HomepageProject";
 import Carousel from "./components/Carousel";
 import { ScrollSnapWrapper } from "./components/ScrollSnapWrapper";
@@ -28,7 +28,7 @@ export default async function Home() {
   return (
     <>
       <Nav />
-      <HorizontalScroll>
+      <HorizontalScrollv0>
         <Hero pageData={page.data}></Hero>
         {/* <SliceZone slices={page.data.slices} components={components} /> */}
         {projectsAsync.map(
@@ -44,7 +44,7 @@ export default async function Home() {
               </HomepageProject>
             )
         )}
-      </HorizontalScroll>
+      </HorizontalScrollv0>
     </>
   );
 }

@@ -15,110 +15,61 @@ export default async function Page() {
   return (
     <>
       <Nav />
+      <div className="absolute z-[100] block float-left mt-[25px] ml-[25px] xl:ml-[30px] xl:mt-[30px] w-[calc(100vw-50px)] xl:w-[calc(100vw-50px)] h-[calc(100vh)] md:h-[calc(100vh-60px)] xl:h-[calc(100vh-60px)]">
+        <div className="w-[calc(100%)] h-[calc(100%-7px)] float-left grid grid-cols-4 grid-rows-12 xl:grid-rows-8 relative gap-x-[15px] gap-y-[0px] xl:h-[calc((100vh-60px))] xl:grid-cols-16 xl:w-[calc(100%)]">
+          <h5 className="text-[16px] md:text-[24px] p-[0px] m-[0px] leading-[115%] col-span-4 row-start-2 xl:col-span-8 md:row-start-2 xl:row-start-2">
+            <PrismicRichText field={page.data.biography} />
+            <span className="">
+              <br></br>
+              Services:
+              <br></br>
+              <br></br>
+              {page.data.service.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <PrismicRichText field={item.description} />
+                  </div>
+                );
+              })}
+              <br></br>
+              Contact:
+              <br></br>
+              <br></br>
+              {page.data.email}
+              <br></br>
+              {page.data.phone}
+              <br></br>
+              {page.data.website_url}
+              <br></br>
+            </span>
+          </h5>
 
-      {/* <div className="relative z-[-40] top--[0] xl:w-[calc(100vw-20px)] m-[10px]">
+          {/* <h5 className="text-[18px] md:text-[24px] p-[0px] m-[0px] leading-[115%] col-span-4 row-start-6 xl:col-span-8  md:row-start-4 xl:row-start-4 xl:mt-[-5.5vh] ">
+            Services:
+            <br></br>
+            <br></br>
+            {page.data.service.map((item, index) => {
+              return (
+                <div key={index}>
+                  <PrismicRichText field={item.description} />
+                </div>
+              );
+            })}
+          </h5> */}
+
+          {/* <h5 className="text-[18px] md:text-[24px] p-[0px] m-[0px] leading-[115%] col-span-4 row-start-15  xl:col-span-8 md:row-start- xl:row-start-8">
+            {page.data.email}
+            <br></br>
+            {page.data.phone}
+            <br></br>
+            {page.data.website_url}
+            <br></br>
+          </h5> */}
+        </div>
+      </div>
+      <div className="absolute top-[0] left-[0]  w-[calc(100vw-50px)] ml-[25px] mt-[25px] xl:mt-[30px] xl:ml-[30px] h-[auto] :h-[calc(100vh-60px)] xl:h-[calc(100vh-60px)] mb-[25px]">
         <Grid16 />
       </div>
-      <div className="relative z-[-40] top--[0] xl:w-[calc(100vw-20px)] m-[10px]">
-        <Grid16 />
-      </div> */}
-
-      <>
-        <div className="relative float-left h-[calc(100vh)] w-[calc(100vw-10px)] mb-[10px] xl:w-[calc(100vw-20px)]  xl:h-[calc(100vh-20px)]">
-          <div className="h-[calc(100vh-20px)] w-[100%] absolute top-[0] z-50 xl:w-[calc(100vw-10px)] m-[10px]">
-            <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%-20px)]">
-              <div className="col-span-2 col-start-1 row-start-2 xl:col-span-8 xl:col-start-1 xl:row-start-3 xl:mt-[8vh]">
-                <h5 className="text-[16px] p-[0px] m-[0px] leading-none xl:text-[16px] font-bold ">
-                  Biography
-                </h5>
-              </div>
-              <div className="col-span-4 col-start-1 row-start-3 xl:col-span-7 xl:col-start-1 xl:row-start-4">
-                <h5 className="text-[16px] p-[0px] m-[0px] leading-none xl:text-[24px] ">
-                  <PrismicRichText field={page.data.biography} />
-                </h5>
-              </div>
-              <div className="col-span-2 col-start-1 row-start-6 xl:col-span-2 xl:col-start-9 xl:row-start-3 xl:mt-[8vh]">
-                <h5 className="text-[16px] p-[0px] m-[0px] leading-none xl:text-[16px] font-bold ">
-                  Contact
-                </h5>
-              </div>
-              <div className="col-span-2 col-start-1 row-start-7 xl:col-span-2 xl:col-start-9 xl:row-start-4">
-                <h5 className="text-[16px] p-[0px] m-[0px] leading-none xl:text-[16px] ">
-                  {page.data.email}
-                  <br></br>
-                  {page.data.phone}
-                  <br></br>
-                  {page.data.website_url}
-                  <br></br>
-                </h5>
-              </div>
-              <div className="col-span-2 col-start-1 row-start-8 xl:col-span-2 xl:col-start-12 xl:row-start-3 xl:mt-[8vh]">
-                <h5 className="text-[16px] p-[0px] m-[0px] leading-none xl:text-[16px] font-bold ">
-                  Social
-                </h5>
-              </div>
-              <div className="col-span-2 col-start-1 row-start-9 xl:col-span-2 xl:col-start-12 xl:row-start-4">
-                <h5 className="text-[16px] p-[0px] m-[0px] leading-none xl:text-[16px] ">
-                  Linked In
-                  <br></br>
-                  Blue Sky
-                  <br></br>
-                  Instagram
-                  <br></br>
-                </h5>
-              </div>
-              <div className="col-span-4 col-start-1 row-start-12 xl:col-span-8 xl:col-start-1 xl:row-start-8">
-                <h5 className="text-[16px] p-[0px] m-[0px] ml-[-0px] leading-none tracking-[0px] xl:text-[9.3vw]  font-bold  xl:tracking-[-10px] xl:mt-[-25px]">
-                  Services
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div className="relative xl:w-[calc(100vw-24px)] m-[10px]">
-            <Grid16 />
-          </div>
-        </div>
-      </>
-      <>
-        <div className="relative float-left h-[calc(100vh)] w-[calc(100vw-10px)] mb-[10px] xl:w-[calc(100vw-20px)]  xl:h-[calc(100vh-20px)]">
-          <div className="h-[calc(100vh-20px)] w-[100%] absolute top-[0] z-50 xl:w-[calc(100vw-10px)] m-[10px]">
-            <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%-20px)]">
-              {page.data.service.map((item, index) => (
-                <>
-                  <div
-                    key={index}
-                    className="col-span-4  xl:col-span-4 xl:row-start-3"
-                  >
-                    <h5 className="text-[16px] p-[0px] m-[0px] leading-none xl:text-[16px] font-bold ">
-                      {item.title}
-                    </h5>
-                  </div>
-                  <div
-                    key={"description" + index}
-                    className="col-span-4 xl:col-span-4 xl:row-start-4"
-                  >
-                    <h5 className="text-[16px] p-[0px] m-[0px] leading-none xl:text-[16px]">
-                      <PrismicRichText field={item.description} />
-                    </h5>
-                  </div>
-                  <div
-                    key={"img" + index}
-                    className="col-span-2 row-span-2 xl:col-span-4 xl:row-start-6 xl:row-span-3 overflow-hidden"
-                  >
-                    <PrismicNextImage field={item.image} alt="" />
-                  </div>
-                </>
-              ))}
-            </div>
-          </div>
-          <div className="relative xl:w-[calc(100vw-24px)] m-[10px]">
-            <Grid16 />
-          </div>
-        </div>
-      </>
-      <></>
-      {/* <SliceZone slices={page.data.slices} components={components} /> */}
-      {/* <p>{page.data.email}</p> */}
     </>
   );
 }
