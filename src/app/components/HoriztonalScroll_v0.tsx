@@ -8,7 +8,9 @@ interface HorizontalScrollProps {
 }
 
 // eslint-disable-next-line  @typescript-eslint/no-explicit-any
-export default function HorizontalScroll({ children }: HorizontalScrollProps) {
+export default function HorizontalScroll_v0({
+  children
+}: HorizontalScrollProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const isDesktop = useMediaQuery("(min-width: 1280px)");
 
@@ -34,10 +36,10 @@ export default function HorizontalScroll({ children }: HorizontalScrollProps) {
   // console.log(wrappedChildren);
   return (
     <>
-      <div className="w-[100vw] xl:overflow-y-hidden ">
+      <div className="w-[100vw] xl:overflow-y-hidden">
         <div
           ref={scrollRef}
-          className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll"
+          className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll first:xl:ml-[0px] last:xl:pr-[40px]"
           // style={{
           //   scrollSnapType: "x proximity",
           //   scrollBehavior: "smooth"

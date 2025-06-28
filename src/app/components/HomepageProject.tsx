@@ -20,11 +20,9 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
 
   return (
     <>
-      {/* <ScrollSnapWrapper index={index} totalItems={children.length}> */}
-      <div key={index} ref={projectRef} className="">
+      <div key={index} ref={projectRef} className="scroll-section">
         <Link href={`/project/${item.uid}`} className="">
-          {/* <div className="relative float-left h-[calc(100vh-20px)] w-[100vw] xl:w-[calc(75vw-20px)] xl:mr-[20px] mb-[10px]"> */}
-          <div className="relative float-left h-[calc(100vh-25px)] w-[calc(100vw-50px)] xl:w-[calc(75vw-45px)] xl:mr-[15px]">
+          <div className="relative float-left h-[calc(100vh-25px)] w-[calc(100vw-50px)] xl:w-[calc(100vw-45px)] xl:mr-[15px] ">
             <div className="absolute top-[0] z-50 w-[100%] h-[calc(100vh-50px)] m-[26px] xl:w-[100%]">
               <div className="float-left relative w-[100%] h-[calc(100%)]  grid grid-cols-4 grid-rows-12  gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 ">
                 <div className="col-span-2 col-start-1 row-start-3 xl:col-span-1 xl:col-start-1 xl:row-start-2">
@@ -64,10 +62,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
                 </div>
               </div>
             </div>
-            {/* <div className="absolute z-[-40] top--[0] xl:w-[calc(75vw-20px)] m-[10px]"> */}
-            {/* <div className="absolute z-[-40] top--[0] xl:w-[calc(75vw-108px)] m-[24px] xl:m-[36px]"> */}
             <div className="absolute z-[-40] top--[0] w-[calc(100vw-50px)] m-[25px] xl:m-[30px] xl:w-[calc(75vw-45px)]">
-              {/* <div className="absolute z-[-40] top--[0] xl:w-[calc(75vw-60px)] m-[30px]"> */}
               <GridScale />
             </div>
             <div className="w-[calc(100vw-25px)] xl:w-[calc(75vw)]">
@@ -76,7 +71,6 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
           </div>
         </Link>
       </div>
-      {/* </ScrollSnapWrapper> */}
     </>
   );
 };

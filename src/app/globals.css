@@ -7,3 +7,28 @@
 p {
   margin-bottom: 16px;
 }
+
+/* .scroll-container {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.scroll-section {
+  scroll-snap-align: start;
+  min-width: 100vw;
+}
+
+.hero-section {
+  scroll-snap-align: start;
+}
+
+.project-section {
+  scroll-snap-align: center;
+} */

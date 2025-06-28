@@ -4,7 +4,7 @@ import { SliceZone } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
-import HomepageProjects from "../components/HorizontalScroll";
+import HomepageProjects from "../components/HorizontalScroll_v2";
 
 export default async function Page() {
   const client = createClient();
