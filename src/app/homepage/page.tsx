@@ -4,6 +4,7 @@ import { SliceZone } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
+import HorizontalScroll_v0 from "../components/HorizontalScroll_v0";
 // import HomepageProjects from "../components/HorizontalScroll_v2";
 
 export default async function Page() {
@@ -44,10 +45,10 @@ export default async function Page() {
       {/* HomepageProjectsSelect */}
       {/* <SliceZone slices={page.data.slices} components={components} /> */}
       <div className="">
-        <HomepageProjects>
+        <HorizontalScroll_v0>
           {/* <Hero pageData={page.data}></Hero> */}
           <SliceZone slices={page.data.slices} components={components} />
-        </HomepageProjects>
+        </HorizontalScroll_v0>
       </div>
     </>
   );
