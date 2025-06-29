@@ -29,7 +29,7 @@ export default async function Page() {
                 className="relative float-left h-[calc(83.33vh-0px)] xl:h-[100vh] xl:ml-[0px]"
                 key={index}
               >
-                <div className="absolute z-[100] grid grid-cols-4 grid-rows-9 xl:grid-rows-8 h-[calc(83.33vh-30px)] xl:h-[calc(100vh-60px)] w-[calc(100vw-44px)] xl:w-[calc(25vw-15px)] ml-[12px] xl:ml-[15px] gap-x-[11px] xl:gap-x-[15px]  mt-[22px] xl:mt-[30px] text-gray-300">
+                <div className="absolute z-[100] grid grid-cols-4 grid-rows-9 xl:grid-rows-8 h-[calc(83.33vh-22px)] xl:h-[calc(100vh-60px)] w-[calc(100vw-44px)] xl:w-[calc(25vw-15px)] ml-[12px] xl:ml-[15px] gap-x-[11px] xl:gap-x-[15px]  mt-[22px] xl:mt-[30px] text-gray-300">
                   <div
                     key={"title" + index}
                     className="col-span-4 row-span-1 row-start-1 mt-[-5px] xl:row-start-2 xl:mt-[9vh]"
