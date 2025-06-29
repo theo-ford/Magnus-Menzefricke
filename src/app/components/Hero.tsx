@@ -9,7 +9,7 @@ import GridScaleHero from "./GridScaleHero";
 export default function Hero({ pageData }) {
   return (
     <>
-      <div className="bg-[#e34234] float-left relative xl:w-[calc(75vw+15px)] xl:mr-[-15px] h-[100vh] scroll-section">
+      <div className="bg-[#e34234] float-left relative xl:w-[calc(75vw+0px)] xl:mr-[-30px] h-[100vh] scroll-section">
         <div className="m-[21px] w-[calc(100vw-38px)] xl:m-[30px] xl:mr[0px] xl:w-[calc(75vw-15px)] ">
           <div className="h-[calc(100vh-38px)] mt-[21px] absolute top-[0] z-50 xl:w-[calc(75vw-0px)] xl:mt-[25px]">
             <div className=" float-left relative grid w-[calc(100%-25px)] h-[calc(100%)] grid-cols-4 grid-rows-12  gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(100%-12.5px)] overflow-hidden">
