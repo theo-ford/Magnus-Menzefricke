@@ -14,8 +14,8 @@ export default async function Page() {
   return (
     <>
       <Nav />
-      <div className="absolute float-left block m-[25px] xl:m-[30px] mb-[25px] h-auto w-[100%] w-[calc(100vw-50px)] xl:w-[calc(100vw-60px)]">
-        <div className="w-[calc(100%-25px)] ml-[25px] border-t-[1px] border-[#d6d6d6] float-left relative opacity-[.3]"></div>
+      <div className="absolute float-left block m-[22px] xl:m-[30px] mb-[25px] h-auto w-[100%] w-[calc(100vw-54px)] xl:w-[calc(100vw-60px)]">
+        <div className="w-[calc(100%-22px)] ml-[22px] border-t-[1px] border-[#d6d6d6] float-left relative opacity-[.3]"></div>
 
         <div className="relative block xl:hidden">
           <GridIndexProject />
@@ -64,14 +64,14 @@ export default async function Page() {
         <div className="relative">
           <GridIndexProject />
         </div>
-        <div className="relative z-100 w-[calc(100vw-50px)] xl:w-[calc(100vw-60px)] float-left">
+        <div className="relative z-100 w-[calc(100vw-44px)] xl:w-[calc(100vw-60px)] float-left">
           <SliceZone slices={page.data.slices} components={components} />
         </div>
         {/* <div className="border-b-[1px] border-[#d6d6d6] opacity-[] w-[100%] h-[10px] bg-red-800"></div> */}
-        <div className="relative w-[calc(100vw-50px)] block xl:hidden">
+        <div className="relative w-[calc(100vw-44px)] block xl:hidden">
           <GridIndexProject />
         </div>
-        <div className="relative w-[calc(100vw-50px)] block xl:hidden">
+        <div className="relative w-[calc(100vw-44px)] block xl:hidden">
           <GridIndexProject />
         </div>
 

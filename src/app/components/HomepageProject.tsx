@@ -22,8 +22,9 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
     <>
       <div key={index} ref={projectRef} className="scroll-section">
         <Link href={`/project/${item.uid}`} className="">
-          <div className="relative float-left h-[calc(100vh-25px)] w-[calc(100vw-50px)] xl:w-[calc(100vw-45px)] xl:mr-[15px] ">
-            <div className="absolute top-[0] z-50 w-[100%] h-[calc(100vh-50px)] m-[26px] xl:w-[100%]">
+          {/* <div className="relative float-left h-[calc(100vh-22px)] w-[calc(100vw-44px)] xl:w-[calc(75vw-45px)] xl:mr-[15px] "> */}
+          <div className="relative float-left h-[calc(100vh-22px)] xl:h-[calc(100vh)] w-[calc(100vw-44px)] xl:w-[calc(75vw-15px)] xl:ml-[15px]">
+            <div className="absolute top-[0] z-50 w-[100%] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] m-[22px] xl:ml-[30px] xl:mt-[30px] xl:w-[100%]">
               <div className="float-left relative w-[100%] h-[calc(100%)]  grid grid-cols-4 grid-rows-12  gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 ">
                 <div className="col-span-2 col-start-1 row-start-3 xl:col-span-1 xl:col-start-1 xl:row-start-2">
                   <h5 className="text-[8.7vh] p-[0px] mt-[-0.1vh] ml-[-2px] leading-none font-bold tracking-[-0.02em] xl:mt-[-3.2vh] xl:text-[17vh]">
@@ -62,10 +63,10 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
                 </div>
               </div>
             </div>
-            <div className="absolute z-[-40] top--[0] w-[calc(100vw-50px)] m-[25px] xl:m-[30px] xl:w-[calc(75vw-45px)]">
+            <div className="absolute z-[-40] top--[0] w-[calc(100vw-44px)] m-[22px] xl:m-[30px] xl:w-[calc(75vw-15px)]">
               <GridScale />
             </div>
-            <div className="w-[calc(100vw-25px)] xl:w-[calc(75vw)]">
+            <div className="w-[calc(100vw-22px)] xl:w-[calc(75vw)] xl:ml-[15px]">
               {children}
             </div>
           </div>

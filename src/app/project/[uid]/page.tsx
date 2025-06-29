@@ -44,10 +44,10 @@ export default async function Page({ params }: { params: Params }) {
       <NavProjects projectTitle={page.data.title} />
       <div className="">
         <div className="w-[100vw] h-[calc(91.63vh+20px)] relative float-left xl:h-[87.5vh+20px]">
-          <div className="h-[calc(91.63vh)] w-[calc(100vw-20px)] absolute top-[0] z-50 xl:w-[calc(100vw-30px)] m-[12.5px] xl:m-[30px] xl:h-[calc(100%-30px)]">
+          <div className="h-[calc(91.63vh)] w-[calc(100vw-22px)] absolute top-[0] z-50 xl:w-[calc(100vw-30px)] m-[12.5px] xl:m-[30px] xl:h-[calc(100%-30px)]">
             {/* <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] text-white"> */}
             <div
-              className={`w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] ${page.data.hero_text_color === "White" ? "text-white" : "text-black"} `}
+              className={`w-[calc(100%-22px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] ${page.data.hero_text_color === "White" ? "text-white" : "text-black"} `}
             >
               <div className="col-span-2 col-start-1 row-start-6 xl:col-span-8 xl:col-start-1 xl:row-start-3">
                 <h5 className="text-[8vh] tracking-[-4px] p-[0px] m-[0px] leading-[80%] xl:text-[9.5vw] xl:mt-[-28px] font-bold xl:tracking-[-10px] xl:ml-[-4px]">

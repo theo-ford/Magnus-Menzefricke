@@ -27,27 +27,35 @@ export const NavMobileTwo = () => {
         className={`${menuClicked ? "hidden" : "inline"} `}
         onClick={menuStateChange}
       >
-        <p className="font-bold text-[22px] tracking-[-1px] m-[24px] mt-[15px] text-gray-300">
+        <p className="font-bold text-[22px] tracking-[-1px] m-[20px] mt-[12px] text-gray-300 ">
           <span className="/">Menu </span>
           <span
-            className={`${currentPage == "/" ? "inline" : "hidden"} opacity-50`}
+            className={`${currentPage == "/" ? "inline" : "hidden"} opacity-50 `}
           >
-            <Link href="/">/ Portfolio</Link>
+            <Link href="/" className="cursor-none">
+              / Portfolio
+            </Link>
           </span>
           <span
             className={`${currentPage == "/about" ? "inline" : "hidden"} opacity-50`}
           >
-            <Link href="/about">/ About</Link>
+            <Link href="/about" className="cursor-none">
+              / About
+            </Link>
           </span>
           <span
             className={`${currentPage == "/news" ? "inline" : "hidden"} opacity-50`}
           >
-            <Link href="/news">/ News</Link>
+            <Link href="/news" className="cursor-none">
+              / News
+            </Link>
           </span>
           <span
             className={`${currentPage == "/project-index" ? "inline" : "hidden"} opacity-50`}
           >
-            <Link href="/project-index">/ Index</Link>
+            <Link href="/project-index" className="cursor-none">
+              / Index
+            </Link>
           </span>
         </p>
       </div>
@@ -56,29 +64,40 @@ export const NavMobileTwo = () => {
         className={`${menuClicked ? "inline" : "hidden"} `}
         onClick={menuStateChange}
       >
-        <p className="font-bold text-[22px] tracking-[-1px] m-[24px] mt-[15px] text-gray-300">
+        <p className="font-bold text-[22px] tracking-[-1px] m-[20px] mt-[12px] text-gray-300">
           <span className="">Menu </span>
           <span
             className={`${currentPage !== "/" ? "inline" : "hidden"} opacity-50 hover:opacity-100`}
           >
-            <Link href="/">/ Portfolio</Link>
+            <Link href="/" className="cursor-none">
+              / Portfolio
+            </Link>
           </span>
           <span
             className={`${currentPage !== "/project-index" ? "inline" : "hidden"} opacity-50 hover:opacity-100`}
           >
             {" "}
-            <Link href="/project-index"> / Index</Link>
+            <Link href="/project-index" className="cursor-none">
+              {" "}
+              / Index
+            </Link>
           </span>
           <span
             className={`${currentPage !== "/news" ? "inline" : "hidden"} opacity-50 hover:opacity-100`}
           >
             {" "}
-            <Link href="/news"> / News</Link>
+            <Link href="/news" className="cursor-none">
+              {" "}
+              / News
+            </Link>
           </span>
           <span
             className={`${currentPage !== "/about" ? "inline" : "hidden"} opacity-50 hover:opacity-100`}
           >
-            <Link href="/about"> / About</Link>
+            <Link href="/about" className="cursor-none">
+              {" "}
+              / About
+            </Link>
           </span>
         </p>
       </div>
