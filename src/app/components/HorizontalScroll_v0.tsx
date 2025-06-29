@@ -36,7 +36,7 @@ export default function HorizontalScroll_v0({
   // console.log(wrappedChildren);
   return (
     <>
-      <div className="w-[100vw] xl:overflow-y-hidden">
+      <div className="w-[100vw] overflow-x-hidden xl:overflow-x-scroll xl:overflow-y-hidden">
         <div
           ref={scrollRef}
           className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll first:xl:ml-[0px] last:xl:pr-[40px]"

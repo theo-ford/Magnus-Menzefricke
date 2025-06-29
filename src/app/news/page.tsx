@@ -19,7 +19,7 @@ export default async function Page() {
       <Nav />
 
       {/* <SliceZone slices={page.data.slices} components={components} /> */}
-      <div className="ml-[0px]">
+      <div className="ml-[11px] xl:ml-[0px] overflow-x-hidden xl:overflow-x-scrol">
         <HoriztonalScroll_v0>
           <GridNewsMobileNavSpacer />
 
@@ -29,7 +29,7 @@ export default async function Page() {
                 className="relative float-left h-[calc(83.33vh-0px)] xl:h-[100vh] xl:ml-[0px]"
                 key={index}
               >
-                <div className="absolute z-[100] grid grid-cols-4 grid-rows-9 xl:grid-rows-8 h-[calc(83.33vh-30px)] xl:h-[calc(100vh-60px)] w-[calc(100vw-50px)] xl:w-[calc(25vw-15px)] ml-[12.5px] xl:ml-[15px] gap-x-[12.5px] xl:gap-x-[15px]  mt-[25px] xl:mt-[30px] text-gray-300">
+                <div className="absolute z-[100] grid grid-cols-4 grid-rows-9 xl:grid-rows-8 h-[calc(83.33vh-30px)] xl:h-[calc(100vh-60px)] w-[calc(100vw-44px)] xl:w-[calc(25vw-15px)] ml-[12px] xl:ml-[15px] gap-x-[11px] xl:gap-x-[15px]  mt-[22px] xl:mt-[30px] text-gray-300">
                   <div
                     key={"title" + index}
                     className="col-span-4 row-span-1 row-start-1 mt-[-5px] xl:row-start-2 xl:mt-[9vh]"
@@ -45,7 +45,7 @@ export default async function Page() {
                   </div>
                   <div
                     key={"body" + index}
-                    className="col-span-4 row-span-2 row-start-7 mt-[-9px] xl:row-start-7"
+                    className="col-span-4 row-span-2 row-start-7 mt-[-5px] xl:row-start-7"
                   >
                     <PrismicRichText field={item.body_text} />
                   </div>
