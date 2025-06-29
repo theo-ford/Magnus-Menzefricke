@@ -11,7 +11,7 @@ import { Nav } from "./components/Nav";
 import HorizontalScrollv0 from "./components/HorizontalScroll_v0";
 import { HomepageProject } from "./components/HomepageProject";
 import Carousel from "./components/Carousel";
-import { ScrollSnapWrapper } from "./components/ScrollSnapWrapper";
+// import { ScrollSnapWrapper } from "./components/ScrollSnapWrapper";
 
 export default async function Home() {
   const client = createClient();

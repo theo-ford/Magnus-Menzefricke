@@ -5,7 +5,7 @@ import { PrismicRichText } from "@prismicio/react";
 import { createClient } from "@/prismicio";
 
 import Grid16 from "../components/Grid16";
-import { PrismicNextImage } from "@prismicio/next";
+// import { PrismicNextImage } from "@prismicio/next";
 import { Nav } from "../components/Nav";
 
 export default async function Page() {
