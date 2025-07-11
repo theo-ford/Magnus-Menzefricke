@@ -1,4 +1,6 @@
-// v1 - jumping two at a time
+// Windsurf responding to v1
+// jumping all the way to the end
+// read most recent windsurf
 
 "use client";
 
@@ -10,7 +12,7 @@ interface HorizontalScrollProps {
 }
 
 // eslint-disable-next-line  @typescript-eslint/no-explicit-any
-export default function HorizontalScroll_v1({
+export default function HorizontalScroll_v3({
   children
 }: HorizontalScrollProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -134,50 +136,79 @@ export default function HorizontalScroll_v1({
   // Move scroll logic outside of useEffect
 
   // Inside useEffect
+
+  const calculateNextSection = (
+    sectionsLength: number,
+    direction: number,
+    currentSection: number
+  ) => {
+    console.log("2 calculate next");
+
+    let nextSection = currentSection + direction;
+    if (nextSection < 0) nextSection = 0;
+    if (nextSection >= sectionsLength) nextSection = sectionsLength - 1;
+    console.log(nextSection);
+    return nextSection;
+  };
+
+  const handleScroll = (el: HTMLDivElement, nextSection: number) => {
+    console.log("3 handle scroll");
+    // setNextSectionState(calculateNextSection(sectionsLength, direction));
+    const sectionWidth = window.innerWidth;
+    const targetScroll = nextSection * sectionWidth;
+    el.scrollTo({
+      top: 0,
+      // left: targetScroll - 700,
+      left: targetScroll,
+      behavior: "smooth"
+    });
+  };
+
   useEffect(() => {
-    const sections = scrollRef.current?.querySelectorAll(".scroll-section");
-    const sectionsLength = sections?.length;
-
-    const calculateNextSection = (
-      sectionsLength: number,
-      direction: number
-    ) => {
-      console.log("2 calculate next");
-      const currentSection = currentSectionState;
-      let nextSection = currentSection + direction;
-      if (nextSection < 0) nextSection = 0;
-      if (nextSection >= sectionsLength) nextSection = sectionsLength - 1;
-      setNextSectionState(nextSection);
-    };
-
-    const handleScroll = (el: HTMLDivElement, direction: number) => {
-      console.log("3 handle scroll");
-      // setNextSectionState(calculateNextSection(sectionsLength, direction));
-      const sectionWidth = window.innerWidth;
-      const targetScroll = nextSectionState * sectionWidth;
-      el.scrollTo({
-        top: 0,
-        left: targetScroll - 700,
-        behavior: "smooth"
-      });
-    };
-
     const el = scrollRef.current;
 
     if (el && isDesktop) {
+      const sections = scrollRef.current?.querySelectorAll(".scroll-section");
+      const sectionsLength = sections?.length;
+
       const onWheel = (e) => {
+        // if (isScrolling) return;
+
         console.log("1 wheel");
-        e.preventDefault();
+        console.log(currentSectionState);
+        // e.preventDefault();
+        // setIsScrolling(true);
+
         const direction = e.deltaY > 0 ? 1 : -1;
-        calculateNextSection(sectionsLength, direction);
-        handleScroll(el, direction);
+        // const nextSection = calculateNextSection(
+        //   sectionsLength,
+        //   direction,
+        //   currentSectionState
+        // );
+        // setCurrentSectionState(nextSection);
+
+        // function myGreeting() {
+        //   setCurrentSectionState(nextSection);
+        // }
+
+        // const myTimeout = setTimeout(myGreeting, 2000);
+
+        // handleScroll(el, nextSection);
         el.addEventListener(
           "scrollend",
           () => {
-            setCurrentSectionState(nextSectionState);
+            // setIsScrolling(false);
           },
           { once: true }
         );
+        // setCurrentSectionState(nextSection);
+        // el.addEventListener(
+        //   "scrollend",
+        //   () => {
+        //     setCurrentSectionState(nextSectionState);
+        //   },
+        //   { once: true }
+        // );
         // el.addEventListener(
         //   "scrollend",
         //   () => {
@@ -219,7 +250,9 @@ export default function HorizontalScroll_v1({
         >
           {/* {wrappedChildren} */}
           {/* {children} */}
-          <div className="flex xl:flex-nowrap">{children}</div>
+          <div className="flex xl:flex-nowrap snap-x snap-mandatory">
+            {children}
+          </div>
         </div>
       </div>
     </>
