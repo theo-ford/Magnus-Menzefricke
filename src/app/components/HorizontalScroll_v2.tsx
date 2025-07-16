@@ -22,7 +22,7 @@ export default function HorizontalScroll_v2({
   const [currentSectionState, setCurrentSectionState] = useState(0);
   const [nextSectionState, setNextSectionState] = useState(0);
 
-  // useEffect(() => {
+
   //   // eslint-disable-next-line  @typescript-eslint/no-explicit-any
   //   const el: any = scrollRef.current;
   //   if (el && isDesktop) {
@@ -153,19 +153,7 @@ export default function HorizontalScroll_v2({
   };
 
   const handleScroll = (el: HTMLDivElement, nextSection: number) => {
-    // console.log("3 handle scroll");
-    // console.log(isScrolling);
-    // setNextSectionState(calculateNextSection(sectionsLength, direction));
-    // const sectionWidth = window.innerWidth;
-    // const targetScroll = nextSection * sectionWidth;
-    // el.scrollTo({
-    //   top: 0,
-    //   // left: targetScroll - 700,
-    //   left: targetScroll,
-    //   behavior: "smooth"
-    // });
     console.log(nextSection);
-    // console.log(el.children[nextSection]);
     el.children[nextSection].scrollIntoView({
       behavior: "smooth",
       inline: "center"
@@ -183,57 +171,27 @@ export default function HorizontalScroll_v2({
       const onWheel = (e) => {
         // if (isScrolling) return;
         // console.log("1 wheel");
-        // console.log(currentSectionState);
         e.preventDefault();
-        // setIsScrolling(true);
         const direction = e.deltaY > 0 ? 1 : -1;
         const nextSection = calculateNextSection(
           sectionsLength,
           direction,
           currentSectionState
         );
-
-        // setCurrentSectionState(nextSection);
-
         // THIS WORKS
         function myGreeting() {
           setCurrentSectionState(nextSection);
-          // setIsScrolling(true);
         }
 
-        // eslint-disable-next-line  @typescript-eslint/no-explicit-any
         const myTimeout = setTimeout(myGreeting, 2000);
         handleScroll(el, nextSection);
         return () => clearTimeout(myTimeout);
-        // if (isScrolling == false) {
-        //   setCurrentSectionState(nextSection);
-        // }
 
-        el.addEventListener(
-          "scroll",
-          () => {
-            setIsScrolling(false);
-            console.log(isScrolling);
-          },
-          { once: true }
-        );
-        // setCurrentSectionState(nextSection);
         // el.addEventListener(
-        //   "scrollend",
+        //   "scroll",
         //   () => {
-        //     setCurrentSectionState(nextSectionState);
-        //   },
-        //   { once: true }
-        // );
-        // el.addEventListener(
-        //   "scrollend",
-        //   () => {
-        //     // handleScroll(el, direction);
-        //     setCurrentSectionState(nextSectionState);
-        //     // setCurrentSectionState(
-        //     //   calculateNextSection(sectionsLength, direction)
-        //     // );
-        //     // console.log("useEffect");
+        //     setIsScrolling(false);
+        //     console.log(isScrolling);
         //   },
         //   { once: true }
         // );
