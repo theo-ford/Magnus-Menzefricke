@@ -18,10 +18,9 @@ export default function HorizontalScroll_v2({
 }: HorizontalScrollProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const isDesktop = useMediaQuery("(min-width: 1280px)");
-  const [isScrolling, setIsScrolling] = useState(false);
+  // const [isScrolling, setIsScrolling] = useState(false);
   const [currentSectionState, setCurrentSectionState] = useState(0);
   const [nextSectionState, setNextSectionState] = useState(0);
-
 
   //   // eslint-disable-next-line  @typescript-eslint/no-explicit-any
   //   const el: any = scrollRef.current;
@@ -205,8 +204,8 @@ export default function HorizontalScroll_v2({
     currentSectionState,
     nextSectionState,
     setCurrentSectionState,
-    setNextSectionState,
-    isScrolling
+    setNextSectionState
+    // isScrolling
   ]);
 
   // const wrappedChildren = Array.isArray(children) ? children : [children];
