@@ -24,6 +24,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scrollbars-custom": "^4.1.1",
+    "seamless-scroll-polyfill": "^2.3.4",
     "swiper": "^11.2.6",
     "tailwind-scrollbar": "^4.0.2",
     "tailwindcss": "^4.0.6"

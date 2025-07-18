@@ -5,6 +5,12 @@
   /* --breakpoint-xl: 1200px; */
 }
 
+/* html,
+body {
+  transform: translateZ(0);
+  will-change: transform;
+} */
+
 p {
   margin-bottom: 16px;
 }
