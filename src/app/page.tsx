@@ -14,6 +14,8 @@ import HorizontalScroll_v2 from "./components/HorizontalScroll_v2";
 import { HomepageProject } from "./components/HomepageProject";
 import Carousel from "./components/Carousel";
 // import { ScrollSnapWrapper } from "./components/ScrollSnapWrapper";
+// import { polyfill } from "seamless-scroll-polyfill";
+// polyfill();
 
 export default async function Home() {
   const client = createClient();

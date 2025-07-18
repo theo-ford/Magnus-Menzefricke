@@ -6,8 +6,7 @@
 
 import { useRef, useEffect, useState } from "react";
 import { useMediaQuery } from "./MediaQuery";
-import { polyfill } from "seamless-scroll-polyfill";
-polyfill();
+
 // import next from "next";
 
 interface HorizontalScrollProps {
@@ -158,9 +157,15 @@ export default function HorizontalScroll_v2({
     el.children[nextSection].scrollIntoView({
       behavior: "smooth",
       inline: "center"
-      // block: "center",
+      // block: "start",
       // inline: "nearest"
     });
+    // setTimeout(() => {
+    //   el.children[nextSection].scrollIntoView({
+    //     behavior: "smooth",
+    //     inline: "center"
+    //   });
+    // }, 50); // tweak delay as needed
   };
 
   useEffect(() => {

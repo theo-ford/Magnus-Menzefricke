@@ -14,11 +14,13 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.49",
     "@next/font": "^14.2.15",
     "@prismicio/client": "^7.16.0",
     "@prismicio/next": "^2.0.0",
     "@prismicio/react": "^3.0.0",
     "@tailwindcss/postcss": "^4.0.6",
+    "fullpage.js": "^4.0.37",
     "next": "^15.1.6",
     "postcss": "^8.5.2",
     "react": "^19.0.0",
