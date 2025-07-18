@@ -156,6 +156,8 @@ export default function HorizontalScroll_v2({
     el.children[nextSection].scrollIntoView({
       behavior: "smooth",
       inline: "center"
+      // block: "center",
+      // inline: "nearest"
     });
   };
 
