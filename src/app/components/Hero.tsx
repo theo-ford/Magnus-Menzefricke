@@ -22,7 +22,7 @@ export default function Hero({ pageData }) {
             </h5>
           </div>
           <div className="hidden xl:inline xl:col-start-1 xl:row-start-2 xl:row-span-2">
-            <div className="mt-[3px] h-[23.7vh]">
+            <div className="mt-[4.5px] h-[23.5vh]">
               <Logo />
             </div>
           </div>

@@ -76,7 +76,7 @@ export default function HorizontalScroll_v2({
       <div className="w-[100vw] xl:overflow-y-hidden ">
         <div
           ref={scrollRef}
-          className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll snap-x snap-mandatory"
+          className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll"
         >
           {children}
         </div>
