@@ -11,6 +11,7 @@ import { Nav } from "./components/Nav";
 // import HorizontalScrollv0 from "./components/HorizontalScroll_v0";
 import HorizontalScroll_v2 from "./components/HorizontalScroll_v2";
 // import HorizontalScroll_v5 from "./components/HorizontalScroll_v5";
+// import HorizontalScroll_v6 from "./components/HorizontalScroll_v6";
 import { HomepageProject } from "./components/HomepageProject";
 import Carousel from "./components/Carousel";
 // import { ScrollSnapWrapper } from "./components/ScrollSnapWrapper";
