@@ -26,9 +26,9 @@ export default async function Page() {
 
         <div
           key={"project"}
-          className="xl:fixed block float-left text-gray-200"
+          className="xl:fixed block float-left text-gray-200 bg-red-800"
         >
-          <div className="absolute grid grid-cols-4 grid-rows-1 gap-[12.5px] xl:gap-[15px] xl:grid-cols-16 xl:w-[calc(100vw-50px)] xl:w-[calc(100vw-60px)]">
+          <div className="absolute grid grid-cols-4 grid-rows-1 gap-[12.5px] xl:gap-[15px] xl:grid-cols-16 w-[calc(100vw-44px)] xl:w-[calc(100vw-60px)] leading-[100%]">
             <div className="col-span-1 hidden xl:block">
               <p key={"index"} className="">
                 No.
@@ -55,8 +55,11 @@ export default async function Page() {
               </p>
             </div>
             <div className="col-span-2 xl:col-span-8">
-              <p key={"description"} className="">
+              <p key={"description"} className="xl:block hidden">
                 Description
+              </p>
+              <p key={"info"} className="block xl:hidden">
+                Info
               </p>
             </div>
           </div>
