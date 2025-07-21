@@ -21,11 +21,11 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
             <div className="w-[100%] h-[calc(33.33vh-20px)] md:h-[calc(25vh-20px)]  ml-[11px] xl:ml-[30px] mt-[18px] xl:!h-[calc(50vh-20px)]">
               <div className="w-[calc(100%)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-2 md:grid-rows-3 relative gap-x-[11px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-2 min-h-[75px] md:!min-h-[200px] xl:min-h-[250px]">
                 {slice.primary.position == "Left" ? (
-                  <div className="md:col-span-2 col-span-4 col-start-1 row-start-1 row-span-4 overflow-hidden md:row-start-1 md:row-span-3 md:col-span-2 md:col-start-1 xl:row-span-6 xl:!col-span-8  flex items-center">
+                  <div className="md:col-span-2 col-span-4 col-start-1 row-start-1 row-span-4 overflow-hidden md:row-start-1 md:row-span-3 md:col-span-2 md:col-start-1 xl:row-span-6 xl:!col-start-1 xl:!col-span-8 flex items-center">
                     <PrismicNextImage field={slice.primary.image} alt="" />
                   </div>
                 ) : (
-                  <div className="md:col-span-2 col-span-4 col-start-1 row-start-1 row-span-4 overflow-hidden md:row-start-1 md:row-span-3 md:!col-span-2 md:!col-start-3 xl:row-span-6 xl:!col-span-8  flex items-center">
+                  <div className="md:col-span-2 col-span-4 col-start-1 row-start-1 row-span-4 overflow-hidden md:row-start-1 md:row-span-3 md:col-span-2 md:col-start-3 xl:row-span-6 xl:!col-start-9 xl:!col-span-8 flex items-center">
                     <PrismicNextImage field={slice.primary.image} alt="" />
                   </div>
                 )}
