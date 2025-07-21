@@ -99,7 +99,7 @@ export default async function Page({ params }: { params: Params }) {
             />
           </div>
         </div>
-        <div className="relative float-left w-[100vw]">
+        <div className="relative float-left w-[calc(100vw-22px)] xl:w-[calc(100vw-60px)]">
           <SliceZone slices={page.data.slices3} components={components} />
         </div>
         {/* <div className="relative float-left w-[100%] h-[400px] bg-red-800">
