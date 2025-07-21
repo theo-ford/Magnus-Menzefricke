@@ -39,7 +39,7 @@ export default function HorizontalScroll_v0({
       <div className="w-[100vw] overflow-x-hidden xl:overflow-x-scroll xl:overflow-y-hidden">
         <div
           ref={scrollRef}
-          className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll"
+          className="overflow-hidden xl:flex xl:flex-nowrap xl:overflow-x-scroll last:xl:pr-[30px]"
           // style={{
           //   scrollSnapType: "x proximity",
           //   scrollBehavior: "smooth"
