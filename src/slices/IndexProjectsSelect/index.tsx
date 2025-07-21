@@ -35,7 +35,7 @@ const IndexProjectsSelect: FC<IndexProjectsSelectProps> = async ({ slice }) => {
           item && (
             <div
               key={"project" + index}
-              className="relative block float-left w-[calc(100vw-44px)] xl:w-[calc(100vw-60px)] text-gray-300 hover:text-gray-400"
+              className="relative block float-left w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)] text-gray-300 hover:text-gray-400"
             >
               <Link href={`project/${item.uid}`} className="cursor-none">
                 {/* {console.log(item.uid)} */}

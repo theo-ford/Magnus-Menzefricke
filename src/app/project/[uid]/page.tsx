@@ -44,7 +44,7 @@ export default async function Page({ params }: { params: Params }) {
       <NavProjects projectTitle={page.data.title} />
       <div className="">
         <div className="w-[100vw] h-[calc(91.63vh+20px)] relative float-left xl:h-[87.5vh+20px]">
-          <div className="h-[calc(91.63vh)] w-[calc(100vw-22px)] absolute top-[0] z-50 xl:w-[calc(100vw-30px)] m-[12.5px] xl:m-[30px] xl:h-[calc(100%-30px)]">
+          <div className="h-[calc(91.63vh)] w-[calc(100vw-30px)] absolute top-[0] z-50 xl:w-[calc(100vw-30px)] m-[15px] xl:m-[30px] xl:h-[calc(100%-30px)]">
             {/* <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] text-white"> */}
             <div
               className={`w-[calc(100%-22px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] ${page.data.hero_text_color === "White" ? "text-white" : "text-black"} `}
@@ -99,16 +99,16 @@ export default async function Page({ params }: { params: Params }) {
             />
           </div>
         </div>
-        <div className="relative float-left w-[calc(100vw-22px)] xl:w-[calc(100vw-60px)]">
+        <div className="relative float-left w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)]">
           <SliceZone slices={page.data.slices3} components={components} />
         </div>
         {/* <div className="relative float-left w-[100%] h-[400px] bg-red-800">
         <RelatedProjectsOne data={page.data.related_project_1} />
       </div> */}
 
-        <div className="h-[calc(83.33vh)] w-[calc(100vw-20px)] relative float-left md:w-[calc(100vw-20px)] m-[10px] md:h-[37.5vh] mt-[33.632vh] md:mt-[25vh]">
+        <div className="h-[calc(83.33vh)] w-[calc(100vw-30px)] relative float-left md:w-[calc(100vw-20px)] m-[15px] md:h-[37.5vh] mt-[33.632vh] md:mt-[25vh]">
           <p>Related Projects</p>
-          <div className=" float-left relative w-[calc(100vw-20px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 md:grid-cols-16 md:grid-rows-3 min-h-[75px] md:!min-h-[200px] xl:min-h-[250px]">
+          <div className=" float-left relative w-[calc(100vw-30px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 md:grid-cols-16 md:grid-rows-3 min-h-[75px] md:!min-h-[200px] xl:min-h-[250px]">
             <RelatedProjectsOne data={page.data.related_project_1} />
             <RelatedProjectsOne data={page.data.related_project_2} />
           </div>

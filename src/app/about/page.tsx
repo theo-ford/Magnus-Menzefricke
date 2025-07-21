@@ -15,7 +15,7 @@ export default async function Page() {
   return (
     <>
       <Nav />
-      <div className="absolute z-[100] block float-left mt-[22px] ml-[22px] xl:ml-[30px] xl:mt-[30px] w-[calc(100vw-50px)] xl:w-[calc(100vw-50px)] h-[calc(100vh)] md:h-[calc(100vh-60px)] xl:h-[calc(100vh-60px)]">
+      <div className="absolute z-[100] block float-left mt-[15px] ml-[15px] xl:ml-[30px] xl:mt-[30px] w-[calc(100vw-30px)] xl:w-[calc(100vw-30px)] h-[calc(100vh)] md:h-[calc(100vh-60px)] xl:h-[calc(100vh-60px)]">
         <div className="w-[calc(100%)] h-[calc(100%-7px)] float-left grid grid-cols-4 grid-rows-12 xl:grid-rows-8 relative gap-x-[15px] gap-y-[0px] xl:h-[calc((100vh-60px))] xl:grid-cols-16 xl:w-[calc(100%)]">
           <h5 className="text-[16px] md:text-[24px] p-[0px] m-[0px] leading-[115%] col-span-4 row-start-2 xl:col-span-8 md:row-start-2 xl:row-start-2">
             <PrismicRichText field={page.data.biography} />
@@ -67,7 +67,7 @@ export default async function Page() {
           </h5> */}
         </div>
       </div>
-      <div className="absolute top-[0] left-[0]  w-[calc(100vw-44px)] xl:w-[calc(100vw-60px)] ml-[22px] mt-[22px] xl:mt-[30px] xl:ml-[30px] h-[auto] xl:h-[calc(100vh-60px)] mb-[22px]">
+      <div className="absolute top-[0] left-[0]  w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)] ml-[15px] mt-[15px] xl:mt-[30px] xl:ml-[30px] h-[auto] xl:h-[calc(100vh-60px)] mb-[15px]">
         <Grid16 />
       </div>
     </>

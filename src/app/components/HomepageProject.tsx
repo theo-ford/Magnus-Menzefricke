@@ -27,7 +27,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
       >
         {/* <Link href={`/project/${item.uid}`} className=""> */}
         {/* <div className="relative float-left h-[calc(100vh-22px)] xl:h-[calc(100vh)] w-[calc(100vw-44px)] xl:w-[calc(75vw-15px)] xl:ml-[15px]"> */}
-        <div className="w-[calc(100vw-22px)] xl:w-[calc(100%)] h-[calc(100%)] xl:h-[calc(100vh)]  ml-[11px] xl:ml-[0px] mt-[11px] xl:mt-[30px]">
+        <div className="w-[calc(100vw-30px)] xl:w-[calc(100%)] h-[calc(100%)] xl:h-[calc(100vh)]  ml-[15px] xl:ml-[0px] mt-[11px] xl:mt-[30px]">
           {/* <div className="absolute top-[0] z-50 w-[100%] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] m-[22px] xl:ml-[30px] xl:mt-[30px] xl:w-[100%]"> */}
           {/* <div className="absolute top-[0] z-50 w-[calc(100%-22px)] xl:w-[100%] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] "> */}
           <div className="absolute top-[0] z-50 w-[calc(100%-22px)] xl:w-[100%] h-[calc(100%)] xl:h-[calc(100vh-60px)] xl:mt-[30px]">
@@ -72,7 +72,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
             </div>
           </div>
           {/* <div className="absolute z-[-40] top--[0] w-[calc(100vw-44px)] m-[22px] xl:m-[30px] xl:w-[calc(75vw-15px)]"> */}
-          <div className="absolute z-[-40] w-[calc(100%-22px)] xl:w-[100%] h-[100%]">
+          <div className="absolute z-[-40] w-[calc(100%-30px)] xl:w-[100%] h-[100%]">
             <GridScale />
           </div>
           {/* <div className="w-[calc(100vw-22px)] xl:w-[calc(75vw)] xl:ml-[15px]"> */}
