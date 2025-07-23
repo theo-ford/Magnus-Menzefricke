@@ -53,7 +53,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
                 </h5>
               </div>
               <div className="col-span-2 col-start-1 row-start-12 xl:col-span-3 xl:col-start-1 xl:row-start-8">
-                <p className="text-[12px] xl:text-[18px] p-[0px] m-[0px] mt-[-3px] leading-[120%]">
+                <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[-3px] leading-[110%]">
                   Net Internal Area: {item.data.net_internal_area}
                   <br></br>
                   Construction Value: {item.data.construction_value}
@@ -63,7 +63,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
                 </p>
               </div>
               <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-4 xl:row-start-8 ">
-                <p className="text-[12px] xl:text-[18px] p-[0px] m-[0px] mt-[-3px] leading-[120%]">
+                <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[-3px] leading-[110%]">
                   Role: {item.data.role}
                   <br></br>
                   Type: {item.data.project_type}

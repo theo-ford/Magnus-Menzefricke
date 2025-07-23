@@ -68,7 +68,7 @@ export default function Hero({ pageData }) {
           <div className="col-span-4 col-start-1 row-start-10 xl:col-start-10 xl:col-span-3 xl:row-start-8  hidden xl:inline">
             <div className="h-[100%] flex items-end mt-[2px]">
               {/* <h5 className="text-[18px] p-[0px] mt-[-1px] xl:mb-[-12px] leading-none  xl:text-[14px]"> */}
-              <h5 className="text-[18px] p-[0px] mt-[-1px] xl:mb-[-0.9vh] leading-none  xl:text-[18px]">
+              <h5 className="text-[18px] p-[0px] mt-[-1px] xl:mb-[-1vh] leading-none  xl:text-[18px]">
                 <p>Magnus Menzefricke &copy;2025</p>
               </h5>
             </div>
