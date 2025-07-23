@@ -1,7 +1,7 @@
 "use client";
 
 import { PrismicRichText } from "@prismicio/react";
-import Logo from "./Logo";
+// import Logo from "./Logo";
 import LogoMagnusHeight from "./Logo_MagnusHeight";
 import LogoMenzefrickeHeight from "./Logo_MenzefrickeHeight";
 import GridScaleHero from "./GridScaleHero";
