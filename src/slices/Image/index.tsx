@@ -26,11 +26,11 @@ const Image: FC<ImageProps> = ({ slice }) => {
         // <div className="w-[100%] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] xl:w-[calc(100%)] bg-red-800 opacity-[.3]">
         // <div className="w-[100%] h-[calc(100vh-44px)] xl:h-[calc(100vh-63px)] xl:w-[calc(100%)]">
         // <div className=" h-[calc(100vh-44px)] xl:h-[calc(100vh-63px)] w-[calc(100%-2px)] xl:w-[calc(100%-1.5px)] xl:mt-[0px]">
-        <div className=" h-[calc(100vh-49px)] xl:h-[calc(100vh-63px)] w-[calc(100%-2px)] xl:w-[calc(100%-1.5px)] xl:mt-[0px]">
+        <div className=" h-[calc(100vh-51px)] xl:h-[calc(100vh-63px)] w-[calc(100%-2px)] xl:w-[calc(100%-1.5px)] xl:mt-[0px]">
           {/* <div className="w-[calc(100%-22px)] xl:w-[calc(75vw-15px)] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[12.5px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]"> */}
           {/* <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[12.5px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]"> */}
           {/* <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-44px)] xl:h-[calc(100vh-63px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[12.5px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]"> */}
-          <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-49px)] xl:h-[calc(100vh-63px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[12.5px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
+          <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-51px)] xl:h-[calc(100vh-63px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[12.5px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
             {slice.primary.position == "Left" ? (
               <div className="col-span-4 col-start-1 row-start-5 row-span-4 md:col-span-2 xl:!col-span-4 xl:row-start-4 xl:row-span-2 xl:!col-start-1 flex items-center justify-center overflow-hidden">
                 <PrismicNextImage
