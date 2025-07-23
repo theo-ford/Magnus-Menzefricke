@@ -27,16 +27,6 @@ export interface AboutDocumentDataServiceItem {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   description: prismic.RichTextField;
-
-  /**
-   * Image field in *About → Service*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.service[].image
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  image: prismic.ImageField<never>;
 }
 
 type AboutDocumentDataSlicesSlice = never;
@@ -88,56 +78,6 @@ interface AboutDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   phone: prismic.KeyTextField;
-
-  /**
-   * Address field in *About*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.address
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  address: prismic.RichTextField;
-
-  /**
-   * Linked In field in *About*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.linked_in
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  linked_in: prismic.LinkField<
-    string,
-    string,
-    unknown,
-    prismic.FieldState,
-    never
-  >;
-
-  /**
-   * Instagram field in *About*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.instagram
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  instagram: prismic.KeyTextField;
-
-  /**
-   * Twitter field in *About*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: about.twitter
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  twitter: prismic.KeyTextField;
 
   /**
    * Service field in *About*
@@ -610,17 +550,6 @@ interface ProjectDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   title: prismic.KeyTextField;
-
-  /**
-   * SubTitle field in *Project*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: Eg. Design Management for Office Group
-   * - **API ID Path**: project.subtitle
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  subtitle: prismic.KeyTextField;
 
   /**
    * Design Architects field in *Project*
@@ -1101,52 +1030,13 @@ export type ImageSlice2XPortraitImage = prismic.SharedSliceVariation<
 >;
 
 /**
- * Primary content in *Image → Full Bleed Image → Primary*
- */
-export interface ImageSliceFullBleedImagePrimary {
-  /**
-   * Desktop Image field in *Image → Full Bleed Image → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: image.fullBleedImage.primary.desktop_image
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  desktop_image: prismic.ImageField<never>;
-
-  /**
-   * Mobile Ipad Image field in *Image → Full Bleed Image → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: image.fullBleedImage.primary.mobile_ipad_image
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  mobile_ipad_image: prismic.ImageField<never>;
-}
-
-/**
- * Full Bleed Image variation for Image Slice
- *
- * - **API ID**: `fullBleedImage`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type ImageSliceFullBleedImage = prismic.SharedSliceVariation<
-  "fullBleedImage",
-  Simplify<ImageSliceFullBleedImagePrimary>,
-  never
->;
-
-/**
  * Slice variation for *Image*
  */
 type ImageSliceVariation =
   | ImageSlice1XLandscapeImage
   | ImageSlice2XLandscapeImage
   | ImageSlice1XPortraitImage
-  | ImageSlice2XPortraitImage
-  | ImageSliceFullBleedImage;
+  | ImageSlice2XPortraitImage;
 
 /**
  * Image Shared Slice
@@ -1616,13 +1506,11 @@ declare module "@prismicio/client" {
       ImageSlice2XLandscapeImagePrimary,
       ImageSlice1XPortraitImagePrimary,
       ImageSlice2XPortraitImagePrimary,
-      ImageSliceFullBleedImagePrimary,
       ImageSliceVariation,
       ImageSlice1XLandscapeImage,
       ImageSlice2XLandscapeImage,
       ImageSlice1XPortraitImage,
       ImageSlice2XPortraitImage,
-      ImageSliceFullBleedImage,
       IndexProjectsSelectSlice,
       IndexProjectsSelectSliceDefaultPrimaryProjectsGroupItem,
       IndexProjectsSelectSliceDefaultPrimary,

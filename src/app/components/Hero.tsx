@@ -22,9 +22,19 @@ export default function Hero({ pageData }) {
               </p>
             </h5>
           </div>
-          <div className="hidden xl:inline xl:col-start-1 xl:row-start-2 xl:row-span-2">
-            <div className="mt-[4.5px] h-[23.5vh]">
+          {/* <div className="hidden xl:inline xl:col-start-1 xl:row-start-2 xl:row-span-2">
+            <div className="mt-[4.9px] h-[23.5vh]">
               <Logo />
+            </div>
+          </div> */}
+          <div className="hidden xl:block col-start-1 row-start-2 col-span-4">
+            <div className="mt-[0.5vh] h-[14.3vh]">
+              <LogoMagnusHeight />
+            </div>
+          </div>
+          <div className="hidden xl:block  col-start-1 row-start-3 col-span-4">
+            <div className="mt-[0.5vh] h-[11.5vh]">
+              <LogoMenzefrickeHeight />
             </div>
           </div>
           <div className="xl:hidden col-start-1 row-start-3 col-span-4">

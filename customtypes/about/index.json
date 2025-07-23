@@ -43,40 +43,6 @@
           "placeholder": ""
         }
       },
-      "address": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Address",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "multi": "paragraph"
-        }
-      },
-      "linked_in": {
-        "type": "Link",
-        "config": {
-          "label": "Linked In",
-          "placeholder": "",
-          "select": null,
-          "allowTargetBlank": true,
-          "allowText": true,
-          "repeat": false
-        }
-      },
-      "instagram": {
-        "type": "Text",
-        "config": {
-          "label": "Instagram",
-          "placeholder": ""
-        }
-      },
-      "twitter": {
-        "type": "Text",
-        "config": {
-          "label": "Twitter",
-          "placeholder": ""
-        }
-      },
       "service": {
         "type": "Group",
         "config": {
@@ -97,14 +63,6 @@
                 "placeholder": "",
                 "allowTargetBlank": true,
                 "multi": "paragraph,strong,em,hyperlink"
-              }
-            },
-            "image": {
-              "type": "Image",
-              "config": {
-                "label": "Image",
-                "constraint": {},
-                "thumbnails": []
               }
             }
           }

@@ -143,33 +143,6 @@
         }
       },
       "items": {}
-    },
-    {
-      "id": "fullBleedImage",
-      "name": "Full Bleed Image",
-      "docURL": "...",
-      "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
-      "primary": {
-        "desktop_image": {
-          "type": "Image",
-          "config": {
-            "label": "Desktop Image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "mobile_ipad_image": {
-          "type": "Image",
-          "config": {
-            "label": "Mobile Ipad Image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        }
-      },
-      "items": {}
     }
   ]
 }

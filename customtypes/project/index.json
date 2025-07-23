@@ -19,13 +19,6 @@
           "placeholder": ""
         }
       },
-      "subtitle": {
-        "type": "Text",
-        "config": {
-          "label": "SubTitle",
-          "placeholder": "Eg. Design Management for Office Group"
-        }
-      },
       "design_architects": {
         "type": "Text",
         "config": {
