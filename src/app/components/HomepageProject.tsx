@@ -72,7 +72,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
             </div>
           </div>
           {/* <div className="absolute z-[-40] top--[0] w-[calc(100vw-44px)] m-[22px] xl:m-[30px] xl:w-[calc(75vw-15px)]"> */}
-          <div className="absolute z-[-40] w-[calc(100%-30px)] xl:w-[100%] h-[100%]">
+          <div className="absolute z-[-40] w-[calc(100%-30px)] xl:w-[100%] h-[100%] xl:mt-[0.2vh]">
             <GridScale />
           </div>
           {/* <div className="w-[calc(100vw-22px)] xl:w-[calc(75vw)] xl:ml-[15px]"> */}
