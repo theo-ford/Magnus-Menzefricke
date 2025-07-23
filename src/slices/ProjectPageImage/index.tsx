@@ -32,7 +32,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
               </div>
             </div>
             <div className="h-auto w-[100%] mt-[6px]  m-[11px] xl:m-[30px] xl:h-auto xl:mt-[10px] absolute">
-              <div className="float-left grid grid-cols-4 grid-rows-1 md:grid-cols-16 relative gap-x-[12.5px] xl:gap-x-[15px] gap-y-[12.5px] xl:grid-cols-16 w-[calc(100%)]">
+              <div className="float-left grid grid-cols-4 grid-rows-1 md:grid-cols-16 relative gap-x-[12.5px] xl:gap-x-[15px] gap-y-[12.5px] xl:grid-cols-16 w-[calc(100%)] text-gray-400">
                 {slice.primary.position == "Left" ? (
                   <div className="col-span-4 md:col-span-8 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
                     <p className="leading-none m-[0] p-[0] text-[12px] xl:text-[12px]">
@@ -66,7 +66,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
               </div>
             </div>
             <div className="h-auto w-[100%] mt-[-6px]  ml-[11px] xl:ml-[30px]  xl:h-auto xl:mt-[-20px] absolute">
-              <div className="float-left grid grid-cols-4 grid-rows-1 md:grid-cols-16 relative gap-x-[11px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-16 w-[calc(100%)]">
+              <div className="float-left grid grid-cols-4 grid-rows-1 md:grid-cols-16 relative gap-x-[11px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-16 w-[calc(100%)] text-gray-400">
                 {slice.primary.position == "Left" ? (
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 md:col-span-8 xl:!col-span-4 xl:col-start-1 flex items-center">
                     <p className="leading-none m-[0] p-[0] text-[12px] xl:text-[12px]">
@@ -98,8 +98,8 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                 </div>
               </div>
             </div>
-            <div className="h-auto w-[calc(100%-20px)] mt-[8px] ml-[10px] xl:h-auto xl:mt-[10px] absolute">
-              <div className="float-left grid grid-cols-4 grid-rows-1 relative gap-x-[12.5px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-16 w-[calc(100%)]">
+            <div className="h-auto w-[calc(100%-20px)] mt-[8px] ml-[15px] xl:ml-[30px] xl:h-auto xl:mt-[10px] absolute">
+              <div className="float-left grid grid-cols-4 grid-rows-1 relative gap-x-[12.5px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-16 w-[calc(100%)] text-gray-400">
                 <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
                   <p className="leading-none m-[0] p-[0] text-[12px] xl:text-[12px]">
                     {slice.primary.caption}
@@ -135,7 +135,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
               </div>
             </div>
             <div className="h-auto w-[calc(100%)] mt-[-6px]  ml-[15px] xl:m-[30px]  xl:h-auto xl:mt-[-20px] absolute">
-              <div className="float-left grid grid-cols-4 grid-rows-1 relative gap-x-[11px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-16 w-[calc(100%)]">
+              <div className="float-left grid grid-cols-4 grid-rows-1 relative gap-x-[11px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-16 w-[calc(100%)] text-gray-400">
                 {slice.primary.position == "Left" ? (
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
                     <p className="leading-none m-[0] p-[0] text-[12px] xl:text-[12px]">
@@ -185,7 +185,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
               </div>
             </div>
             <div className="h-auto w-[100%] mt-[-6px] ml-[15px] xl:ml-[30px]  xl:h-auto xl:mt-[-20px] absolute">
-              <div className="float-left w-[100%] grid grid-cols-4 grid-rows-1 relative gap-x-[11px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-16 ">
+              <div className="float-left w-[100%] grid grid-cols-4 grid-rows-1 relative gap-x-[11px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-16 text-gray-400">
                 {slice.primary.position == "Left" ? (
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
                     <p className="leading-none m-[0] p-[0] text-[12px] xl:text-[12px]">
