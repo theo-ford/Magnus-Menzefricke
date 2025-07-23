@@ -76,7 +76,10 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
             <GridScale />
           </div>
           {/* <div className="w-[calc(100vw-22px)] xl:w-[calc(75vw)] xl:ml-[15px]"> */}
-          <div className="w-[100%] xl:w-[100%] xl:ml-[0px] ">{children}</div>
+          {/* <div className="w-[100%] xl:w-[100%] xl:ml-[1px] ">{children}</div> */}
+          <div className="w-[calc(100%)] xl:w-[100%] xl:ml-[1px] ">
+            {children}
+          </div>
         </div>
         {/* </Link> */}
       </div>
