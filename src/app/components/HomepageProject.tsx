@@ -39,21 +39,21 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
               </div>
 
               <div className="col-span-2 col-start-1 row-start-11 xl:col-start-1 xl:col-span-3 xl:row-start-7">
-                <h5 className="text-[18px] p-[0px] m-[0px] mt-[-3px] leading-none  xl:text-[24px]">
+                <h5 className="text-[18px] p-[0px] m-[0px] mt-[-3px] leading-none  xl:text-[22px]">
                   <Link href={`/project/${item.uid}`} className="">
                     <span className="font-bold">{item.data.title}</span>
                   </Link>
                 </h5>
               </div>
               <div className="col-span-2 col-start-3 row-start-11  xl:col-start-4 xl:col-span-2 xl:row-start-7">
-                <h5 className="text-[18px] p-[0px] m-[0px] mt-[-3px] leading-none xl:text-[24px]">
+                <h5 className="text-[18px] p-[0px] m-[0px] mt-[-3px] leading-none xl:text-[22px]">
                   {item.data.location}
                   <br></br>
                   {item.data.completion_date}
                 </h5>
               </div>
               <div className="col-span-2 col-start-1 row-start-12 xl:col-span-3 xl:col-start-1 xl:row-start-8">
-                <p className="text-[12px] xl:text-[16px] p-[0px] m-[0px] mt-[-3px] leading-[120%]">
+                <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[-3px] leading-[120%]">
                   Net Internal Area: {item.data.net_internal_area}
                   <br></br>
                   Construction Value: {item.data.construction_value}
@@ -63,7 +63,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
                 </p>
               </div>
               <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-4 xl:row-start-8 ">
-                <p className="text-[12px] xl:text-[16px] p-[0px] m-[0px] mt-[-3px] leading-[120%]">
+                <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[-3px] leading-[120%]">
                   Role: {item.data.role}
                   <br></br>
                   Type: {item.data.project_type}
