@@ -166,7 +166,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
           </div>
         </div>
       )}
-      {slice.variation == "fullBleedImage" && (
+      {/* {slice.variation == "fullBleedImage" && (
         <div className="w-[100%] h-[calc(100vh-44px)] m-[0px] xl:mt-[0px] xl:h-[calc(100vh-60px)] overflow-hidden xl:w-[calc(75vw)]">
           <div className="w-[calc(100%)] h-[calc(100%-0px)] xl:h-[calc(100%+0px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[12.5px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 ">
             <div className="col-span-4 col-start-1 row-start-1 row-span-12 overflow-hidden xl:row-span-8 xl:col-span-12 xl:col-start-1 l:row-start-1 flex items-center justify-center">
@@ -185,7 +185,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };
