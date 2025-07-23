@@ -18,6 +18,14 @@ const NeueHaasUnica = localFont({
   ]
 });
 
+export const metadata = {
+  title: "Magnus Menzefricke",
+  description: "Magnus Menzefricke Portfolio Site",
+  icons: {
+    icon: "/favicon.png"
+  }
+};
+
 export default function RootLayout({
   children
 }: Readonly<{
@@ -27,6 +35,7 @@ export default function RootLayout({
     <html lang="en" className={NeueHaasUnica.className}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.png" />
       </head>
       <body className="">{children}</body>
       <PrismicPreview repositoryName={repositoryName} />
