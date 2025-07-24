@@ -75,7 +75,7 @@ export default function Hero({ pageData }) {
           </div>
         </div>
         {/* <div className="absolute z-70"> */}
-        <div className="absolute">
+        <div className="absolute w-[calc(100vw-15px)]">
           <GridScaleHero />
         </div>
       </div>
