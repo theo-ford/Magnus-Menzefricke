@@ -38,7 +38,7 @@ export default function Hero({ pageData }) {
             </div>
           </div>
           <div className="xl:hidden col-start-1 row-start-3 col-span-4">
-            <div className="mt-[2.1vh] h-[7.1vh]">
+            <div className="mt-[1.9vh] h-[7.1vh]">
               <LogoMagnusHeight />
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function Hero({ pageData }) {
           </div>
           <div className="col-span-4 col-start-1 row-start-10 xl:col-start-10 xl:col-span-3 xl:row-start-7 hidden xl:inline">
             {/* <h5 className="text-[18px] p-[0px] mt-[-1px] xl:mt-[-6px] leading-none  xl:text-[18px]"> */}
-            <h5 className="text-[18px] p-[0px] mt-[-18px] xl:mt-[-0.6vh] leading-none  xl:text-[18px]">
+            <h5 className="text-[18px] p-[0px] mt-[-39px] xl:mt-[-0.6vh] leading-none  xl:text-[18px]">
               <p>
                 {pageData.website_url}
                 <br></br>
