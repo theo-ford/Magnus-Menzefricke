@@ -33,7 +33,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
             <div className="absolute top-[0] z-50 w-[calc(100%-31px)] xl:w-[100%] h-[calc(100%-7px)] xl:h-[calc(100vh-60px)] xl:mt-[30px]">
               <div className="float-left relative w-[100%] h-[calc(100%)]  grid grid-cols-4 grid-rows-12  gap-x-[11px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 ">
                 <div className="col-span-2 col-start-1 row-start-3 xl:col-span-1 xl:col-start-1 xl:row-start-2">
-                  <h5 className="text-[8.4vh] p-[0px] mt-[-0.1vh] ml-[-2px] leading-none font-bold tracking-[-0.02em] xl:mt-[-3.2vh] xl:text-[16.4vh]">
+                  <h5 className="text-[8.4vh] p-[0px] mt-[-0vh] ml-[-2px] leading-none font-bold tracking-[-0.02em] xl:mt-[-3.2vh] xl:text-[16.4vh]">
                     {"0" + (index + 1)}
                   </h5>
                 </div>

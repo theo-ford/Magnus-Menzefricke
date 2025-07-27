@@ -38,12 +38,12 @@ export default function Hero({ pageData }) {
             </div>
           </div>
           <div className="xl:hidden col-start-1 row-start-3 col-span-4">
-            <div className="mt-[1.9vh] h-[7.1vh]">
+            <div className="mt-[1.7vh] h-[7.1vh]">
               <LogoMagnusHeight />
             </div>
           </div>
           <div className="xl:hidden col-start-1 row-start-4 col-span-4">
-            <div className="mt-[1.5vh] h-[5.8vh]">
+            <div className="mt-[1.3vh] h-[5.8vh]">
               <LogoMenzefrickeHeight />
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function Hero({ pageData }) {
           <div className="col-span-4 col-start-1 row-start-10 xl:col-start-10 xl:col-span-3 xl:row-start-8  hidden xl:inline">
             <div className="h-[100%] flex items-end mt-[2px]">
               {/* <h5 className="text-[18px] p-[0px] mt-[-1px] xl:mb-[-12px] leading-none  xl:text-[14px]"> */}
-              <h5 className="text-[18px] p-[0px] mt-[-1px] xl:mb-[-1vh] leading-none  xl:text-[12px]">
+              <h5 className="text-[18px] p-[0px] mt-[-5px] xl:mb-[-1vh] leading-none  xl:text-[12px]">
                 <p>Magnus Menzefricke &copy;2025</p>
               </h5>
             </div>
