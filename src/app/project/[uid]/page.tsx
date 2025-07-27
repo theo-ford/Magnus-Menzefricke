@@ -81,7 +81,7 @@ export default async function Page({ params }: { params: Params }) {
               </div>
             </div>
           </div>
-          <div className="absolute float-left w-[100vw] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden  flex items-center  justify-center min-h-[600px]">
+          <div className="absolute float-left w-[calc(100vw+5px)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden  flex items-center  justify-center min-h-[600px]">
             {/* <PrismicNextImage
               field={page.data.hero_image_desktop}
               alt=""
@@ -90,12 +90,12 @@ export default async function Page({ params }: { params: Params }) {
             <PrismicNextImage
               field={page.data.hero_image_desktop}
               alt=""
-              className="hidden xl:inline xl:w-[100%] xl:h-auto"
+              className="hidden xl:inline  xl:w-[100%] xl:h-auto"
             />
             <PrismicNextImage
               field={page.data.hero_image_mobile_ipad}
               alt=""
-              className="block xl:hidden h-[100%] max-w-none w-auto min-h-[900px]"
+              className="block xl:hidden h-[100%] w-[calc(100%)] max-w-none w-auto min-h-[900px]"
             />
           </div>
         </div>
