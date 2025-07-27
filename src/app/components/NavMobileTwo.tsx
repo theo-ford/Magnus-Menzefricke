@@ -24,11 +24,11 @@ export const NavMobileTwo = () => {
   return (
     <>
       <div
-        className={`${menuClicked ? "hidden" : "inline"} `}
+        className={`${menuClicked ? "hidden" : "inline"} cursor-none`}
         onClick={menuStateChange}
       >
         <p className="font-bold text-[24px] tracking-[-1px] m-[14px] mt-[6px] text-gray-300 ">
-          <span className="/">Menu </span>
+          <span className="cursor-none">Menu </span>
           <span
             className={`${currentPage == "/" ? "inline" : "hidden"} opacity-50 `}
           >
@@ -61,11 +61,11 @@ export const NavMobileTwo = () => {
       </div>
 
       <div
-        className={`${menuClicked ? "inline" : "hidden"} `}
+        className={`${menuClicked ? "inline" : "hidden"} cursor-none`}
         onClick={menuStateChange}
       >
         <p className="font-bold text-[24px] tracking-[-1px] m-[14px] mt-[6px] text-gray-300">
-          <span className="">Menu </span>
+          <span className="cursor-none">Menu </span>
           <span
             className={`${currentPage !== "/" ? "inline" : "hidden"} opacity-50 hover:opacity-100`}
           >

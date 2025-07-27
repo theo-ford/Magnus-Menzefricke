@@ -25,7 +25,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
         ref={projectRef}
         className="w-[100vw] xl:w-[calc(75vw-30px)] h-[calc(100vh-44px)] xl:h-[100vh] xl:mr-[15px] relative scroll-section"
       >
-        <Link href={`/project/${item.uid}`} className="">
+        <Link href={`/project/${item.uid}`} className="cursor-none">
           {/* <div className="relative float-left h-[calc(100vh-22px)] xl:h-[calc(100vh)] w-[calc(100vw-44px)] xl:w-[calc(75vw-15px)] xl:ml-[15px]"> */}
           <div className="w-[calc(100vw-30px)] xl:w-[calc(100%)] h-[calc(100%)] xl:h-[calc(100vh)]  ml-[15px] xl:ml-[0px] mt-[11px] xl:mt-[30px]">
             {/* <div className="absolute top-[0] z-50 w-[100%] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] m-[22px] xl:ml-[30px] xl:mt-[30px] xl:w-[100%]"> */}
