@@ -140,7 +140,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
                     <p className="leading-[110%] m-[0] p-[0] text-[12px] xl:text-[12px]">
                       {slice.primary.caption_1 &&
-                        `Left: ${slice.primary.caption_1}. `}
+                        `Left: ${slice.primary.caption_1} `}
                       {slice.primary.caption_2 &&
                         `Right: ${slice.primary.caption_2}`}
                     </p>
@@ -149,7 +149,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-9  flex items-center">
                     <p className="leading-[110%] m-[0] p-[0] text-[12px] xl:text-[12px]">
                       {slice.primary.caption_1 &&
-                        `Left: ${slice.primary.caption_1}. `}
+                        `Left: ${slice.primary.caption_1} `}
                       {slice.primary.caption_2 &&
                         `Right: ${slice.primary.caption_2}`}
                     </p>
@@ -190,7 +190,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
                     <p className="leading-[110%] m-[0] p-[0] text-[12px] xl:text-[12px]">
                       {slice.primary.caption_1 &&
-                        `Left: ${slice.primary.caption_1}. `}
+                        `Left: ${slice.primary.caption_1} `}
                       {slice.primary.caption_2 &&
                         `Right: ${slice.primary.caption_2}`}
                     </p>
@@ -199,7 +199,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-9  flex items-center">
                     <p className="leading-[110%] m-[0] p-[0] text-[14px] xl:text-[12px]">
                       {slice.primary.caption_1 &&
-                        `Left: ${slice.primary.caption_1}. `}
+                        `Left: ${slice.primary.caption_1} `}
                       {slice.primary.caption_2 &&
                         `Right: ${slice.primary.caption_2}`}
                     </p>
