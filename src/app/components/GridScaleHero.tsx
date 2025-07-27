@@ -13,7 +13,7 @@ export default function GridScaleHero() {
       {/* hello world */}
       {/* <div className="h-[calc(100vh-30px)] xl:h-[calc(100vh-60px)] w-[calc(100%-15px)] xl:w-[calc(100%)] opacity-[.33] xl:opacity-[.24] "> */}
       {/* <div className="h-[calc(100vh-30px)] xl:h-[calc(100vh-60px)] w-[calc(100%-15px)] xl:w-[calc(100%)] opacity-[.28] xl:opacity-[.4] "> */}
-      <div className="h-[calc(100vh-30px)] xl:h-[calc(100vh-60px)] w-[calc(100%-15px)] xl:w-[calc(100%)] opacity-[.28] xl:opacity-[.375] ">
+      <div className="h-[calc(100vh-24px)] xl:h-[calc(100vh-60px)] w-[calc(100%-15px)] xl:w-[calc(100%)] opacity-[.28] xl:opacity-[.375] ">
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
         <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[8.25px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
