@@ -23,7 +23,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
       <div
         key={index}
         ref={projectRef}
-        className="w-[100vw] xl:w-[calc(75vw-30px)] h-[calc(100vh-245x)] xl:h-[100vh] xl:mr-[15px] relative scroll-section"
+        className="w-[100vw] xl:w-[calc(75vw-30px)] h-[calc(100vh-25px)] xl:h-[100vh] xl:mr-[15px] relative scroll-section"
       >
         <Link href={`/project/${item.uid}`} className="cursor-none">
           {/* <div className="relative float-left h-[calc(100vh-22px)] xl:h-[calc(100vh)] w-[calc(100vw-44px)] xl:w-[calc(75vw-15px)] xl:ml-[15px]"> */}
