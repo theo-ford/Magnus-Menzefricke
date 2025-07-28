@@ -61,7 +61,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
           {/* <div className="w-[calc(100%-22px)] xl:w-[calc(75vw-15px)] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[13.5px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]"> */}
           {/* <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[13.5px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]"> */}
           {/* <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-44px)] xl:h-[calc(100vh-63px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[13.5px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]"> */}
-          <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-29px)] xl:h-[calc(100vh-63px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[13.5px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
+          <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-29px)] xl:h-[calc(100vh-63px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[11.5px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
             {slice.primary.position == "Left" ? (
               <>
                 <div className="col-span-2 col-start-1 row-start-6 row-span-2 md:row-span-4 md:row-start-5 xl:col-span-4 xl:!row-start-4 xl:!row-span-2 xl:col-start-1 overflow-hidden flex items-center">
