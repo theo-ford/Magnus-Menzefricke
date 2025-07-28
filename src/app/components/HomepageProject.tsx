@@ -23,17 +23,17 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
       <div
         key={index}
         ref={projectRef}
-        className="w-[100vw] xl:w-[calc(75vw-30px)] h-[calc(100vh-44px)] xl:h-[100vh] xl:mr-[15px] relative scroll-section"
+        className="w-[100vw] xl:w-[calc(75vw-30px)] h-[calc(100vh-33px)] xl:h-[100vh] xl:mr-[15px] relative scroll-section"
       >
         <Link href={`/project/${item.uid}`} className="cursor-none">
           {/* <div className="relative float-left h-[calc(100vh-22px)] xl:h-[calc(100vh)] w-[calc(100vw-44px)] xl:w-[calc(75vw-15px)] xl:ml-[15px]"> */}
           <div className="w-[calc(100vw-30px)] xl:w-[calc(100%)] h-[calc(100%)] xl:h-[calc(100vh)]  ml-[15px] xl:ml-[0px] mt-[11px] xl:mt-[30px]">
             {/* <div className="absolute top-[0] z-50 w-[100%] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] m-[22px] xl:ml-[30px] xl:mt-[30px] xl:w-[100%]"> */}
             {/* <div className="absolute top-[0] z-50 w-[calc(100%-22px)] xl:w-[100%] h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] "> */}
-            <div className="absolute top-[0] z-50 w-[calc(100%-31px)] xl:w-[100%] h-[calc(100%-7px)] xl:h-[calc(100vh-60px)] xl:mt-[30px]">
+            <div className="absolute top-[0] z-50 w-[calc(100%-31px)] xl:w-[100%] h-[calc(100%-5px)] xl:h-[calc(100vh-60px)] xl:mt-[30px]">
               <div className="float-left relative w-[100%] h-[calc(100%)]  grid grid-cols-4 grid-rows-12  gap-x-[11px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 ">
                 <div className="col-span-2 col-start-1 row-start-3 xl:col-span-1 xl:col-start-1 xl:row-start-2">
-                  <h5 className="text-[8.4vh] p-[0px] mt-[-0vh] ml-[-2px] leading-none font-bold tracking-[-0.02em] xl:mt-[-3.2vh] xl:text-[16.4vh]">
+                  <h5 className="text-[8.4vh] p-[0px] mt-[0.3vh] ml-[-2px] leading-none font-bold tracking-[-0.02em] xl:mt-[-3.2vh] xl:text-[16.4vh]">
                     {"0" + (index + 1)}
                   </h5>
                 </div>
@@ -72,7 +72,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
               </div>
             </div>
             {/* <div className="absolute z-[-40] top--[0] w-[calc(100vw-44px)] m-[22px] xl:m-[30px] xl:w-[calc(75vw-15px)]"> */}
-            <div className="absolute z-[-40] w-[calc(100%-30px)] xl:w-[100%] h-[100%]">
+            <div className="absolute z-[-40] w-[calc(100%-30px)] xl:w-[100%]">
               <GridScale />
             </div>
             {/* <div className="w-[calc(100vw-22px)] xl:w-[calc(75vw)] xl:ml-[15px]"> */}
