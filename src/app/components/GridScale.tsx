@@ -9,7 +9,7 @@ export default function GridScale() {
       {/* <div className="h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] w-[100%] xl:w-[calc(100%)] opacity-[.5] xl:opacity-[.35] "> */}
       <div className="h-[calc(100vh-44px)] xl:h-[calc(100vh-60px)] w-[100%] xl:w-[calc(100%)] opacity-[.5] xl:opacity-[.5] ">
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -27,7 +27,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -45,7 +45,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -63,7 +63,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -81,7 +81,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -99,7 +99,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -117,7 +117,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -135,7 +135,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:h-[calc((100%/8)-1px)] xl:grid-cols-12 xl:w-[calc(100%)]">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -153,7 +153,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative  xl:w-[calc(100%)]"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:hidden ">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:hidden ">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -172,7 +172,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:hidden"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:hidden">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:hidden">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -191,7 +191,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:hidden"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:hidden">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:hidden">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
@@ -210,7 +210,7 @@ export default function GridScale() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative xl:hidden"></div>
-        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[11px] xl:gap-[15px] xl:hidden">
+        <div className="w-[calc(100%)] h-[calc((100%/12)-1px)] float-left grid grid-cols-4 relative gap-[9px] xl:gap-[15px] xl:hidden">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
