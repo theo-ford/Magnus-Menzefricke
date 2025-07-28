@@ -31,7 +31,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                 )}
               </div>
             </div>
-            <div className="h-auto w-[100%] mt-[6px]  m-[9px] xl:m-[30px] xl:h-auto xl:mt-[10px] absolute">
+            <div className="h-auto w-[100%] mt-[6px]  m-[15px] xl:m-[30px] xl:h-auto xl:mt-[10px] absolute">
               <div className="float-left grid grid-cols-4 grid-rows-1 md:grid-cols-16 relative gap-x-[12.5px] xl:gap-x-[15px] gap-y-[12.5px] xl:grid-cols-16 w-[calc(100%)] text-gray-400">
                 {slice.primary.position == "Left" ? (
                   <div className="col-span-4 md:col-span-8 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-1 flex items-center">
@@ -65,7 +65,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                 )}
               </div>
             </div>
-            <div className="h-auto w-[100%] mt-[-6px]  ml-[9px] xl:ml-[30px]  xl:h-auto xl:mt-[-20px] absolute">
+            <div className="h-auto w-[100%] mt-[-6px]  ml-[15px] xl:ml-[30px]  xl:h-auto xl:mt-[-20px] absolute">
               <div className="float-left grid grid-cols-4 grid-rows-1 md:grid-cols-16 relative gap-x-[9px] xl:gap-x-[15px] gap-y-[0px] xl:grid-cols-16 w-[calc(100%)] text-gray-400">
                 {slice.primary.position == "Left" ? (
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 md:col-span-8 xl:!col-span-4 xl:col-start-1 flex items-center">
@@ -197,7 +197,7 @@ const ProjectPageImage: FC<ProjectPageImageProps> = ({ slice }) => {
                   </div>
                 ) : (
                   <div className="col-span-4 col-start-1 row-start-1 row-span-1 xl:col-span-8 xl:col-start-9  flex items-center">
-                    <p className="leading-[110%] m-[0] p-[0] text-[14px] xl:text-[12px]">
+                    <p className="leading-[110%] m-[0] p-[0] text-[12px] xl:text-[12px]">
                       {slice.primary.caption_1 &&
                         `Left: ${slice.primary.caption_1} `}
                       {slice.primary.caption_2 &&
