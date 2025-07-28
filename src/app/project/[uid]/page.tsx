@@ -80,17 +80,20 @@ export default async function Page({ params }: { params: Params }) {
               </div>
             </div>
           </div>
-          <div className="absolute float-left w-[calc(100vw)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden  flex items-center  justify-center min-h-[600px]">
-            <PrismicNextImage
-              field={page.data.hero_image_desktop}
-              alt=""
-              className="hidden xl:inline  xl:w-[100%] xl:h-auto"
-            />
-            <PrismicNextImage
-              field={page.data.hero_image_mobile_ipad}
-              alt=""
-              className="block xl:hidden h-[100%] w-[calc(100%)] max-w-none w-auto min-h-[900px]"
-            />
+          <div className="w-[calc(100vw)] overflow-x-hidden">
+            <div className="absolute float-left w-[calc(100vw+20px)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden  flex items-center  justify-center min-h-[600px]">
+              <PrismicNextImage
+                field={page.data.hero_image_desktop}
+                alt=""
+                className="hidden xl:inline  xl:w-[100%] xl:h-auto"
+              />
+
+              <PrismicNextImage
+                field={page.data.hero_image_mobile_ipad}
+                alt=""
+                className="block xl:hidden h-[100%] w-[calc(100%)] max-w-none w-auto min-h-[900px]"
+              />
+            </div>
           </div>
         </div>
         <div className="relative float-left w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)]">
