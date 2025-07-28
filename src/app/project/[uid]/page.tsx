@@ -42,7 +42,7 @@ export default async function Page({ params }: { params: Params }) {
   return (
     <>
       <NavProjects projectTitle={page.data.title} />
-      <div className="">
+      <div className="width-[100vw] overflow-x-hidden">
         <div className="w-[100vw] h-[calc(91.63vh+20px)] relative float-left xl:h-[87.5vh+20px]">
           <div className="h-[calc(91.63vh)] w-[calc(100vw-30px)] absolute top-[0] z-50 xl:w-[calc(100vw-30px)] m-[15px] xl:m-[30px] xl:h-[calc(100%-30px)]">
             {/* <div className="w-[calc(100%-20px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] text-white"> */}
@@ -82,11 +82,6 @@ export default async function Page({ params }: { params: Params }) {
             </div>
           </div>
           <div className="absolute float-left w-[calc(100vw+5px)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden  flex items-center  justify-center min-h-[600px]">
-            {/* <PrismicNextImage
-              field={page.data.hero_image_desktop}
-              alt=""
-              className="h-[100%] max-w-none w-auto xl:w-[100%] xl:h-auto"
-            /> */}
             <PrismicNextImage
               field={page.data.hero_image_desktop}
               alt=""
