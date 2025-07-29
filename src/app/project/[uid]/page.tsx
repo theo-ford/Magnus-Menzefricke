@@ -55,7 +55,7 @@ export default async function Page({ params }: { params: Params }) {
               </div>
               <div className="col-span-4 col-start-1 row-start-9  xl:col-span-2 xl:col-start-1 xl:row-start-8">
                 <div className="xl:relative">
-                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[-3px] leading-none xl:text-[24px]">
+                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[-3px] leading-none xl:text-[24px] w-[calc(100%+40px)]">
                     Location: {page.data.location}
                     <br></br>
                     Year: {page.data.completion_date}
