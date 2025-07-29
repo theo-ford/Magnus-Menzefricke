@@ -20,6 +20,7 @@ export default async function Page() {
           <h5 className="text-[16px] md:text-[18px] xl:text-[24px] p-[0px] m-[0px] leading-[115%] col-span-4 row-start-2 md:col-span-8 xl:col-span-6 md:row-start-2 xl:row-start-2">
             <PrismicRichText field={page.data.biography} />
             <span className="">
+              <br></br>
               Services:
               <br></br>
               <br></br>
