@@ -14,7 +14,7 @@ export default function Hero({ pageData }) {
       <div className="w-[calc(100vw-30px)] xl:w-[calc(75vw-15px)] h-[100%] xl:h-[calc(100vh-60px)] pt-[15px] xl:pt-[0px] xl:mt-[30px] ml-[15px] xl:ml-[30px]">
         <div className="float-left relative z-80 grid w-[calc(100%-22px)] xl:w-[calc(100%)] h-[calc(100%)] grid-cols-4 grid-rows-12  gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[100%] overflow-hidden">
           <div className="col-span-4 col-start-1 row-start-10 xl:col-start-10 xl:col-span-3 xl:row-start-1  hidden xl:inline">
-            <h5 className="text-[18px] p-[0px] mt-[-1px] leading-none  xl:text-[18px]">
+            <h5 className="text-[18px] p-[0px] mt-[-1px] leading-none  xl:text-[16px]">
               <p>
                 MM-0002
                 <br></br>
@@ -55,7 +55,7 @@ export default function Hero({ pageData }) {
           </div>
           <div className="col-span-4 col-start-1 row-start-10 xl:col-start-10 xl:col-span-3 xl:row-start-7 hidden xl:inline">
             {/* <h5 className="text-[18px] p-[0px] mt-[-1px] xl:mt-[-6px] leading-none  xl:text-[18px]"> */}
-            <h5 className="text-[18px] p-[0px] mt-[-39px] xl:mt-[-0.4vh] leading-none  xl:text-[18px]">
+            <h5 className="text-[18px] p-[0px] mt-[-39px] xl:mt-[-0.4vh] leading-none  xl:text-[16px]">
               <p>
                 {pageData.website_url}
                 <br></br>
