@@ -81,7 +81,7 @@ export default async function Page({ params }: { params: Params }) {
             </div>
           </div>
           <div className="w-[calc(100vw)] overflow-x-hidden">
-            <div className="absolute float-left w-[calc(100vw+20px)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden  flex items-center  justify-center min-h-[600px]">
+            <div className="absolute float-left w-[calc(100vw+0px)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden  flex items-center  justify-center min-h-[600px]">
               <PrismicNextImage
                 field={page.data.hero_image_desktop}
                 alt=""
