@@ -39,7 +39,7 @@ const IndexProjectsSelect: FC<IndexProjectsSelectProps> = async ({ slice }) => {
             >
               <Link href={`project/${item.uid}`} className="cursor-none">
                 {/* {console.log(item.uid)} */}
-                <div className="absolute grid grid-cols-4 grid-rows-1 w-[100%] gap-[12.5px] xl:gap-[15px] xl:grid-cols-16 text-[16px] xl:text-[24px] leading-[100%] ">
+                <div className="absolute grid grid-cols-4 grid-rows-1 w-[100%] gap-[9px] xl:gap-[15px] xl:grid-cols-16 text-[16px] xl:text-[24px] leading-[100%] ">
                   <div className="col-span-1 hidden xl:block">
                     <p key={"index" + index} className="">
                       {index}
