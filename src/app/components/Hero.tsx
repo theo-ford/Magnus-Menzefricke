@@ -49,7 +49,7 @@ export default function Hero({ pageData }) {
           </div>
           <div className="col-span-4 col-start-1 row-start-10 xl:col-start-1 xl:col-span-8 xl:row-start-7">
             {/* <h5 className="text-[18px] p-[0px] mt-[-10px] xl:mt-[-6px] leading-none  xl:text-[24px]"> */}
-            <h5 className="text-[18px] p-[0px] mt-[-11px] xl:mt-[-0.6vh] leading-none  xl:text-[24px]">
+            <h5 className="text-[18px] p-[0px] mt-[-11.5px] xl:mt-[-0.6vh] leading-none  xl:text-[24px]">
               <PrismicRichText field={pageData.introduction} />
             </h5>
           </div>
