@@ -38,7 +38,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" />
       </head>
       {/* <body className="cursor-none">{children}</body> */}
-      <body className="">{children}</body>
+      <body className="bg-white">{children}</body>
       <PrismicPreview repositoryName={repositoryName} />
     </html>
   );
