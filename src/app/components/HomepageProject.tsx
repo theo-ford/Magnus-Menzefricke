@@ -39,14 +39,14 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
                 </div>
 
                 <div className="col-span-2 col-start-1 row-start-11 xl:col-start-1 xl:col-span-3 xl:row-start-7">
-                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[-6px] leading-none  xl:text-[24px]">
+                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[-6.5px] leading-none  xl:text-[24px]">
                     {/* <Link href={`/project/${item.uid}`} className=""> */}
                     <span className="font-bold">{item.data.title}</span>
                     {/* </Link> */}
                   </h5>
                 </div>
                 <div className="col-span-2 col-start-3 row-start-11  xl:col-start-4 xl:col-span-2 xl:row-start-7">
-                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[-6px] leading-none xl:text-[24px]">
+                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[-6.5px] leading-none xl:text-[24px]">
                     {item.data.location}
                     <br></br>
                     {item.data.completion_date}
