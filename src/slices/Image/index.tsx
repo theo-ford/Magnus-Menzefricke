@@ -21,7 +21,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
   return (
     <>
       {slice.variation == "1XLandscapeImage" && (
-        <div className="h-[calc(100vh-12px)] xl:h-[calc(100vh-60px)] w-[calc(100%)] xl:w-[calc(100%)] xl:mt-[0px]">
+        <div className="h-[calc(100vh-10px)] xl:h-[calc(100vh-60px)] w-[calc(100%)] xl:w-[calc(100%)] xl:mt-[0px]">
           <div className="w-[calc(100%)] xl:w-[calc(100%-2px)] h-[calc(100%)] xl:h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
             {slice.primary.position == "Left" ? (
               <div className="col-span-4 col-start-1 row-start-5 row-span-4 md:col-span-2 xl:!col-span-4 xl:row-start-4 xl:row-span-2 xl:!col-start-1 flex items-center justify-center overflow-hidden">
@@ -46,7 +46,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
       {slice.variation == "2XLandscapeImage" && (
         // <div className="w-[calc(100%-2px)] h-[calc(100vh-52px)] xl:h-[calc(100vh-63px)] xl:w-[calc(100%-1.5px)] xl:mt-[0px]">
         // <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-28px)] xl:h-[calc(100vh-63px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[11.5px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
-        <div className="h-[calc(100vh-12px)] xl:h-[calc(100vh-60px)] w-[calc(100%)] xl:w-[calc(100%)] xl:mt-[0px]">
+        <div className="h-[calc(100vh-10px)] xl:h-[calc(100vh-60px)] w-[calc(100%)] xl:w-[calc(100%)] xl:mt-[0px]">
           <div className="w-[calc(100%)] xl:w-[calc(100%-2px)] h-[calc(100%)] xl:h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
             {slice.primary.position == "Left" ? (
               <>
@@ -90,7 +90,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
       {slice.variation == "2XPortraitImage" && (
         // <div className="w-[100%] h-[calc(100vh-52px)] xl:h-[calc(100vh-63px)] xl:w-[calc(100%-1.5px)] xl:mt-[0px]">
         //   <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-28px)] xl:h-[calc(100vh-63px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
-        <div className="h-[calc(100vh-12px)] xl:h-[calc(100vh-60px)] w-[calc(100%)] xl:w-[calc(100%)] xl:mt-[0px]">
+        <div className="h-[calc(100vh-10px)] xl:h-[calc(100vh-60px)] w-[calc(100%)] xl:w-[calc(100%)] xl:mt-[0px]">
           <div className="w-[calc(100%)] xl:w-[calc(100%-2px)] h-[calc(100%)] xl:h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
             {slice.primary.position == "Top" ? (
               <>
@@ -133,7 +133,7 @@ const Image: FC<ImageProps> = ({ slice }) => {
       {slice.variation == "1XPortraitImage" && (
         // <div className="w-[calc(100%)] h-[calc(100vh-52px)] xl:h-[calc(100vh-63px)] xl:w-[calc(100%-1.5px)] xl:mt-[0px]">
         //   <div className="w-[calc(100%)] xl:w-[calc(100%)] h-[calc(100vh-28px)] xl:h-[calc(100vh-63px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
-        <div className="h-[calc(100vh-12px)] xl:h-[calc(100vh-60px)] w-[calc(100%)] xl:w-[calc(100%)] xl:mt-[0px]">
+        <div className="h-[calc(100vh-10px)] xl:h-[calc(100vh-60px)] w-[calc(100%)] xl:w-[calc(100%)] xl:mt-[0px]">
           <div className="w-[calc(100%)] xl:w-[calc(100%-2px)] h-[calc(100%)] xl:h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] xl:gap-x-[17px] gap-y-[2px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[calc(75vw-15px)]">
             {slice.primary.position == "Top" ? (
               // <div className="col-span-4 col-start-1 row-start-1 row-span-12 overflow-hidden xl:col-span-4 xl:row-start-1 xl:row-span-5 xl:col-start-9 flex items-center">
