@@ -6,7 +6,8 @@ import { NavMobileTwo } from "./NavMobileTwo";
 // import { NavMobile } from "./NavMobile";
 
 export const Nav = () => {
-  const isDesktop = useMediaQuery("(min-width: 1280px)");
+  // const isDesktop = useMediaQuery("(min-width: 1280px)");
+  const isDesktop = useMediaQuery("(min-width: 1150px)");
 
   return (
     <>
