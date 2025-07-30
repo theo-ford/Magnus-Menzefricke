@@ -59,15 +59,18 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
                     <br></br>
                     Construction Value: {item.data.construction_value}
                     <br></br>
-                    Client: {item.data.client}
+                    Role: {item.data.role}
                     <br></br>
                   </p>
                 </div>
                 <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-4 xl:row-start-8 ">
                   <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
-                    Role: {item.data.role}
+                    Design: {item.data.design_architects}
                     <br></br>
-                    Type: {item.data.project_type}
+                    Tech: {item.data.technical_architects}
+                    <br></br>
+                    Client: {item.data.client}
+                    <br></br>
                   </p>
                 </div>
               </div>
