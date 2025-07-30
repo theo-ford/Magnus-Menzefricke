@@ -65,9 +65,9 @@ export default async function Page({ params }: { params: Params }) {
               <div className="col-span-4 col-start-1 row-start-11 xl:col-span-4 xl:col-start-4 xl:row-span-1 xl:row-start-8 xl:inline">
                 <div className="">
                   <p className="text-[16px] p-[0px] m-[0px] mb-[0px!important] leading-[120%]">
-                    Role: {page.data.role}
+                    Design: {page.data.design_architects}
                     <br></br>
-                    Type: {page.data.project_type}
+                    Tech: {page.data.technical_architects}
                     <br></br>
                     <br></br>
                     Net Internal Area: {page.data.net_internal_area}
