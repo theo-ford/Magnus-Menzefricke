@@ -23,7 +23,8 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
       <div
         key={index}
         ref={projectRef}
-        className="w-[100vw] xl:w-[calc(75vw-30px)] h-[calc(100vh-24px)] xl:h-[100vh] xl:mr-[15px] relative scroll-section"
+        // className="w-[100vw] xl:w-[calc(75vw-30px)] h-[calc(100vh-24px)] xl:h-[100vh] xl:mr-[15px] relative scroll-section"
+        className="w-[100vw] xl:w-[calc(75vw-30px)] h-[calc(100vh)] xl:h-[100vh] xl:mr-[15px] relative scroll-section"
       >
         <Link href={`/project/${item.uid}`} className="">
           {/* <div className="relative float-left h-[calc(100vh-22px)] xl:h-[calc(100vh)] w-[calc(100vw-44px)] xl:w-[calc(75vw-15px)] xl:ml-[15px]"> */}
@@ -39,21 +40,21 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
                 </div>
 
                 <div className="col-span-2 col-start-1 row-start-11 xl:col-start-1 xl:col-span-3 xl:row-start-7">
-                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[-2.5px] leading-none  xl:text-[24px]">
+                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-4.5px] leading-none  xl:text-[24px]">
                     {/* <Link href={`/project/${item.uid}`} className=""> */}
                     <span className="font-bold">{item.data.title}</span>
                     {/* </Link> */}
                   </h5>
                 </div>
                 <div className="col-span-2 col-start-3 row-start-11  xl:col-start-4 xl:col-span-2 xl:row-start-7">
-                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[-2.5px] leading-none xl:text-[24px]">
+                  <h5 className="text-[18px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-4.5px] leading-none xl:text-[24px]">
                     {item.data.location}
                     <br></br>
                     {item.data.completion_date}
                   </h5>
                 </div>
                 <div className="col-span-2 col-start-1 row-start-12 xl:col-span-3 xl:col-start-1 xl:row-start-8">
-                  <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[-1.5px] leading-[110%]">
+                  <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
                     Net Internal Area: {item.data.net_internal_area}
                     <br></br>
                     Construction Value: {item.data.construction_value}
@@ -63,12 +64,13 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
                   </p>
                 </div>
                 <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-4 xl:row-start-8 ">
-                  <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[-1.5px] leading-[110%]">
+                  <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
                     Design: {item.data.design_architects}
                     <br></br>
                     Tech: {item.data.technical_architects}
                     <br></br>
                     Client: {item.data.client}
+                    <br></br>
                   </p>
                 </div>
               </div>
@@ -79,7 +81,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
             </div>
             {/* <div className="w-[calc(100vw-22px)] xl:w-[calc(75vw)] xl:ml-[15px]"> */}
             {/* <div className="w-[100%] xl:w-[100%] xl:ml-[1px] ">{children}</div> */}
-            <div className="w-[calc(100%)] xl:w-[100%] ml-[1px] xl:ml-[1px]">
+            <div className="w-[calc(100%)] xl:w-[100%] ml-[0px] xl:ml-[1px]">
               {children}
             </div>
           </div>
