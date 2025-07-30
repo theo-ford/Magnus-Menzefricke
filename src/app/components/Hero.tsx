@@ -9,7 +9,7 @@ import GridScaleHero from "./GridScaleHero";
 
 export default function Hero({ pageData }) {
   return (
-    <div className="scroll-section snap-start relative w-[100vw] xl:w-[calc(75vw+18px)] bg-[#e34234] h-[calc(100vh)] xl:mr-[13px] mb-[14px] xl:mb-[0px]">
+    <div className="scroll-section snap-start relative w-[100vw] xl:w-[calc(75vw+18px)] bg-[#e34234] h-[calc(100vh)] xl:mr-[15px] mb-[11px] xl:mb-[0px]">
       {/* <div className="w-[calc(100vw-22px)] xl:w-[calc(75vw-15px)] h-[100%] xl:h-[calc(100vh-60px)] pt-[11px] xl:pt-[0px] xl:mt-[30px] ml-[11px] xl:ml-[30px]"> */}
       <div className="w-[calc(100vw-30px)] xl:w-[calc(75vw-15px)] h-[calc(100%+0px)] xl:h-[calc(100vh-60px)] pt-[15px] xl:pt-[0px] xl:mt-[30px] ml-[15px] xl:ml-[30px]">
         <div className="float-left relative z-80 grid w-[calc(100%-22px)] xl:w-[calc(100%)] h-[calc(100%)] grid-cols-4 grid-rows-12  gap-x-[15px] gap-y-[0px] xl:grid-cols-12 xl:grid-rows-8 xl:w-[100%] overflow-hidden">
