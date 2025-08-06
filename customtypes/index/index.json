@@ -13,6 +13,15 @@
           "placeholder": ""
         }
       },
+      "index_introduction_paragraph": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Index Introduction Paragraph",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

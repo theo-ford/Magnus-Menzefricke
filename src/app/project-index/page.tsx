@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { isFilled, asImageSrc } from "@prismicio/client";
-import { SliceZone } from "@prismicio/react";
+import { SliceZone, PrismicRichText } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
@@ -20,14 +20,32 @@ export default async function Page() {
         <div className="relative block xl:hidden">
           <GridIndexProject />
         </div>
+        <div className="relative block md:hidden">
+          <GridIndexProject />
+        </div>
+        <div className="relative">
+          <GridIndexProject />
+        </div>
         <div className="relative">
           <GridIndexProject />
         </div>
 
         <div
+          key={"intro"}
+          // className="xl:fixed block float-left text-gray-200 bg-red-800"
+          className="absolute float-left text-gray-300 bg-red-800 top-[calc(8.33vh)] md:top-[0px]"
+        >
+          <div className="absolute grid grid-cols-4 grid-rows-1 gap-[9px] xl:gap-[15px] xl:grid-cols-16 w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)] leading-[100%]">
+            <div className="col-span-4 col-start-1 md:col-span-2 md:col-start-3 xl:!col-span-8 xl:!col-start-9 h-[calc(8.33vh*2)] sm:line-clamp-4">
+              <PrismicRichText field={page.data.index_introduction_paragraph} />
+            </div>
+          </div>
+        </div>
+
+        <div
           key={"project"}
           // className="xl:fixed block float-left text-gray-200 bg-red-800"
-          className="xl:fixed fixed float-left text-gray-200 bg-red-800"
+          className="xl:fixed fixed float-left text-gray-300 bg-red-800"
         >
           <div className="absolute grid grid-cols-4 grid-rows-1 gap-[9px] xl:gap-[15px] xl:grid-cols-16 w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)] leading-[100%]">
             <div className="col-span-1 hidden xl:block">

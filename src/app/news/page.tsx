@@ -36,7 +36,9 @@ export default async function Page() {
                     className="col-span-4 row-span-1 row-start-1 mt-[-5px] xl:row-start-2 xl:mt-[9vh]"
                   >
                     <p>{item.date}</p>
-                    <p className="text-[22px] hidden xl:block">{item.title}</p>
+                    <p className="text-[22px] hidden xl:block leading-[100%]">
+                      {item.title}
+                    </p>
                   </div>
                   <div className="col-span-4 row-span-1 row-start-2 mt-[-15px] xl:row-start-2 xl:mt-[9vh] xl:hidden">
                     <p className="text-[22px]">{item.title}</p>

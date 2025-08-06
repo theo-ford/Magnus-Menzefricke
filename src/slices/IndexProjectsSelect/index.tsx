@@ -35,9 +35,9 @@ const IndexProjectsSelect: FC<IndexProjectsSelectProps> = async ({ slice }) => {
           item && (
             <div
               key={"project" + index}
-              className="relative block float-left w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)] text-gray-300 hover:text-gray-400"
+              className="relative block float-left w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)] text-gray-300 hover:text-gray-400 h-[calc(8.33vh)] overflow-hidden"
             >
-              <Link href={`project/${item.uid}`} className="cursor-none">
+              <Link href={`project/${item.uid}`} className="">
                 {/* {console.log(item.uid)} */}
                 <div className="absolute grid grid-cols-4 grid-rows-1 w-[100%] gap-[9px] xl:gap-[15px] xl:grid-cols-16 text-[16px] md:text-[18px] xl:text-[24px] leading-[100%] ">
                   <div className="col-span-1 hidden xl:block">
@@ -51,7 +51,10 @@ const IndexProjectsSelect: FC<IndexProjectsSelectProps> = async ({ slice }) => {
                     </p>
                   </div>
                   <div className="col-span-2 col-start-3 xl:hidden ">
-                    <p key={"date" + index} className="">
+                    <p
+                      key={"date" + index}
+                      className="line-clamp-3 sm:line-clamp-1"
+                    >
                       {item.data.role}
                       <br></br>
                       {item.data.location}

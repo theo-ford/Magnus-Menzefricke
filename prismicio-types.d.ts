@@ -289,6 +289,17 @@ type IndexDocumentDataSlicesSlice = IndexProjectsSelectSlice;
  */
 interface IndexDocumentData {
   /**
+   * Index Introduction Paragraph field in *Index*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: index.index_introduction_paragraph
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  index_introduction_paragraph: prismic.RichTextField;
+
+  /**
    * Slice Zone field in *Index*
    *
    * - **Field Type**: Slice Zone

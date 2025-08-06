@@ -31,7 +31,7 @@ export default function Carousel({ children }: { children: any }) {
       </Swiper> */}
 
       <Swiper
-        autoplay={{ delay: 1750 }}
+        autoplay={{ delay: 2000 }}
         speed={1}
         loop={true}
         modules={[Navigation, Autoplay]}
