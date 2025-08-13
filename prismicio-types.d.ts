@@ -684,6 +684,18 @@ interface ProjectDocumentData {
   related_project_image: prismic.ImageField<never>;
 
   /**
+   * Related Projects field in *Project*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: true
+   * - **API ID Path**: project.related_projects
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  related_projects: prismic.BooleanField;
+
+  /**
    * Related Project 1 field in *Project*
    *
    * - **Field Type**: Content Relationship

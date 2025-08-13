@@ -39,6 +39,21 @@ export default async function Page({ params }: { params: Params }) {
     .getByUID("project", params.uid)
     .catch(() => notFound());
 
+  console.log("Related: " + page.data.related_projects);
+  const RelatedProjects = () => {
+    return (
+      <>
+        <div className="h-[calc(83.33vh)] w-[calc(100vw-30px)] relative float-left md:w-[calc(100vw-20px)] m-[15px] md:h-[37.5vh] mt-[33.632vh] md:mt-[25vh]">
+          <p>Related Projects</p>
+          <div className=" float-left relative w-[calc(100vw-30px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 md:grid-cols-16 md:grid-rows-3 min-h-[75px] md:!min-h-[200px] xl:min-h-[250px]">
+            <RelatedProjectsOne data={page.data.related_project_1} />
+            <RelatedProjectsOne data={page.data.related_project_2} />
+          </div>
+        </div>
+      </>
+    );
+  };
+
   return (
     <>
       <NavProjects projectTitle={page.data.title} />
@@ -58,7 +73,9 @@ export default async function Page({ params }: { params: Params }) {
                   <h5 className="text-[18px] p-[0px] m-[0px] mt-[-3px] leading-none xl:text-[24px] w-[calc(100%+40px)]">
                     Location: {page.data.location}
                     <br></br>
-                    Year: {page.data.completion_date}
+                    {/* Year: {page.data.completion_date} */}
+                    {/* Completion: {page.data.completion_date} */}
+                    {page.data.completion_date}
                   </h5>
                 </div>
               </div>
@@ -102,14 +119,7 @@ export default async function Page({ params }: { params: Params }) {
         {/* <div className="relative float-left w-[100%] h-[400px] bg-red-800">
         <RelatedProjectsOne data={page.data.related_project_1} />
       </div> */}
-
-        <div className="h-[calc(83.33vh)] w-[calc(100vw-30px)] relative float-left md:w-[calc(100vw-20px)] m-[15px] md:h-[37.5vh] mt-[33.632vh] md:mt-[25vh]">
-          <p>Related Projects</p>
-          <div className=" float-left relative w-[calc(100vw-30px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 md:grid-cols-16 md:grid-rows-3 min-h-[75px] md:!min-h-[200px] xl:min-h-[250px]">
-            <RelatedProjectsOne data={page.data.related_project_1} />
-            <RelatedProjectsOne data={page.data.related_project_2} />
-          </div>
-        </div>
+        ${page.data.related_projects ? <RelatedProjects /> : ""}
       </div>
     </>
   );

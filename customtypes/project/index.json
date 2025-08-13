@@ -97,6 +97,15 @@
           "thumbnails": []
         }
       },
+      "related_projects": {
+        "type": "Boolean",
+        "config": {
+          "label": "Related Projects",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": true
+        }
+      },
       "related_project_1": {
         "type": "Link",
         "config": {

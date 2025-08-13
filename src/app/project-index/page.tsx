@@ -23,6 +23,9 @@ export default async function Page() {
         <div className="relative block md:hidden">
           <GridIndexProject />
         </div>
+        <div className="relative block md:hidden">
+          <GridIndexProject />
+        </div>
         <div className="relative">
           <GridIndexProject />
         </div>
@@ -45,7 +48,7 @@ export default async function Page() {
         <div
           key={"project"}
           // className="xl:fixed block float-left text-gray-200 bg-red-800"
-          className="xl:fixed fixed float-left text-gray-300 bg-red-800"
+          className="xl:absolute absolute float-left text-gray-300 bg-red-800"
         >
           <div className="absolute grid grid-cols-4 grid-rows-1 gap-[9px] xl:gap-[15px] xl:grid-cols-16 w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)] leading-[100%]">
             <div className="col-span-1 hidden xl:block">
