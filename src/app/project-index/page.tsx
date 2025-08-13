@@ -15,7 +15,7 @@ export default async function Page() {
     <>
       <Nav />
       <div className="absolute float-left block m-[15px] xl:m-[30px] mb-[25px] h-auto w-[100%] w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)]">
-        <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative opacity-[.3]"></div>
+        <div className="w-[calc(100%)]  float-left relative opacity-[.3]"></div>
 
         <div className="relative block xl:hidden">
           <GridIndexProject />
@@ -48,7 +48,7 @@ export default async function Page() {
         <div
           key={"project"}
           // className="xl:fixed block float-left text-gray-200 bg-red-800"
-          className="xl:absolute absolute float-left text-gray-300 bg-red-800"
+          className="xl:absolute absolute float-left text-gray-300 bg-red-800 "
         >
           <div className="absolute grid grid-cols-4 grid-rows-1 gap-[9px] xl:gap-[15px] xl:grid-cols-16 w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)] leading-[100%]">
             <div className="col-span-1 hidden xl:block">
@@ -99,7 +99,7 @@ export default async function Page() {
         <div className="relative w-[calc(100vw-44px)] block xl:hidden">
           <GridIndexProject />
         </div>
-
+        <div className="w-[calc(100%)] border-t-[1px] border-[#d6d6d6] float-left relative opacity-[0.6] pb-[5px] xl:pb-[30px]"></div>
         <div className="relative float-left block h-[10px] w-[100%] bg-white  block xl:hidden"></div>
       </div>
     </>
