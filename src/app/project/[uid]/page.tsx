@@ -105,11 +105,11 @@ export default async function Page({ params }: { params: Params }) {
                 className="hidden xl:inline  xl:w-[100%] xl:h-auto"
               />
             </div>
-            <div className="absolute float-left w-[calc(100vw+0px)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden flex items-center  justify-center  md:min-h-[600px] sm:h-[calc(91.63vh+20px)]">
+            <div className="absolute float-left w-[calc(100vw+10px)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden flex items-center  justify-center  md:min-h-[600px] sm:h-[calc(91.63vh+20px)]">
               <PrismicNextImage
                 field={page.data.hero_image_mobile_ipad}
                 alt=""
-                className="block xl:hidden h-[100%] w-[calc(100%)] max-w-none w-auto sm:h-[calc(140vh)]"
+                className="block xl:hidden h-[100%] w-[calc(100%)] max-w-none w-auto sm:h-[calc(160vh)]"
               />
             </div>
           </div>
