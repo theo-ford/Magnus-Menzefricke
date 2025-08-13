@@ -43,12 +43,12 @@ export default async function Page() {
                   <div className="col-span-4 row-span-1 row-start-2 mt-[-15px] xl:row-start-2 xl:mt-[9vh] xl:hidden">
                     <p className="text-[22px]">{item.title}</p>
                   </div>
-                  <div className="col-span-4 row-span-3 row-start-3 overflow-hidden xl:row-start-4 xl:row-span-2 mt-[-7px]">
+                  <div className="col-span-4 row-span-3 row-start-3 overflow-hidden xl:row-start-4 xl:row-span-2 mt-[-7px] flex items-center justify-center">
                     <PrismicNextImage field={item.image} alt="" />
                   </div>
                   <div
                     key={"body" + index}
-                    className="col-span-4 row-span-2 row-start-7 mt-[-5px] xl:row-start-7 leading-[113%]"
+                    className="col-span-4 row-span-2 row-start-7 mt-[-5px] xl:row-start-7 leading-[113%] news-text"
                   >
                     <PrismicRichText field={item.body_text} />
                   </div>

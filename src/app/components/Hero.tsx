@@ -5,9 +5,42 @@ import { PrismicRichText } from "@prismicio/react";
 import LogoMagnusHeight from "./Logo_MagnusHeight";
 import LogoMenzefrickeHeight from "./Logo_MenzefrickeHeight";
 import GridScaleHero from "./GridScaleHero";
+import React, { useEffect } from "react";
 // import GridScale from "./GridScale";
 
 export default function Hero({ pageData }) {
+  const [time, setTime] = React.useState(date());
+
+  function date() {
+    const nwDate = new Date();
+    const year = nwDate.getFullYear();
+    const month = nwDate.getMonth() + 1;
+    const monthString = month.toString();
+    const day = nwDate.getDate();
+    const hours = nwDate.getHours();
+    const minutes = nwDate.getMinutes();
+    const seconds = nwDate.getSeconds();
+    const dateTimeString =
+      year +
+      "." +
+      ("0" + monthString).slice(-2) +
+      "." +
+      ("0" + day).slice(-2) +
+      " " +
+      ("0" + hours).slice(-2) +
+      ":" +
+      ("0" + minutes).slice(-2) +
+      ":" +
+      ("0" + seconds).slice(-2);
+    return dateTimeString;
+  }
+
+  useEffect(() => {
+    setInterval(() => {
+      setTime(date());
+    }, 1000);
+  }, []);
+
   return (
     <div className="scroll-section snap-start relative w-[100vw] xl:w-[calc(75vw+18px)] bg-[#e34234] h-[calc(100vh)] xl:mr-[15px] mb-[14px] xl:mb-[0px]">
       {/* <div className="w-[calc(100vw-22px)] xl:w-[calc(75vw-15px)] h-[100%] xl:h-[calc(100vh-60px)] pt-[11px] xl:pt-[0px] xl:mt-[30px] ml-[11px] xl:ml-[30px]"> */}
@@ -18,7 +51,7 @@ export default function Hero({ pageData }) {
               <p>
                 MM-0002
                 <br></br>
-                25.06.02 17:43
+                {time.toString()}
               </p>
             </h5>
           </div>

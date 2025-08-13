@@ -58,7 +58,7 @@ export default async function Page({ params }: { params: Params }) {
     <>
       <NavProjects projectTitle={page.data.title} />
       <div className="">
-        <div className="w-[100vw] h-[calc(91.63vh+20px)] relative float-left xl:h-[87.5vh+20px]">
+        <div className="w-[100vw] h-[calc(91.63vh+20px)] relative float-left xl:h-[87.5vh+20px] bg-green-800">
           <div className="h-[calc(91.63vh)] w-[calc(100vw-30px)] absolute top-[0] z-50 xl:w-[calc(100vw-30px)] m-[15px] xl:m-[30px] xl:h-[calc(100%-30px)]">
             <div
               className={`w-[calc(100%-22px)] h-[calc(100%)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8 xl:w-[calc(100%)] ${page.data.hero_text_color === "White" ? "text-white" : "text-black"} `}
@@ -79,7 +79,7 @@ export default async function Page({ params }: { params: Params }) {
                   </h5>
                 </div>
               </div>
-              <div className="col-span-4 col-start-1 row-start-11 xl:col-span-4 xl:col-start-4 xl:row-span-1 xl:row-start-8 xl:inline">
+              <div className="col-span-4 col-start-1 row-start-10 xl:col-span-4 xl:col-start-4 xl:row-span-1 xl:row-start-8 xl:inline">
                 <div className="">
                   <p className="text-[16px] p-[0px] m-[0px] mb-[0px!important] leading-[120%]">
                     Design: {page.data.design_architects}
@@ -98,17 +98,18 @@ export default async function Page({ params }: { params: Params }) {
             </div>
           </div>
           <div className="w-[calc(100vw)] overflow-x-hidden">
-            <div className="absolute float-left w-[calc(100vw+0px)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden  flex items-center  justify-center min-h-[600px]">
+            <div className="absolute float-left w-[calc(100vw+0px)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden  flex items-center  justify-center min-h-[600px] sm:h-[calc(91.63vh+20px)]">
               <PrismicNextImage
                 field={page.data.hero_image_desktop}
                 alt=""
                 className="hidden xl:inline  xl:w-[100%] xl:h-auto"
               />
-
+            </div>
+            <div className="absolute float-left w-[calc(100vw+0px)] h-[calc(91.63vh+30px)] xl:h-[calc(100vh-30px)] overflow-hidden flex items-center  justify-center  md:min-h-[600px] sm:h-[calc(91.63vh+20px)]">
               <PrismicNextImage
                 field={page.data.hero_image_mobile_ipad}
                 alt=""
-                className="block xl:hidden h-[100%] w-[calc(100%)] max-w-none w-auto min-h-[900px]"
+                className="block xl:hidden h-[100%] w-[calc(100%)] max-w-none w-auto sm:h-[calc(140vh)]"
               />
             </div>
           </div>
@@ -116,10 +117,7 @@ export default async function Page({ params }: { params: Params }) {
         <div className="relative float-left w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)]">
           <SliceZone slices={page.data.slices3} components={components} />
         </div>
-        {/* <div className="relative float-left w-[100%] h-[400px] bg-red-800">
-        <RelatedProjectsOne data={page.data.related_project_1} />
-      </div> */}
-        ${page.data.related_projects ? <RelatedProjects /> : ""}
+        {page.data.related_projects ? <RelatedProjects /> : ""}
       </div>
     </>
   );

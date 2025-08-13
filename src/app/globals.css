@@ -39,3 +39,7 @@ p {
 .project-section {
   scroll-snap-align: center;
 } */
+
+.news-text a:hover {
+  color: #a0aec0;
+}
