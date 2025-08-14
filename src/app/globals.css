@@ -43,3 +43,9 @@ p {
 .news-text a:hover {
   color: #a0aec0;
 }
+
+@screen mobile-landscape {
+  .your-element {
+    width: calc(50vw - 23px);
+  }
+}

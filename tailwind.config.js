@@ -10,10 +10,16 @@ module.exports = {
   ],
   theme: {
     screens: {
+      "mobile-portrait": { max: "768px", raw: "(orientation: portrait)" },
+      "mobile-landscape": {
+        min: "375px",
+        max: "1024px",
+        raw: "(orientation: landscape)"
+      },
       sm: "640px",
       // => @media (min-width: 640px) { ... }
 
-      md: "768px",
+      md: { min: "768px", max: "1023px" },
       // => @media (min-width: 768px) { ... }
 
       lg: "1024px",
