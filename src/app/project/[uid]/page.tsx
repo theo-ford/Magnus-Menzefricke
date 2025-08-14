@@ -63,7 +63,7 @@ export default async function Page({ params }: { params: Params }) {
             <div
               className={`w-[calc(100%)] xl:w-[calc(100%)] h-[calc(91.63vh)] xl:h-[calc(100%-30px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8   ${page.data.hero_text_color === "White" ? "text-white" : "text-black"} `}
             >
-              <div className="col-span-2 col-start-1 row-start-6 xl:col-span-8 xl:col-start-1 xl:row-start-3">
+              <div className="col-span-4 col-start-1 row-start-6 xl:col-span-8 xl:col-start-1 xl:row-start-3">
                 <h5 className="text-[8vh] tracking-[-4px] p-[0px] ml-[-5px] leading-[80%] xl:text-[9.5vw] xl:mt-[-28px] font-bold xl:tracking-[-10px] xl:ml-[-4px]">
                   {page.data.title}
                 </h5>
