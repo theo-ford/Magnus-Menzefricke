@@ -95,8 +95,17 @@ export default async function Page({ params }: { params: Params }) {
             <div
               className={`w-[calc(100%)] xl:w-[calc(100%)] h-[calc(91.63vh)] xl:h-[calc(100%-30px)] float-left grid grid-cols-4 grid-rows-12 relative gap-x-[10px] gap-y-[0px] xl:grid-cols-16 xl:grid-rows-8   ${page.data.hero_text_color === "White" ? "text-white" : "text-black"} `}
             >
-              <div className="col-span-4 col-start-1 row-start-6 xl:col-span-8 xl:col-start-1 xl:row-start-3">
-                <h5 className="text-[8vh] tracking-[-4px] p-[0px] ml-[-5px] leading-[80%] xl:text-[9.5vw] xl:mt-[-28px] font-bold xl:tracking-[-10px] xl:ml-[-4px]">
+              <div className="col-span-4 col-start-1 row-start-6 md:col-span-3 lg:col-span-3 xl:col-span-8 xl:col-start-1 xl:row-start-3">
+                <h5
+                  className="
+                text-[8vh] xl:text-[9.5vw]
+                tracking-[-0.5vh] md:tracking-[-0.6vh] lg:tracking-[-4px] xl:tracking-[-10px]
+                p-[0px] 
+                ml-[-5px] xl:ml-[-4px]
+                leading-[80%]                  
+                xl:mt-[-28px] 
+                font-bold"
+                >
                   {page.data.title}
                 </h5>
               </div>
@@ -109,7 +118,14 @@ export default async function Page({ params }: { params: Params }) {
                   </h5>
                 </div>
               </div>
-              <div className="col-span-4 col-start-1 row-start-10 xl:col-span-4 xl:col-start-4 xl:row-span-1 xl:row-start-8 xl:inline">
+              <div
+                className="
+                  col-span-4 xl:col-span-4
+                  col-start-1 xl:col-start-4
+                  row-start-10 xl:row-span-1 
+                  xl:row-start-8 xl:inline
+                  test3"
+              >
                 <div className="">
                   <p className="text-[16px] p-[0px] m-[0px] mb-[0px!important] leading-[120%]">
                     Design: {page.data.design_architects}
@@ -139,7 +155,7 @@ export default async function Page({ params }: { params: Params }) {
               <PrismicNextImage
                 field={page.data.hero_image_mobile_ipad}
                 alt=""
-                className="block xl:hidden h-[100%] w-[calc(100%)] max-w-none w-auto sm:h-[calc(160vh)]"
+                className="block xl:hidden h-[100%] w-[calc(100%)] max-w-none w-auto sm:h-[calc(180vh)]"
               />
             </div>
           </div>

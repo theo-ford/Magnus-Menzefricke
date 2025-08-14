@@ -29,6 +29,10 @@ p {
   .test2 {
     height: calc(150vh - 10px);
   }
+  .test3 {
+    grid-column: 3 / span 2;
+    margin-top: -32px;
+  }
 }
 
 @screen mobile-landscape {
