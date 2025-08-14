@@ -1,38 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}"
+    "./components/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
     screens: {
-      "mobile-portrait": { max: "768px", raw: "(orientation: portrait)" },
-      "mobile-landscape": {
-        min: "375px",
-        max: "1024px",
-        raw: "(orientation: landscape)"
-      },
       sm: "640px",
-      // => @media (min-width: 640px) { ... }
-
       md: { min: "768px", max: "1023px" },
-      // => @media (min-width: 768px) { ... }
-
       lg: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
-      xl: "1100px"
-      // => @media (min-width: 1100px) { ... }
+      xl: "1100px",
+      "mobile-portrait": { max: "768px" },
+      "mobile-landscape": { min: "375px", max: "1024px" }
     },
     extend: {
-      // screens: {
-      //   xl: "1400px"
-      //   // => @media (min-width: 1100px) { ... }
-      // },
       gridTemplateColumns: {
         12: "repeat(12, minmax(0, 1fr))",
         48: "repeat(48, minmax(0, 1fr))"
@@ -53,27 +35,12 @@ module.exports = {
     }
   },
   plugins: [
-    // function ({ addUtilities }) {
-    //   const newUtilities = {
-    //     ".scrollbar-thin": {
-    //       scrollbarWidth: "thin",
-    //       scrollbarColor: "rgb(31 29 29) white"
-    //     },
-    //     ".scrollbar-webkit": {
-    //       "&::-webkit-scrollbar": {
-    //         width: "40px"
-    //       },
-    //       "&::-webkit-scrollbar-track": {
-    //         background: "white"
-    //       },
-    //       "&::-webkit-scrollbar-thumb": {
-    //         backgroundColor: "rgb(31 41 55)",
-    //         borderRadius: "20px",
-    //         border: "1px solid white"
-    //       }
-    //     }
-    //   };
-    //   addUtilities(newUtilities, ["responsive", "hover"]);
-    // }
+    // plugin(function ({ addVariant }) {
+    //   // Adds a variant that works just like sm:, md:, etc.
+    //   addVariant(
+    //     "mobile-landscape",
+    //     "@media (max-width: 64rem) and (orientation: landscape)"
+    //   );
+    // })
   ]
 };

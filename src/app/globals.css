@@ -1,51 +1,41 @@
 @import "tailwindcss";
+@config "../../tailwind.config.js";
 
 @theme {
   --breakpoint-xl: 1150px;
   /* --breakpoint-xl: 1200px; */
 }
 
-/* html,
-body {
-  transform: translateZ(0);
-  will-change: transform;
-} */
-
 p {
   margin-bottom: 16px;
 }
-
-/* .scroll-container {
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
-}
-
-.scroll-container::-webkit-scrollbar {
-  display: none; 
-}
-
-.scroll-section {
-  scroll-snap-align: start;
-  min-width: 100vw;
-}
-
-.hero-section {
-  scroll-snap-align: start;
-}
-
-.project-section {
-  scroll-snap-align: center;
-} */
 
 .news-text a:hover {
   color: #a0aec0;
 }
 
-@screen mobile-landscape {
-  .your-element {
+/* @media (orientation: landscape) {
+  .test {
+    background-color: red;
+  }
+} */
+
+@media ((min-width: 375px) and (max-width: 1024px) and (orientation: landscape)) {
+  .test1 {
     width: calc(50vw - 23px);
+    height: calc(150vh - 10px);
+    margin-bottom: 10px;
+  }
+  .test2 {
+    height: calc(150vh - 10px);
+  }
+}
+
+@screen mobile-landscape {
+  @media (orientation: landscape) {
+    /* your styles */
+    .test {
+      background-color: green;
+    }
   }
 }
