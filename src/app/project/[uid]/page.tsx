@@ -43,12 +43,44 @@ export default async function Page({ params }: { params: Params }) {
   const RelatedProjects = () => {
     return (
       <>
-        <div className="h-[calc(83.33vh)] w-[calc(100vw-30px)] relative float-left md:w-[calc(100vw-20px)] m-[15px] md:h-[37.5vh] mt-[33.632vh] md:mt-[25vh]">
-          <p>Related Projects</p>
-          <div className=" float-left relative w-[calc(100vw-30px)] h-[calc(100%)]   gap-x-[10px] gap-y-[0px] grid grid-cols-4 grid-rows-10 md:grid-cols-16 md:grid-rows-3 min-h-[75px] md:!min-h-[200px] xl:min-h-[250px]">
+        {/* <div
+          className="
+        relative float-left
+        h-[calc(83.33vh)] md:h-[37.5vh]
+        w-[calc(100vw-30px)]  md:w-[calc(100vw-20px)] 
+        m-[30px] md:!ml-[30px] mt-[33.632vh] md:mt-[25vh] hidden md:block xl:block"
+        >
+          <p className="text-[20px]">Related Projects</p>
+          <div
+            className="float-left relative 
+            w-[calc(100vw-30px)] h-[calc(100%)] 
+            gap-x-[10px] gap-y-[0px] 
+            grid grid-cols-4 grid-rows-10 md:!grid-cols-16 xl:!grid-cols-16 md:grid-rows-3 
+            min-h-[75px] md:!min-h-[200px] xl:min-h-[250px]
+            gap-x-[15px] gap-y-[0px]"
+          >
             <RelatedProjectsOne data={page.data.related_project_1} />
             <RelatedProjectsOne data={page.data.related_project_2} />
           </div>
+        </div> */}
+        <div className="relative float-left inline-block mt-[20vh] mb-[20vh] ml-[22px] xl:ml-[15px]">
+          <p className="ml-[0px] md:ml-[11px] xl:ml-[15px] text-[20px]">
+            Related Projects
+          </p>
+          <RelatedProjectsOne data={page.data.related_project_1} />
+          <RelatedProjectsOne data={page.data.related_project_2} />
+          {/* <div
+            className="
+            relative float-left inline-block
+            w-[calc(100vw-44px)] md:w-[calc(25vw-22px)] lg:w-[calc(25vw-30px)] xl:w-[calc(25vw-30px)] 
+            h-[50vw] md:h-[15vh] lg:h-[20vh] xl:h-[25vh]
+            ml-[22px] xl:ml-[30px]
+            
+            mb-[50px]"
+          >
+            <div className="w-[100%] h-[100%] bg-red-800"></div>
+            <p>Hello World</p>
+          </div> */}
         </div>
       </>
     );
