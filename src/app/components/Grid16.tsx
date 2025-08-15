@@ -52,7 +52,7 @@ export default function Grid16() {
           {/* ROW */}
         </div>
         <div className="w-[calc(100%-10px)] border-t-[1px] border-[#d6d6d6] float-left relative xl:w-[calc(100%)]"></div>
-        <div className="w-[calc(100%-10px)] h-[calc((8.33vh)-1px)] md:h-[calc((100%/12)-1px)] xl:h-[calc((100%/8)-1px)!important] float-left grid grid-cols-4 relative gap-x-[15px]  xl:grid-cols-16 xl:w-[calc(100%)]">
+        <div className="w-[calc(100%-10px)] h-[calc((8.33vh)-1px)] md:h-[calc((100%/12)-1px)] xl:h-[calc((100%/8)-1px)!important] float-left grid grid-cols-4 relative gap-x-[9px] xl:gap-x-[15px]  xl:grid-cols-16 xl:w-[calc(100%)]">
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>
           <div className="border-r-[1px] border-l-[1px] border-[#d6d6d6] w-[100%] h-[100%]"></div>

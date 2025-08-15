@@ -41,6 +41,9 @@ p {
   .test5 {
     height: 60vh;
   }
+  .test6 {
+    display: none;
+  }
 }
 
 @screen mobile-landscape {

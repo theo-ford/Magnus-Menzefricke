@@ -65,7 +65,16 @@ export default async function Page() {
           </h5> */}
         </div>
       </div>
-      <div className="absolute top-[0] left-[0]  w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)] ml-[15px] mt-[15px] xl:mt-[30px] xl:ml-[30px] h-[auto] xl:h-[calc(100vh-60px)] mb-[15px]">
+      <div
+        className="
+        absolute top-[0] left-[0]  
+        w-[calc(100vw-30px)] xl:w-[calc(100vw-60px)] 
+        h-[auto] xl:h-[calc(100vh-60px)]
+        ml-[15px] mt-[15px] 
+        xl:mt-[30px] xl:ml-[30px]  
+        mb-[15px]
+        test6"
+      >
         <Grid16 />
       </div>
     </>
