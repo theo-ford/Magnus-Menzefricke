@@ -17,7 +17,74 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
   children
 }) => {
   const projectRef = useRef<HTMLDivElement>(null);
-
+  const ProjectType3 = () => {
+    if (item.data.project_type_2 === "design_management") {
+      return (
+        <>
+          <div className="col-span-2 col-start-1 row-start-12 xl:col-span-3 xl:col-start-1 xl:row-start-8">
+            <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
+              Net Internal Area: {item.data.net_internal_area}
+              <br></br>
+              Construction Value: {item.data.construction_value}
+              <br></br>
+              Client: {item.data.client}
+              <br></br>
+            </p>
+          </div>
+          <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-4 xl:row-start-8 ">
+            <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
+              Role: {item.data.role}
+              <br></br>
+              Design: {item.data.design_architects}
+              <br></br>
+              Tech: {item.data.technical_architects}
+              <br></br>
+            </p>
+          </div>
+        </>
+      );
+    } else if (item.data.project_type_2 === "architecture") {
+      return (
+        <>
+          <div className="col-span-2 col-start-1 row-start-12 xl:col-span-3 xl:col-start-1 xl:row-start-8">
+            <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
+              Net Internal Area: {item.data.net_internal_area}
+              <br></br>
+              Construction Value: {item.data.construction_value}
+              <br></br>
+              Client: {item.data.client}
+              <br></br>
+            </p>
+          </div>
+          <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-4 xl:row-start-8 ">
+            <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
+              Role: {item.data.role}
+            </p>
+          </div>
+        </>
+      );
+    } else if (item.data.project_type_2 === "masterplanning") {
+      return (
+        <>
+          <div className="col-span-2 col-start-1 row-start-12 xl:col-span-3 xl:col-start-1 xl:row-start-8">
+            <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
+              Gross External Area: {item.data.gross_external_area}
+              <br></br>
+              Site Area: {item.data.site_area}
+              <br></br>
+              Client: {item.data.client}
+              <br></br>
+            </p>
+          </div>
+          <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-4 xl:row-start-8 ">
+            <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
+              Role: {item.data.role}
+            </p>
+          </div>
+        </>
+      );
+    }
+  };
   return (
     <>
       <div
@@ -53,26 +120,7 @@ export const HomepageProject: React.FC<HomepageProjectProps> = ({
                     {item.data.completion_date}
                   </h5>
                 </div>
-                <div className="col-span-2 col-start-1 row-start-12 xl:col-span-3 xl:col-start-1 xl:row-start-8">
-                  <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
-                    Net Internal Area: {item.data.net_internal_area}
-                    <br></br>
-                    Construction Value: {item.data.construction_value}
-                    <br></br>
-                    Role: {item.data.role}
-                    <br></br>
-                  </p>
-                </div>
-                <div className="col-span-2 col-start-3 row-start-12  xl:col-span-2 xl:col-start-4 xl:row-start-8 ">
-                  <p className="text-[12px] xl:text-[12px] p-[0px] m-[0px] mt-[0.2vh] xl:mt-[-2.5px] leading-[110%]">
-                    Design: {item.data.design_architects}
-                    <br></br>
-                    Tech: {item.data.technical_architects}
-                    <br></br>
-                    Client: {item.data.client}
-                    <br></br>
-                  </p>
-                </div>
+                <ProjectType3 />
               </div>
             </div>
             {/* <div className="absolute z-[-40] top--[0] w-[calc(100vw-44px)] m-[22px] xl:m-[30px] xl:w-[calc(75vw-15px)]"> */}

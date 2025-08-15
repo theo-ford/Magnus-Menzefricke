@@ -567,15 +567,26 @@ interface ProjectDocumentData {
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
-   * - **Default Value**: Design Management
-   * - **API ID Path**: project.project_type
+   * - **Default Value**: design_management
+   * - **API ID Path**: project.project_type_2
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  project_type: prismic.SelectField<
-    "Design Management" | "Architecture" | "Masterplanning",
+  project_type_2: prismic.SelectField<
+    "design_management" | "architecture" | "masterplanning",
     "filled"
   >;
+
+  /**
+   * Role field in *Project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.role
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  role: prismic.KeyTextField;
 
   /**
    * Design Architects field in *Project*
@@ -633,17 +644,6 @@ interface ProjectDocumentData {
   client: prismic.KeyTextField;
 
   /**
-   * Role field in *Project*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.role
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  role: prismic.KeyTextField;
-
-  /**
    * Location field in *Project*
    *
    * - **Field Type**: Text
@@ -675,6 +675,28 @@ interface ProjectDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   construction_value: prismic.KeyTextField;
+
+  /**
+   * Gross External Area field in *Project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.gross_external_area
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  gross_external_area: prismic.KeyTextField;
+
+  /**
+   * Site Area field in *Project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.site_area
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  site_area: prismic.KeyTextField;
 
   /**
    * Related Project Image field in *Project*

@@ -43,50 +43,76 @@ export default async function Page({ params }: { params: Params }) {
   const RelatedProjects = () => {
     return (
       <>
-        {/* <div
+        <div
           className="
-        relative float-left
-        h-[calc(83.33vh)] md:h-[37.5vh]
-        w-[calc(100vw-30px)]  md:w-[calc(100vw-20px)] 
-        m-[30px] md:!ml-[30px] mt-[33.632vh] md:mt-[25vh] hidden md:block xl:block"
+        relative float-left inline-block 
+        mt-[20vh] 
+        mb-[20vh] 
+        ml-[15px] md:ml-[10px] xl:ml-[15px]"
         >
-          <p className="text-[20px]">Related Projects</p>
-          <div
-            className="float-left relative 
-            w-[calc(100vw-30px)] h-[calc(100%)] 
-            gap-x-[10px] gap-y-[0px] 
-            grid grid-cols-4 grid-rows-10 md:!grid-cols-16 xl:!grid-cols-16 md:grid-rows-3 
-            min-h-[75px] md:!min-h-[200px] xl:min-h-[250px]
-            gap-x-[15px] gap-y-[0px]"
-          >
-            <RelatedProjectsOne data={page.data.related_project_1} />
-            <RelatedProjectsOne data={page.data.related_project_2} />
-          </div>
-        </div> */}
-        <div className="relative float-left inline-block mt-[20vh] mb-[20vh] ml-[22px] xl:ml-[15px]">
-          <p className="ml-[0px] md:ml-[11px] xl:ml-[15px] text-[20px]">
+          <p className="ml-[0px] md:ml-[5px] xl:ml-[15px] text-[20px]">
             Related Projects
           </p>
           <RelatedProjectsOne data={page.data.related_project_1} />
           <RelatedProjectsOne data={page.data.related_project_2} />
-          {/* <div
-            className="
-            relative float-left inline-block
-            w-[calc(100vw-44px)] md:w-[calc(25vw-22px)] lg:w-[calc(25vw-30px)] xl:w-[calc(25vw-30px)] 
-            h-[50vw] md:h-[15vh] lg:h-[20vh] xl:h-[25vh]
-            ml-[22px] xl:ml-[30px]
-            
-            mb-[50px]"
-          >
-            <div className="w-[100%] h-[100%] bg-red-800"></div>
-            <p>Hello World</p>
-          </div> */}
         </div>
       </>
     );
   };
 
-  console.log("PROJECT TYPE: " + page.data.project_type);
+  const ProjectType2 = () => {
+    if (page.data.project_type_2 === "design_management") {
+      return (
+        <p className="text-[16px] p-[0px] m-[0px] mb-[0px!important] leading-[120%]">
+          Net Internal Area: {page.data.net_internal_area}
+          <br></br>
+          Construction Value: {page.data.construction_value}
+          <br></br>
+          Client: {page.data.client}
+          <br></br>
+          <br></br>
+          Role: {page.data.role}
+          <br></br>
+          Design: {page.data.design_architects}
+          <br></br>
+          Tech: {page.data.technical_architects}
+          <br></br>
+        </p>
+      );
+    } else if (page.data.project_type_2 === "architecture") {
+      return (
+        <p className="text-[16px] p-[0px] m-[0px] mb-[0px!important] leading-[120%]">
+          Net Internal Area: {page.data.net_internal_area}
+          <br></br>
+          Construction Value: {page.data.construction_value}
+          <br></br>
+          Client: {page.data.client}
+          <br></br>
+          <br></br>
+          Role: {page.data.role}
+          <br></br>
+        </p>
+      );
+    } else if (page.data.project_type_2 === "masterplanning") {
+      return (
+        <p className="text-[16px] p-[0px] m-[0px] mb-[0px!important] leading-[120%]">
+          Gross External Area: {page.data.gross_external_area}
+          <br></br>
+          Site Area: {page.data.site_area}
+          <br></br>
+          Client: {page.data.client}
+          <br></br>
+          <br></br>
+          <br></br>
+          Role: {page.data.role}
+          <br></br>
+        </p>
+      );
+    }
+  };
+
+  console.log("PROJECT TYPE 2: " + page.data.project_type_2);
+  console.log("Role: " + page.data.role);
 
   return (
     <>
@@ -111,12 +137,12 @@ export default async function Page({ params }: { params: Params }) {
                   {page.data.title}
                 </h5>
               </div>
-              <div className="col-span-4 col-start-1 row-start-9  xl:col-span-2 xl:col-start-1 xl:row-start-8">
+              <div className="col-span-4 col-start-1 row-start-9  xl:col-span-2 xl:col-start-1 xl:row-start-8 test4">
                 <div className="xl:relative">
                   <h5 className="text-[18px] p-[0px] m-[0px] mt-[-3px] leading-none xl:text-[16px] w-[calc(100%+40px)]">
                     Location: {page.data.location}
                     <br></br>
-                    {page.data.completion_date}
+                    Completion: {page.data.completion_date}
                   </h5>
                 </div>
               </div>
@@ -128,20 +154,7 @@ export default async function Page({ params }: { params: Params }) {
                   xl:row-start-8 xl:inline
                   test3"
               >
-                <div className="">
-                  <p className="text-[16px] p-[0px] m-[0px] mb-[0px!important] leading-[120%]">
-                    Design: {page.data.design_architects}
-                    <br></br>
-                    Tech: {page.data.technical_architects}
-                    <br></br>
-                    <br></br>
-                    Net Internal Area: {page.data.net_internal_area}
-                    <br></br>
-                    Construction Value: {page.data.construction_value}
-                    <br></br>
-                    Client: {page.data.client}
-                  </p>
-                </div>
+                <ProjectType2 />
               </div>
             </div>
           </div>

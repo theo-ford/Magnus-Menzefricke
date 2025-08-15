@@ -19,13 +19,20 @@
           "placeholder": ""
         }
       },
-      "project_type": {
+      "project_type_2": {
         "type": "Select",
         "config": {
           "label": "Project Type",
           "placeholder": "",
-          "options": ["Design Management", "Architecture", "Masterplanning"],
-          "default_value": "Design Management"
+          "options": ["design_management", "architecture", "masterplanning"],
+          "default_value": "design_management"
+        }
+      },
+      "role": {
+        "type": "Text",
+        "config": {
+          "label": "Role",
+          "placeholder": ""
         }
       },
       "design_architects": {
@@ -63,13 +70,6 @@
           "placeholder": ""
         }
       },
-      "role": {
-        "type": "Text",
-        "config": {
-          "label": "Role",
-          "placeholder": ""
-        }
-      },
       "location": {
         "type": "Text",
         "config": {
@@ -88,6 +88,20 @@
         "type": "Text",
         "config": {
           "label": "Construction Value",
+          "placeholder": ""
+        }
+      },
+      "gross_external_area": {
+        "type": "Text",
+        "config": {
+          "label": "Gross External Area",
+          "placeholder": ""
+        }
+      },
+      "site_area": {
+        "type": "Text",
+        "config": {
+          "label": "Site Area",
           "placeholder": ""
         }
       },

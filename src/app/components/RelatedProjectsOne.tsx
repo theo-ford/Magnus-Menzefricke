@@ -12,28 +12,16 @@ export default async function RelatedProjectsOne({ data }) {
     });
     return (
       <>
-        {/* <div className="col-span-4 row-span-4 overflow-hidden flex items-center md:row-span-2 ">
-          <a href={`${relatedProjectsOne.uid}`}>
-            <div className=" ">
-              <PrismicNextImage
-                field={relatedProjectsOne.data.related_project_image}
-                alt=""
-              />
-              <br></br>
-            </div>
-          </a>
-          <p className="text-gray-300 mt-[-20px]">
-            {relatedProjectsOne.data.title}
-          </p>
-        </div> */}
         <a href={`${relatedProjectsOne.uid}`}>
           <div
             className="
             relative float-left inline-block
-            w-[calc(100vw-44px)] md:w-[calc(25vw-22px)] lg:w-[calc(25vw-30px)] xl:w-[calc(25vw-30px)] 
-            h-[50vw] md:h-[15vh] lg:h-[20vh] xl:h-[25vh]
-            md:ml-[11px] xl:ml-[15px]            
-            mb-[50px]"
+            w-[calc(100vw-30px)] md:w-[calc(25vw-22px)] lg:w-[calc(25vw-30px)] xl:w-[calc(25vw-30px)] 
+            h-[50vw] md:h-[15vh] lg:h-[15vh] xl:h-[25vh]
+            md:ml-[5px] xl:ml-[15px] 
+            md:mr-[5px] lg:mr-[5px] xl:mr-[0px]            
+            mb-[50px]
+            test5"
           >
             <div className="w-[100%] h-[100%] overflow-hidden flex items-center">
               <PrismicNextImage
