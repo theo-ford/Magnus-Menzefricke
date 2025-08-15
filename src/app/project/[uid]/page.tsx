@@ -86,6 +86,8 @@ export default async function Page({ params }: { params: Params }) {
     );
   };
 
+  console.log("PROJECT TYPE: " + page.data.project_type);
+
   return (
     <>
       <NavProjects projectTitle={page.data.title} />

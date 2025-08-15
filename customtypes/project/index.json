@@ -19,6 +19,15 @@
           "placeholder": ""
         }
       },
+      "project_type": {
+        "type": "Select",
+        "config": {
+          "label": "Project Type",
+          "placeholder": "",
+          "options": ["Design Management", "Architecture", "Masterplanning"],
+          "default_value": "Design Management"
+        }
+      },
       "design_architects": {
         "type": "Text",
         "config": {
@@ -72,13 +81,6 @@
         "type": "Text",
         "config": {
           "label": "Description",
-          "placeholder": ""
-        }
-      },
-      "project_type": {
-        "type": "Text",
-        "config": {
-          "label": "Project Type",
           "placeholder": ""
         }
       },

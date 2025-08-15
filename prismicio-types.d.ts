@@ -563,6 +563,21 @@ interface ProjectDocumentData {
   title: prismic.KeyTextField;
 
   /**
+   * Project Type field in *Project*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Design Management
+   * - **API ID Path**: project.project_type
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  project_type: prismic.SelectField<
+    "Design Management" | "Architecture" | "Masterplanning",
+    "filled"
+  >;
+
+  /**
    * Design Architects field in *Project*
    *
    * - **Field Type**: Text
@@ -649,17 +664,6 @@ interface ProjectDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   description: prismic.KeyTextField;
-
-  /**
-   * Project Type field in *Project*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: project.project_type
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  project_type: prismic.KeyTextField;
 
   /**
    * Construction Value field in *Project*

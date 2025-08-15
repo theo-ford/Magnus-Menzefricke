@@ -19,7 +19,7 @@ export default function HorizontalScroll_v0({
     const el: any = scrollRef.current;
     if (el && isDesktop) {
       const onWheel = (e) => {
-        console.log(e.deltaY);
+        // console.log(e.deltaY);
         if (e.deltaY == 0) return;
         e.preventDefault();
         el.scrollTo({
