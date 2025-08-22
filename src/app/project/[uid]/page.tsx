@@ -142,7 +142,7 @@ export default async function Page({ params }: { params: Params }) {
                   <h5 className="text-[18px] p-[0px] m-[0px] mt-[-3px] leading-none xl:text-[16px] w-[calc(100%+40px)]">
                     Location: {page.data.location}
                     <br></br>
-                    Completion: {page.data.completion_date}
+                    Date: {page.data.completion_date}
                   </h5>
                 </div>
               </div>

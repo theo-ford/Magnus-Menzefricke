@@ -17,7 +17,7 @@
             "label": "Text",
             "placeholder": "Lorem ipsum...",
             "allowTargetBlank": true,
-            "multi": "paragraph,embed,strong,em",
+            "multi": "paragraph,strong,em,embed,hyperlink",
             "labels": [
               "codespan"
             ]

@@ -49,8 +49,8 @@ export default function Hero({ pageData }) {
           <div className="col-span-4 col-start-1 row-start-10 xl:col-start-10 xl:col-span-3 xl:row-start-1  hidden xl:inline">
             <h5 className="text-[18px] p-[0px] mt-[-1px] leading-none  md:text-[16px]">
               <p>
-                MM-0002
-                <br></br>
+                {/* MM-0002 */}
+                {/* <br></br> */}
                 {time.toString()}
               </p>
             </h5>

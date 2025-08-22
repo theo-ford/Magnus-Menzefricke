@@ -13,7 +13,10 @@ p {
 .news-text a:hover {
   color: #a0aec0;
 }
-
+.richtextlinks a {
+  /* color: #5e6875; */
+  text-decoration: underline;
+}
 /* @media (orientation: landscape) {
   .test {
     background-color: red;

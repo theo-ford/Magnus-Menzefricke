@@ -61,7 +61,7 @@ export default async function Page() {
                   </div>
                   <div
                     key={"body" + index}
-                    className="col-span-4 row-span-2 row-start-7 mt-[-5px] xl:row-start-7 leading-[113%] news-text"
+                    className="col-span-4 row-span-2 row-start-7 mt-[-5px] xl:row-start-7 leading-[113%] news-text mt-[0px]"
                   >
                     <PrismicRichText field={item.body_text} />
                   </div>
