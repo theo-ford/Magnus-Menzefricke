@@ -17,7 +17,7 @@ export default async function Page() {
       <Nav />
       <div className="absolute z-[100] block float-left mt-[15px] ml-[15px] xl:ml-[30px] xl:mt-[30px] w-[calc(100vw-30px)] xl:w-[calc(100vw-30px)] h-[calc(100vh)] md:h-[calc(100vh-60px)] xl:h-[calc(100vh-60px)]">
         <div className="w-[calc(100%)] h-[calc(100%-7px)] float-left grid grid-cols-4 grid-rows-12 xl:grid-rows-8 relative gap-x-[15px] gap-y-[0px] xl:h-[calc((100vh-60px))] xl:grid-cols-16 xl:w-[calc(100%-40px)]">
-          <h5 className="text-[16px] md:text-[18px] xl:text-[24px] p-[0px] m-[0px] leading-[115%] col-span-4 row-start-2 md:col-span-8 xl:col-span-6 md:row-start-2 xl:row-start-2">
+          <h5 className="text-[16px] md:text-[18px] xl:text-[20px] p-[0px] m-[0px] leading-[115%] col-span-4 row-start-2 md:col-span-8 xl:col-span-8 md:row-start-2 xl:row-start-2 text-gray-400">
             <PrismicRichText field={page.data.biography} />
             <span className="">
               Services:
