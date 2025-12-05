@@ -31,6 +31,8 @@ export default async function Home() {
     })
   );
 
+  console.log("20251205 16:02 Testing")
+
   return (
     <>
       <Nav />
